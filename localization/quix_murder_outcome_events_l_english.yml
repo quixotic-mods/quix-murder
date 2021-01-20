@@ -1,6 +1,28 @@
-﻿l_english:
+﻿##################################
+# Quixotic Murder
+# alpha1
+# quix_murder_outcome_events_l_english.yml
+# Rev 1
+# by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
+##################################
+
+#1000 - murder plots
+l_english:
  
  quix_murder_outcome.1001.t:0 "Arsonist!"
- murder_outcome.1001.d:0 "An opportunity arises. My agents have. One of them will pay the assassin the very night the deed will happen. Another will ensure the wall is unguarded. A third will leave a subtle trail of candles to [target.GetTitledFirstNamePossessive] bedchamber.\n\nEverything is in place."
- murder_outcome.1001.a:0 "Do it."
- murder_outcome.1001.b:0 "Wait, I am not ready."
+ quix_murder_outcome.1001.d:0 "An opportunity arises. My agents have discovered [target.GetTitledFirstName] and entourage will be staying at an inn on an upcoming trip. This inn is made entirely from timber and has an old thatched roof. If we cannot easily get past [target.GetTitledFirstNamePossessive] guards, they can just go up in the blaze as well. The best part about the plan is it leaves no evidence.\n\nIt could even have been an accident..."
+ quix_murder_outcome.1001.a:0 "Burn, baby, burn."
+ quix_murder_outcome.1001.b:0 "I happen to like that inn..."
+
+#2000 - outcomes
+ quix_murder_outcome.2001.t:0 "Arsonist!"
+ quix_murder_outcome.2001.opening_1:0 "[target.GetName] went up in a towering inferno!"
+ quix_murder_outcome.2001.opening_2:0 "Although not everything went to plan, the Arsonist was able to make due by barricading a few patrons inside with [target.GetName]. Wrong place, wrong time!"
+ quix_murder_outcome.2001.opening_3:0 "The plan worked so well, the blaze took several other buildings along with the Inn. [target.GetName] Had no chance!"
+ quix_murder_outcome.2001.heh:0 "\nHot."
+ quix_murder_outcome.2001.owner_is_known_1:0 "\n\nHowever, it seems as if everyone has assumed it was my doing anyway!"
+ quix_murder_outcome.2001.owner_is_known_2:0 "\n\nIt would seem that someone wasn't able to keep this a secret, however, and speculation abounds that I killed [target.GetTitledFirstName]."
+ quix_murder_outcome.2001.no_awareness_1:0 "\n\nFortunately, buildings burn down all the time, and my involvement is not suspected."
+ quix_murder_outcome.2001.no_awareness_2:0 "\n\nAny witnesses burned up with the inn!"
+ quix_murder_outcome.2001.a.discovered:0 "But you are mistaken, he was merely an incompetent lamplighter!"
+ quix_murder_outcome.2001.a:0 "From now on I believe I will sleep with a pale of water beside my bed..."
