@@ -593,16 +593,8 @@ quix_murder_outcome.2002 = {
 		random_valid = {
 			desc = quix_murder_outcome.2002.opening_1
 			desc = quix_murder_outcome.2002.opening_2
-			desc = quix_murder_outcome.2002.opening_3
-		}
-		triggered_desc = {
-			# Additional comment if you're sadistic.
-			trigger = {
-				has_trait = sadistic
 			}
-			desc = quix_murder_outcome.2002.heh
-		}
-
+		
 		first_valid = {
 			# If the Scheme Owner is known:
 			triggered_desc = {

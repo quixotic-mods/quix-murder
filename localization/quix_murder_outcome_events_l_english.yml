@@ -104,6 +104,7 @@ quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle
 #################
 #2000 - 2999 Successes
 #################
+
 # 2001 A Toasty Inn... Success
  quix_murder_outcome.2001.t:0 "A Toasty Inn..."
  quix_murder_outcome.2001.opening_1:0 "[target.GetName] went up in a towering inferno!"
@@ -116,3 +117,23 @@ quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle
  quix_murder_outcome.2001.no_awareness_2:0 "\n\nAny witnesses burned up with the inn!"
  quix_murder_outcome.2001.a.discovered:0 "But you are mistaken, he was merely an incompetent lamplighter!"
  quix_murder_outcome.2001.a:0 "From now on I believe I will sleep with a pale of water beside my bed..."
+
+# 2002 Arrow to the Balcony Success
+ quix_murder_outcome.2002.t:0 "An Arrow to the Balcony."
+ quix_murder_outcome.2002.opening_1:0 "I'm told the arrow caught [target.GetName] in the throat, and they died choking on their own blood."
+ quix_murder_outcome.2002.opening_2:0 "It seems when my assassin hit [target.GetName], [target.GetHisorHer] body fell from that beloved balcony onto a maneur cart!."
+quix_murder_outcome.2002.owner_is_known_1:0 "\n\nUnfortunately, the bowman was apprehended and has accused me!!"
+ quix_murder_outcome.2002.owner_is_known_2:0 "\n\nAlthough the feat so impressed the bowman that he has been bragging that you paid him to kill [target.GetTitledFirstName]!"
+ quix_murder_outcome.2002.no_awareness_1:0 "\n\nDespite the obvious assassination, it seems no one has caught on to me."
+ quix_murder_outcome.2002.no_awareness_2:0 "\n\nAnd best of all, the bowman got away cleanly!"
+ quix_murder_outcome.2002.a.discovered:0 "Me? Why would I want to kill [target.GetName]? I told him to shoot an old blind donkey, he misunderstood!"
+
+# 2003 Dead Drunk Success
+ quix_murder_outcome.2003.t:0 "Dead Drunk."
+ quix_murder_outcome.2003.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
+ quix_murder_outcome.2003.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
+ quix_murder_outcome.2003.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
+ quix_murder_outcome.2003.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
+ quix_murder_outcome.2003.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
+ quix_murder_outcome.2003.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
+ quix_murder_outcome.2003.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
