@@ -13,7 +13,7 @@ namespace = quix_murder_outcome
 # 0100-0199 Method Selection Events
 # 	0101 A Toasty Inn...
 #	0102 Arrow to the Balcony
-#	0103 A Gift of Poisoned Wine
+#	0103 Dead Drunk
 #	0104 Throat slit in the dark
 #	0105 A slinger on a hillside
 #	0106 Betrayed by household guard
@@ -42,7 +42,7 @@ namespace = quix_murder_outcome
 # 1000 - 1199 "REGULAR" MURDER SETUPS 
 #	1001 A Toasty Inn Setup
 #	1002 Arrow to the Balcony Setup
-#	1003 A Gift of Poisoned Wine Setup
+#	1003 Dead Drunk Setup
 # 	1004 Throat slit in the dark Setup
 #	1005 A slinger on a hillside Setup
 #	1006 Betrayed by household guard Setup
@@ -67,7 +67,7 @@ namespace = quix_murder_outcome
 #  Regular
 #	2001 A Toasty Inn Success
 #	2002 Arrow to the Balcony Success
-#	2003 A Gift of Poisoned Wine Success
+#	2003 Dead Drunk Success
 # 	2004 Throat slit in the dark Success
 #	2005 A slinger on a hillside Success
 #	2006 Betrayed by household guard Success
@@ -89,7 +89,7 @@ namespace = quix_murder_outcome
 #  Regular
 #	4001 A Toasty Inn Failure
 #	4002 Arrow to the Balcony Failure
-#	4003 A Gift of Poisoned Wine Failure
+#	4003 Dead Drunk Failure
 # 	4004 Throat slit in the dark Failure
 #	4005 A slinger on a hillside Failure
 #	4006 Betrayed by household guard Failure
@@ -141,10 +141,16 @@ quix_murder_outcome.0102 = {
 	}
 }
 
-# 103 A Gift of Poisoned Wine
+# 103 Dead Drunk
 quix_murder_outcome.0103 = {
 	type = character_event
 	hidden = yes
+
+	trigger = {
+		scope:target = {
+			has_trait = drunkard
+		}
+		}
 
 	immediate = {
 		save_scope_value_as = {
@@ -154,7 +160,6 @@ quix_murder_outcome.0103 = {
 		trigger_event = { on_action = murder_setup }
 	}
 }
-
 #104 Throat slit in the dark
 
 #105 A slinger on a hillside
@@ -387,7 +392,7 @@ quix_murder_outcome.1002 = {
 	}
 }
 
-# 1003 A Gift of Poisoned Wine Setup
+# 1003 Dead Drunk Setup
 quix_murder_outcome.1003 = {
 	title = quix_murder_outcome.1003.t
 	desc = quix_murder_outcome.1003.d
@@ -654,27 +659,19 @@ quix_murder_outcome.2002 = {
 }
 
 ########################
-# 2003 A Gift of Poisoned Wine
+# 2003 Dead Drunk
 ########################
 quix_murder_outcome.2003 = {
 	type = character_event
-	title = quix_murder_outcome.2002.t
+	title = quix_murder_outcome.2003.t
 	desc = {
 		# Open with a statement celebrating success
-		# Remember to name the Target character
 		random_valid = {
-			desc = quix_murder_outcome.2002.opening_1
-			desc = quix_murder_outcome.2002.opening_2
-			desc = quix_murder_outcome.2002.opening_3
+			desc = quix_murder_outcome.2003.opening_1
+			desc = quix_murder_outcome.2003.opening_2
+			desc = quix_murder_outcome.2003.opening_3
 		}
-		triggered_desc = {
-			# Additional comment if you're sadistic.
-			trigger = {
-				has_trait = sadistic
-			}
-			desc = quix_murder_outcome.2002.heh
-		}
-
+		
 		first_valid = {
 			# If the Scheme Owner is known:
 			triggered_desc = {
@@ -683,17 +680,15 @@ quix_murder_outcome.2003 = {
 				}
 				desc = {
 					random_valid = {
-						desc = quix_murder_outcome.2002.owner_is_known_1
-						desc = quix_murder_outcome.2002.owner_is_known_2
-					#	desc = # I am known 3
+						desc = quix_murder_outcome.2003.owner_is_known_1
+						desc = quix_murder_outcome.2003.owner_is_known_2
 					}
 				}
 			}
 			desc = {
 				random_valid = {
-					desc = quix_murder_outcome.2002.no_awareness_1
-					desc = quix_murder_outcome.2002.no_awareness_2
-				#	desc = # Nothing is known 3
+					desc = quix_murder_outcome.2003.no_awareness_1
+					desc = quix_murder_outcome.2003.no_awareness_2
 				}
 			}
 		}

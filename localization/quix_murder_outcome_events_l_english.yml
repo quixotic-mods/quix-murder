@@ -79,7 +79,6 @@ l_english:
 #	4019 Tortured by assassin Failure
 #	4020 Poisoned While Sleeping Failure
 
-
 #################
 # 1000 - 1199 "REGULAR" MURDER SETUPS 
 #################
@@ -91,8 +90,16 @@ l_english:
  quix_murder_outcome.1001.b:0 "I happen to like that inn..."
 
 # 1002 Arrow to the Balcony Setup
+quix_murder_outcome.1002.t:0 "An Arrow to the Balcony..."
+quix_murder_outcome.1002.d:0 "In our efforts to rid the world of [target.GetTitledFirstName], a window of opportunity has appeared. Or, more fittingly, a balcony. It would appear that [target.GetTitledFirstName] has a favorite spot to take the most afternoons. This balcony is across a small courtyard from a tavern. Even a mediocre bowman could make the shot..."
+ quix_murder_outcome.1002.a:0 "Send word for my best archer."
+ quix_murder_outcome.1002.b:0 "No, that's too dignified for[target.GetTitledFirstName]."
 
 #	1003 A Gift of Poisoned Wine Setup
+quix_murder_outcome.1003.t:0 "Dead Drunk."
+quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle of wine, a thought occurred to me. Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
+ quix_murder_outcome.1003.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
+ quix_murder_outcome.1003.b:0 "On second thought, I'll save it for a special occasion."
 
 #################
 #2000 - 2999 Successes
