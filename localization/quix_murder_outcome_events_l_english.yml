@@ -1,0 +1,6 @@
+﻿l_english:
+ 
+ quix_murder_outcome.1001.t:0 "Arsonist!"
+ murder_outcome.1001.d:0 "An opportunity arises. My agents have. One of them will pay the assassin the very night the deed will happen. Another will ensure the wall is unguarded. A third will leave a subtle trail of candles to [target.GetTitledFirstNamePossessive] bedchamber.\n\nEverything is in place."
+ murder_outcome.1001.a:0 "Do it."
+ murder_outcome.1001.b:0 "Wait, I am not ready."
