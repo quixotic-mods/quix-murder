@@ -1,7 +1,7 @@
 # Quixotic Murder - Crusader Kings 3 Mod
 **Version: Alpha 1**
 
-*by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ DonQuixote.Games*
+*by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*
 
 
 Events mod for Crusader Kings 3 by Paradox Interactive. Will add dozens of new murder events.
