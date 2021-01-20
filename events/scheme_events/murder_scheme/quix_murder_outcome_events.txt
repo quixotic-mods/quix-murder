@@ -1,21 +1,119 @@
 ##################################
 # Quixotic Murder
-# alpha1
 # quix_murder_outcome_events.txt
-# Rev 1
+# Version:alpha1
 # by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
+# https://DonQuixote.Games/
 ##################################
 namespace = quix_murder_outcome
 
+#################
+# INDEX
+#################
+# 0100-0199 Method Selection Events
+# 	0101 A Toasty Inn...
+#	0102 Arrow to the Balcony
+#	0103 A Gift of Poisoned Wine
+#	0104 Throat slit in the dark
+#	0105 A slinger on a hillside
+#	0106 Betrayed by household guard
+#	0107 A daring night time raid
+#	0108 A greedy seneschal...
+#	0109 The crooked apothecary
+#	0110 The Bold Bloodletter
+#	0111 The Foreign Warrior
+#	0112 The Masked Assassin
+#	0113 Your Champion's blade
+#	0114 A Chance Encounter...
+#	0115 Band of Horsemen
+#	0116 The ol Carriage Switch
+#	0117 A hunting accident
+#	0118 Kidnapped and killed in the woods
+#	0119 Tortured by assassin
+#	0120 Poisoned While Sleeping
+# 0201-0299 CHILD AND INFANT MURDERS
+#	0201 Tossed In The Sea
+#   0202 Trojan Rocking Horse
+# 0301-0399 IMPRISONMENT MURDERS
+#	0301 Fileted Skin
+#	0302 Hot Irons
+#	0303 The Most Dangerous Game
+#	0304 Drowned in Basin
+# 1000 - 1199 "REGULAR" MURDER SETUPS 
+#	1001 A Toasty Inn Setup
+#	1002 Arrow to the Balcony Setup
+#	1003 A Gift of Poisoned Wine Setup
+# 	1004 Throat slit in the dark Setup
+#	1005 A slinger on a hillside Setup
+#	1006 Betrayed by household guard Setup
+#	1007 A daring night time raid Setup
+#	1008 A greedy seneschal... Setup
+#	1009 The crooked apothecary Setup
+#	1010 The Bold Bloodletter Setup
+#	1011 The Foreign Warrior Setup
+#	1012 The Masked Assassin Setup
+#	1013 Your Champion's blade Setup
+#	1014 A Chance Encounter... Setup
+#	1015 Band of Horsemen Setup
+#	1016 The ol Carriage Switch Setup
+#	1017 A hunting accident Setup
+#	1018 Kidnapped and killed in the woods Setup
+#	1019 Tortured by assassin Setup
+#	1020 Poisoned While Sleeping Setup
+# 1200 - 1299 CHILD MURDER SETUP
+#	1201 Tossed In The Sea Setup
+#   1202 Trojan Rocking Horse Setup
+# 2000 - 2999 SUCCESSFUL OUTCOME
+#  Regular
+#	2001 A Toasty Inn Success
+#	2002 Arrow to the Balcony Success
+#	2003 A Gift of Poisoned Wine Success
+# 	2004 Throat slit in the dark Success
+#	2005 A slinger on a hillside Success
+#	2006 Betrayed by household guard Success
+#	2007 A daring night time raid Success
+#	2008 A greedy seneschal... Success
+#	2009 The crooked apothecary Success
+#	2010 The Bold Bloodletter Success
+#	2011 The Foreign Warrior Success
+#	2012 The Masked Assassin Success
+#	2013 Your Champion's blade Success
+#	2014 A Chance Encounter... Success
+#	2015 Band of Horsemen Success
+#	2016 The ol Carriage Switch Success
+#	2017 A hunting accident Success
+#	2018 Kidnapped and killed in the woods Success
+#	2019 Tortured by assassin Success
+#	2020 Poisoned While Sleeping Success
+# 4000 - 4999 FAILURE OUTCOMES 
+#  Regular
+#	4001 A Toasty Inn Failure
+#	4002 Arrow to the Balcony Failure
+#	4003 A Gift of Poisoned Wine Failure
+# 	4004 Throat slit in the dark Failure
+#	4005 A slinger on a hillside Failure
+#	4006 Betrayed by household guard Failure
+#	4007 A daring night time raid Failure
+#	4008 A greedy seneschal... Failure
+#	4009 The crooked apothecary Failure
+#	4010 The Bold Bloodletter Failure
+#	4011 The Foreign Warrior Failure
+#	4012 The Masked Assassin Failure
+#	4013 Your Champion's blade Failure
+#	4014 A Chance Encounter... Failure
+#	4015 Band of Horsemen Failure
+#	4016 The ol Carriage Switch Failure
+#	4017 A hunting accident Failure
+#	4018 Kidnapped and killed in the woods Failure
+#	4019 Tortured by assassin Failure
+#	4020 Poisoned While Sleeping Failure
 
 #################
 # METHOD SELECTION EVENTS
 # 0100-0199
 #################
-# These are used to pick out the murder method.
 
-# Arson
-# by El Ingenioso Hidalgo Don Quixote de la Mancha
+# 101 A Toasty Inn...
 quix_murder_outcome.0101 = {
 	type = character_event
 	hidden = yes
@@ -29,14 +127,74 @@ quix_murder_outcome.0101 = {
 	}
 }
 
+# 102 Arrow to the Balcony
+quix_murder_outcome.0102 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:archery_balcony
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 103 A Gift of Poisoned Wine
+quix_murder_outcome.0103 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:poisoned_wine
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+#104 Throat slit in the dark
+
+#105 A slinger on a hillside
+
+#106 Betrayed by household guard
+
+#107 A daring night time raid
+
+#108 A greedy seneschal...
+
+#109 The crooked apothecary
+
+#110 The Bold Bloodletter
+
+#111 The Foreign Warrior
+
+#112 The Masked Assassin
+
+#113 Your Champion's blade
+
+#114 A Chance Encounter...
+
+#115 Band of Horsemen
+
+#116 The ol Carriage Switch
+
+#117 A hunting accident
+
+#118 Kidnapped and killed in the woods
+
+#119 Tortured by assassin
+
+#120 Poisoned While Sleeping
 
 #############################
 # CHILD AND INFANT MURDERS
 # 0201-0299
 #############################
 
-# Drown a child in the ocean.
-# by El Valiente Caballero Don Quixote de la Mancha
+# 201 Drown a child in the ocean.
 quix_murder_outcome.0201 = {
 	type = character_event
 	hidden = yes
@@ -74,14 +232,12 @@ quix_murder_outcome.0201 = {
 	}
 }
 
-
 ################################
 # IMPRISONMENT MURDERS
 # 0301-0399
 ################################
 
 # Torture to death in dungeon
-# by El Magnifico Hidalgo Don Quixote de la Mancha
 quix_murder_outcome.0301 = {
 	hidden = yes
 
@@ -95,7 +251,6 @@ quix_murder_outcome.0301 = {
 }
 
 # Torture to death in dungeon
-# by El Apuesto Caballero Don Quixote de la Mancha
 quix_murder_outcome.0302 = {
 	hidden = yes
 
@@ -134,9 +289,7 @@ quix_murder_outcome.0302 = {
 	}
 }
 
-
 # The most dangerous game...
-# by El Magnifico Hidalgo Don Quixote de la Mancha
 quix_murder_outcome.0302 = {
 	hidden = yes
 
@@ -152,16 +305,13 @@ quix_murder_outcome.0302 = {
 #######################################
 # "REGULAR" MURDER SETUPS 1000 - 1999
 #######################################
-# Whichever event is randomly rolled here determines what form the event takes.
 # Remember to set flags for reference when generating event text in success or failure event.
 
-
-# Setup for a hired arsonist
-# by El Magnifico Hidalgo Don Quixote de la Mancha
+# 1001 A Toasty Inn Setup
 quix_murder_outcome.1001 = {
 	title = quix_murder_outcome.1001.t
 	desc = quix_murder_outcome.1001.d
-	theme = quix_murder_scheme
+	theme = murder_scheme
 	left_portrait = scope:target
 
 	trigger = {
@@ -197,14 +347,91 @@ quix_murder_outcome.1001 = {
 	}
 }
 
+# 1002 Arrow to the Balcony Setup
+quix_murder_outcome.1002 = {
+	title = quix_murder_outcome.1002.t
+	desc = quix_murder_outcome.1002.d
+	theme = murder_scheme
+	left_portrait = scope:target
+
+	trigger = {
+		scope:murder_method = flag:archery_balcony
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1002.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1002.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+# 1003 A Gift of Poisoned Wine Setup
+quix_murder_outcome.1003 = {
+	title = quix_murder_outcome.1003.t
+	desc = quix_murder_outcome.1003.d
+	theme = murder_scheme
+	left_portrait = scope:target
+
+	trigger = {
+		scope:murder_method = flag:poisoned_wine
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1003.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1003.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
 
 #####################################
 # CHILD MURDER SETUP 1200 - 1299
 #####################################
 
-# Drown child in ocean
-# by El Valiente Caballero Don Quixote de la Mancha
-
+# 1201 Drown child in ocean setup
 quix_murder_outcome.1201 = {
 	title = quix_murder_outcome.1201.t
 	desc = {
@@ -268,19 +495,16 @@ quix_murder_outcome.1201 = {
 	}
 }
 
-
 #####################################
 # SUCCESSFUL OUTCOME 2000 - 2999
 #####################################
 
 ########################
-# Hired an arsonist
+# 2001 A Toasty Inn...
 ########################
 quix_murder_outcome.2001 = {
 	type = character_event
 	title = quix_murder_outcome.2001.t
-
-			### START DESC
 	desc = {
 		# Open with a statement celebrating success
 		# Remember to name the Target character
@@ -321,8 +545,6 @@ quix_murder_outcome.2001 = {
 		}
 	}
 
-	### END OF DESC
-
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -354,6 +576,159 @@ quix_murder_outcome.2001 = {
 	}
 }
 
+########################
+# 2002 Arrow to the Balcony
+########################
+quix_murder_outcome.2002 = {
+	type = character_event
+	title = quix_murder_outcome.2002.t
+	desc = {
+		# Open with a statement celebrating success
+		# Remember to name the Target character
+		random_valid = {
+			desc = quix_murder_outcome.2002.opening_1
+			desc = quix_murder_outcome.2002.opening_2
+			desc = quix_murder_outcome.2002.opening_3
+		}
+		triggered_desc = {
+			# Additional comment if you're sadistic.
+			trigger = {
+				has_trait = sadistic
+			}
+			desc = quix_murder_outcome.2002.heh
+		}
+
+		first_valid = {
+			# If the Scheme Owner is known:
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = {
+					random_valid = {
+						desc = quix_murder_outcome.2002.owner_is_known_1
+						desc = quix_murder_outcome.2002.owner_is_known_2
+					#	desc = # I am known 3
+					}
+				}
+			}
+			desc = {
+				random_valid = {
+					desc = quix_murder_outcome.2002.no_awareness_1
+					desc = quix_murder_outcome.2002.no_awareness_2
+				#	desc = # Nothing is known 3
+				}
+			}
+		}
+	}
+
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = sick
+	}
+
+	trigger = {
+		scope:murder_method = flag:archery_balcony
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2002.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2002.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+	}
+}
+
+########################
+# 2003 A Gift of Poisoned Wine
+########################
+quix_murder_outcome.2003 = {
+	type = character_event
+	title = quix_murder_outcome.2002.t
+	desc = {
+		# Open with a statement celebrating success
+		# Remember to name the Target character
+		random_valid = {
+			desc = quix_murder_outcome.2002.opening_1
+			desc = quix_murder_outcome.2002.opening_2
+			desc = quix_murder_outcome.2002.opening_3
+		}
+		triggered_desc = {
+			# Additional comment if you're sadistic.
+			trigger = {
+				has_trait = sadistic
+			}
+			desc = quix_murder_outcome.2002.heh
+		}
+
+		first_valid = {
+			# If the Scheme Owner is known:
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = {
+					random_valid = {
+						desc = quix_murder_outcome.2002.owner_is_known_1
+						desc = quix_murder_outcome.2002.owner_is_known_2
+					#	desc = # I am known 3
+					}
+				}
+			}
+			desc = {
+				random_valid = {
+					desc = quix_murder_outcome.2002.no_awareness_1
+					desc = quix_murder_outcome.2002.no_awareness_2
+				#	desc = # Nothing is known 3
+				}
+			}
+		}
+	}
+
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = sick
+	}
+
+	trigger = {
+		scope:murder_method = flag:archery_balcony
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2002.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2002.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+	}
+}
 
 ###############################
 # FAILURE OUTCOMES 4000 - 4999

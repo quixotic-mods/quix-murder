@@ -1,21 +1,104 @@
 ﻿##################################
 # Quixotic Murder
-# alpha1
 # quix_murder_outcome_events_l_english.yml
-# Rev 1
+# Version:alpha1
 # by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
+# https://DonQuixote.Games
 ##################################
-
-#1000 - murder plots
 l_english:
- 
- quix_murder_outcome.1001.t:0 "Arsonist!"
+
+#################
+# INDEX
+#################
+# 1000 - 1199 "REGULAR" MURDER SETUPS 
+#	  1001 A Toasty Inn Setup
+#	  1002 Arrow to the Balcony Setup
+#	  1003 A Gift of Poisoned Wine Setup
+#   1004 Throat slit in the dark Setup
+#	  1005 A slinger on a hillside Setup
+#	  1006 Betrayed by household guard Setup
+#	  1007 A daring night time raid Setup
+#	  1008 A greedy seneschal... Setup
+#	  1009 The crooked apothecary Setup
+#	  1010 The Bold Bloodletter Setup
+#	  1011 The Foreign Warrior Setup
+#	  1012 The Masked Assassin Setup
+#	  1013 Your Champion's blade Setup
+#	  1014 A Chance Encounter... Setup
+#	  1015 Band of Horsemen Setup
+#	1016 The ol Carriage Switch Setup
+#	1017 A hunting accident Setup
+#	1018 Kidnapped and killed in the woods Setup
+#	1019 Tortured by assassin Setup
+#	1020 Poisoned While Sleeping Setup
+# 1200 - 1299 CHILD MURDER SETUP
+#	1201 Tossed In The Sea Setup
+# 1202 Trojan Rocking Horse Setup
+# 2000 - 2999 SUCCESSFUL OUTCOME
+#  Regular
+#	2001 A Toasty Inn Success
+#	2002 Arrow to the Balcony Success
+#	2003 A Gift of Poisoned Wine Success
+# 2004 Throat slit in the dark Success
+#	2005 A slinger on a hillside Success
+#	2006 Betrayed by household guard Success
+#	2007 A daring night time raid Success
+#	2008 A greedy seneschal... Success
+#	2009 The crooked apothecary Success
+#	2010 The Bold Bloodletter Success
+#	2011 The Foreign Warrior Success
+#	2012 The Masked Assassin Success
+#	2013 Your Champion's blade Success
+#	2014 A Chance Encounter... Success
+#	2015 Band of Horsemen Success
+#	2016 The ol Carriage Switch Success
+#	2017 A hunting accident Success
+#	2018 Kidnapped and killed in the woods Success
+#	2019 Tortured by assassin Success
+#	2020 Poisoned While Sleeping Success
+# 4000 - 4999 FAILURE OUTCOMES 
+#  Regular
+#	4001 A Toasty Inn Failure
+#	4002 Arrow to the Balcony Failure
+#	4003 A Gift of Poisoned Wine Failure
+# 	4004 Throat slit in the dark Failure
+#	4005 A slinger on a hillside Failure
+#	4006 Betrayed by household guard Failure
+#	4007 A daring night time raid Failure
+#	4008 A greedy seneschal... Failure
+#	4009 The crooked apothecary Failure
+#	4010 The Bold Bloodletter Failure
+#	4011 The Foreign Warrior Failure
+#	4012 The Masked Assassin Failure
+#	4013 Your Champion's blade Failure
+#	4014 A Chance Encounter... Failure
+#	4015 Band of Horsemen Failure
+#	4016 The ol Carriage Switch Failure
+#	4017 A hunting accident Failure
+#	4018 Kidnapped and killed in the woods Failure
+#	4019 Tortured by assassin Failure
+#	4020 Poisoned While Sleeping Failure
+
+
+#################
+# 1000 - 1199 "REGULAR" MURDER SETUPS 
+#################
+
+# 1001 A Toasty Inn...
+ quix_murder_outcome.1001.t:0 "A Toasty Inn..."
  quix_murder_outcome.1001.d:0 "An opportunity arises. My agents have discovered [target.GetTitledFirstName] and entourage will be staying at an inn on an upcoming trip. This inn is made entirely from timber and has an old thatched roof. If we cannot easily get past [target.GetTitledFirstNamePossessive] guards, they can just go up in the blaze as well. The best part about the plan is it leaves no evidence.\n\nIt could even have been an accident..."
  quix_murder_outcome.1001.a:0 "Burn, baby, burn."
  quix_murder_outcome.1001.b:0 "I happen to like that inn..."
 
-#2000 - outcomes
- quix_murder_outcome.2001.t:0 "Arsonist!"
+# 1002 Arrow to the Balcony Setup
+
+#	1003 A Gift of Poisoned Wine Setup
+
+#################
+#2000 - 2999 Successes
+#################
+# 2001 A Toasty Inn... Success
+ quix_murder_outcome.2001.t:0 "A Toasty Inn..."
  quix_murder_outcome.2001.opening_1:0 "[target.GetName] went up in a towering inferno!"
  quix_murder_outcome.2001.opening_2:0 "Although not everything went to plan, the Arsonist was able to make due by barricading a few patrons inside with [target.GetName]. Wrong place, wrong time!"
  quix_murder_outcome.2001.opening_3:0 "The plan worked so well, the blaze took several other buildings along with the Inn. [target.GetName] Had no chance!"
