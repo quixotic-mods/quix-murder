@@ -1,0 +1,270 @@
+##################################
+# Quixotic Murder
+# alpha1
+# quix_murder_outcome_events.txt
+# Rev 1
+# by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
+##################################
+namespace = quix_murder_outcome
+
+
+#################
+# METHOD SELECTION EVENTS
+# 0100-0199
+#################
+# These are used to pick out the murder method.
+
+# Arson
+# by El Ingenioso Hidalgo Don Quixote de la Mancha
+quix_murder_outcome.0101 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:hired_arsonist
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+
+#############################
+# CHILD AND INFANT MURDERS
+# 0201-0299
+#############################
+
+# Drown a child in the ocean.
+# by El Valiente Caballero Don Quixote de la Mancha
+quix_murder_outcome.0201 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		scope:target = {
+			OR = { #There's water close by your target
+				AND = {
+					is_landed = yes
+					any_sub_realm_county = {
+						is_coastal_county = yes
+					}
+				}
+				AND = {
+					exists = location.county
+					location.county = {
+						OR = {
+							is_coastal_county = yes
+							any_neighboring_county = {
+								is_coastal_county = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:drowned_in_ocean
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+
+################################
+# IMPRISONMENT MURDERS
+# 0301-0399
+################################
+
+# Torture to death in dungeon
+# by El Magnifico Hidalgo Don Quixote de la Mancha
+quix_murder_outcome.0301 = {
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:torture_to_death_in_dungeon
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# Torture to death in dungeon
+# by El Apuesto Caballero Don Quixote de la Mancha
+murder_outcome.0302 = {
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:unwelcome_guest_house_arrest
+		}
+		scope:target = {
+			if = {
+				limit = { is_landed = yes }
+				save_scope_as = home_owner
+			}
+			else = {
+				if = {
+					limit = {
+						exists = court_owner
+					}
+					court_owner = {
+						save_scope_as = home_owner
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:home_owner.capital_province
+			}
+			scope:home_owner.capital_province = {
+				barony = {
+					save_scope_as = target_home
+				}
+			}	
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+
+# The most dangerous game...
+# by El Magnifico Hidalgo Don Quixote de la Mancha
+quix_murder_outcome.0302 = {
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:hunted_to_death
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+#######################################
+# "REGULAR" MURDER SETUPS 1000 - 1999
+#######################################
+# Whichever event is randomly rolled here determines what form the event takes.
+# Remember to set flags for reference when generating event text in success or failure event.
+
+
+# Setup for a hired arsonist
+# by El Magnifico Hidalgo Don Quixote de la Mancha
+quix_murder_outcome.1001 = {
+	title = quix_murder_outcome.1001.t
+	desc = quix_murder_outcome.1001.d
+	theme = quix_murder_scheme
+	left_portrait = scope:target
+
+	trigger = {
+		#Will have been set by murder_outcome.0001 or a special setup event.
+		scope:murder_method = flag:hired_arsonist
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1001.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			gregarious = minor_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1001.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+
+#####################################
+# CHILD MURDER SETUP 1200 - 1299
+#####################################
+
+# Drown child in ocean
+# by El Valiente Caballero Don Quixote de la Mancha
+
+quix_murder_outcome.1201 = {
+	title = quix_murder_outcome.1201.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:acting_agent
+				}
+				desc = quix_murder_outcome.1201.desc
+			}
+			desc = quix_murder_outcome.1201.no_acting_agent
+		}
+	}
+	theme = murder_scheme
+	left_portrait = scope:target
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:murder_method = flag:drowned_in_ocean
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+		scope:scheme = {
+			if = {
+				limit = {
+					any_scheme_agent = {
+						scope:scheme = {
+							NOT = {is_scheme_agent_exposed = prev }
+						}
+					}
+				}
+				random_scheme_agent = {
+					save_scope_as = acting_agent
+				}
+			}
+			else = {
+				random_dummy_gender_effect = yes
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1201.a
+		custom_tooltip = quix_murder_child_really_tooltip
+		murder_outcome_roll_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1201.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
