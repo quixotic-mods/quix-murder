@@ -504,9 +504,7 @@ quix_murder_outcome.1201 = {
 # SUCCESSFUL OUTCOME 2000 - 2999
 #####################################
 
-########################
 # 2001 A Toasty Inn...
-########################
 quix_murder_outcome.2001 = {
 	type = character_event
 	title = quix_murder_outcome.2001.t
@@ -581,9 +579,7 @@ quix_murder_outcome.2001 = {
 	}
 }
 
-########################
 # 2002 Arrow to the Balcony
-########################
 quix_murder_outcome.2002 = {
 	type = character_event
 	title = quix_murder_outcome.2002.t
@@ -650,9 +646,8 @@ quix_murder_outcome.2002 = {
 	}
 }
 
-########################
+
 # 2003 Dead Drunk
-########################
 quix_murder_outcome.2003 = {
 	type = character_event
 	title = quix_murder_outcome.2003.t
@@ -721,9 +716,8 @@ quix_murder_outcome.2003 = {
 # FAILURE OUTCOMES 4000 - 4999
 ###############################
 
-#######################
+
 # Arsonist failure
-#######################
 quix_murder_outcome.4001 = {
 	type = character_event
 	title = quix_murder_outcome.4001.t

@@ -137,3 +137,17 @@ quix_murder_outcome.2002.owner_is_known_1:0 "\n\nUnfortunately, the bowman was a
  quix_murder_outcome.2003.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
  quix_murder_outcome.2003.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
  quix_murder_outcome.2003.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+
+# 4000 Failure Outcomes
+
+# 4001 A Toasty Inn Failure
+ quix_murder_outcome.4001.t:0 "A Toasty Inn..."
+ quix_murder_outcome.4001.failure_declaration_1:0 "[target.GetTitledFirstName] yet lives!"
+ quix_murder_outcome.4001.failure_declaration_2:0 "Our plot to end [target.GetTitledFirstName]'s life has failed!"
+ quix_murder_outcome.4001.failure_declaration_3:0 "Killing [target.GetTitledFirstName] won't be as easy as I thought. [target.GetTitledName] still lives."
+ quix_murder_outcome.4001.desc:0 "\n\nOur arsonist torched the wrong inn! [target.GetName] came out into the street to watch the inferno."
+ quix_murder_outcome.4001.exposed_scheme:0 "The arsonist was captured, and the plot has been exposed!"
+ quix_murder_outcome.4001.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
+ quix_murder_outcome.4001.a.discovered:0 "[dummy_assassin_gender.GetSheHe|U] was actually there to scare off the #EMP real#! assassin! And succeeded!"
+ quix_murder_outcome.4001.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
+ quix_murder_outcome.4001.b:0 "If at first you don't succeed..."
