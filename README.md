@@ -5,6 +5,9 @@
 
 Events mod for Crusader Kings 3 by Paradox Interactive. Will add dozens of new murder events focused on immersion, roleplaying, and flavor, while not affecting overall game tone or balance.
 
+## Compatibility
+This mod is NOT compatible with other murder scheme event mods. Technically speaking, I am overwriting murder_on_actions.txt because this is the only way I can figure out to insert the custom events into schemes. If you know a better way, please let me know. Mod authors, I would be happy to release a patch for your mod and give you everything you need to release one for mine, hit me up.
+
 ## Installation
 Put in your CK3 Mods Folder (found in Paradox \ Documents)
 
