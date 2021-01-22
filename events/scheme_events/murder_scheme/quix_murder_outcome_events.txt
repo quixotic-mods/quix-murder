@@ -199,113 +199,12 @@ quix_murder_outcome.0103 = {
 # 0201-0299
 #############################
 
-# 201 Drown a child in the ocean.
-quix_murder_outcome.0201 = {
-	type = character_event
-	hidden = yes
-
-	trigger = {
-		scope:target = {
-			OR = { #There's water close by your target
-				AND = {
-					is_landed = yes
-					any_sub_realm_county = {
-						is_coastal_county = yes
-					}
-				}
-				AND = {
-					exists = location.county
-					location.county = {
-						OR = {
-							is_coastal_county = yes
-							any_neighboring_county = {
-								is_coastal_county = yes
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	immediate = {
-		save_scope_value_as = {
-			name = murder_method
-			value = flag:drowned_in_ocean
-		}
-		trigger_event = { on_action = murder_setup }
-	}
-}
-
 ################################
 # IMPRISONMENT MURDERS
 # 0301-0399
 ################################
 
-# Torture to death in dungeon
-quix_murder_outcome.0301 = {
-	hidden = yes
 
-	immediate = {
-		save_scope_value_as = {
-			name = murder_method
-			value = flag:torture_to_death_in_dungeon
-		}
-		trigger_event = { on_action = murder_setup }
-	}
-}
-
-# Torture to death in dungeon
-quix_murder_outcome.0302 = {
-	hidden = yes
-
-	immediate = {
-		save_scope_value_as = {
-			name = murder_method
-			value = flag:unwelcome_guest_house_arrest
-		}
-		scope:target = {
-			if = {
-				limit = { is_landed = yes }
-				save_scope_as = home_owner
-			}
-			else = {
-				if = {
-					limit = {
-						exists = court_owner
-					}
-					court_owner = {
-						save_scope_as = home_owner
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				exists = scope:home_owner.capital_province
-			}
-			scope:home_owner.capital_province = {
-				barony = {
-					save_scope_as = target_home
-				}
-			}	
-		}
-		trigger_event = { on_action = murder_setup }
-	}
-}
-
-# The most dangerous game...
-quix_murder_outcome.0302 = {
-	hidden = yes
-
-	immediate = {
-		save_scope_value_as = {
-			name = murder_method
-			value = flag:hunted_to_death
-		}
-		trigger_event = { on_action = murder_setup }
-	}
-}
 
 #######################################
 # "REGULAR" MURDER SETUPS 1000 - 1999
@@ -436,69 +335,6 @@ quix_murder_outcome.1003 = {
 # CHILD MURDER SETUP 1200 - 1299
 #####################################
 
-# 1201 Drown child in ocean setup
-quix_murder_outcome.1201 = {
-	title = quix_murder_outcome.1201.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					exists = scope:acting_agent
-				}
-				desc = quix_murder_outcome.1201.desc
-			}
-			desc = quix_murder_outcome.1201.no_acting_agent
-		}
-	}
-	theme = murder_scheme
-	left_portrait = scope:target
-	widget = {
-		gui = "event_window_widget_scheme"
-		container = "custom_widgets_container"
-	}
-
-	trigger = {
-		scope:murder_method = flag:drowned_in_ocean
-	}
-
-	immediate = {
-		murder_outcome_roll_setup_effect = yes
-		scope:scheme = {
-			if = {
-				limit = {
-					any_scheme_agent = {
-						scope:scheme = {
-							NOT = {is_scheme_agent_exposed = prev }
-						}
-					}
-				}
-				random_scheme_agent = {
-					save_scope_as = acting_agent
-				}
-			}
-			else = {
-				random_dummy_gender_effect = yes
-			}
-		}
-	}
-
-	option = {
-		name = quix_murder_outcome.1201.a
-		custom_tooltip = quix_murder_child_really_tooltip
-		murder_outcome_roll_effect = yes
-	}
-
-	option = {
-		name = quix_murder_outcome.1201.b
-		ai_chance = {
-			base = 0
-		}
-		scope:scheme = {
-			add_scheme_progress = decline_execution_setback
-		}
-		custom_tooltip = do_not_execute_murder_tooltip
-	}
-}
 
 #####################################
 # SUCCESSFUL OUTCOME 2000 - 2999
@@ -700,13 +536,13 @@ quix_murder_outcome.2003 = {
 			trigger = {
 				exists = scope:scheme_discovered
 			}
-			text = quix_murder_outcome.2002.a.discovered
+			text = quix_murder_outcome.2003.a.discovered
 		}
 		name = {
 			trigger = {
 				NOT = { exists = scope:scheme_discovered }
 			}
-			text = quix_murder_outcome.2002.a
+			text = quix_murder_outcome.2003.a
 		}
 		successful_murder_outcome_event_option_effect = yes
 	}
@@ -885,7 +721,7 @@ quix_murder_outcome.4002 = {
 	}
 
 	option = {
-		name = quix_murder_outcome.4001.b
+		name = quix_murder_outcome.4002.b
 		trigger = {
 			NOT = { exists = scope:scheme_discovered }
 		}
@@ -916,31 +752,31 @@ quix_murder_outcome.4002 = {
 	}
 }
 
-# 4001 A Toasty Inn Failure
-quix_murder_outcome.4001 = {
+# 4003 Dead Drunk
+quix_murder_outcome.4003 = {
 	type = character_event
-	title = quix_murder_outcome.4001.t
+	title = quix_murder_outcome.4003.t
 		### START DESC
 		desc = {
 		
 			# Start off with declaration of failure
 			# Include Target's name!
 			random_valid = {
-				desc = quix_murder_outcome.4001.failure_declaration_1
-				desc = quix_murder_outcome.4001.failure_declaration_2
-				desc = quix_murder_outcome.4001.failure_declaration_3
+				desc = quix_murder_outcome.4003.failure_declaration_1
+				desc = quix_murder_outcome.4003.failure_declaration_2
+				desc = quix_murder_outcome.4003.failure_declaration_3
 			}
 		
-			desc = quix_murder_outcome.4001.desc
+			desc = quix_murder_outcome.4003.desc
 
 			first_valid = {
 				triggered_desc = {
 					trigger = {
 						exists = scope:scheme_discovered
 					}
-					desc = quix_murder_outcome.4001.exposed_scheme
+					desc = quix_murder_outcome.4003.exposed_scheme
 				}
-				desc = quix_murder_outcome.4001.not_exposed_scheme
+				desc = quix_murder_outcome.4003.not_exposed_scheme
 			}
 		}
 	### END DESC
@@ -951,7 +787,7 @@ quix_murder_outcome.4001 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:hired_arsonist
+		scope:murder_method = flag:poisoned_wine
 	}
 
 	immediate = {
@@ -964,13 +800,13 @@ quix_murder_outcome.4001 = {
 			trigger = {
 				exists = scope:scheme_discovered
 			}
-			text = quix_murder_outcome.4001.a.discovered
+			text = quix_murder_outcome.4003.a.discovered
 		}
 		name = {
 			trigger = {
 				NOT = { exists = scope:scheme_discovered }
 			}
-			text = quix_murder_outcome.4001.a
+			text = quix_murder_outcome.4003.a
 		}
 		show_as_tooltip = {
 			scope:scheme = {
@@ -986,7 +822,7 @@ quix_murder_outcome.4001 = {
 	}
 
 	option = {
-		name = quix_murder_outcome.4001.b
+		name = quix_murder_outcome.4003.b
 		trigger = {
 			NOT = { exists = scope:scheme_discovered }
 		}

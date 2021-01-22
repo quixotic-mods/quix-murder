@@ -7,105 +7,31 @@
 ##################################
 l_english:
 
-#################
-# INDEX
-#################
-# 1000 - 1199 "REGULAR" MURDER SETUPS 
-#	  1001 A Toasty Inn Setup
-#	  1002 Arrow to the Balcony Setup
-#	  1003 A Gift of Poisoned Wine Setup
-#   1004 Throat slit in the dark Setup
-#	  1005 A slinger on a hillside Setup
-#	  1006 Betrayed by household guard Setup
-#	  1007 A daring night time raid Setup
-#	  1008 A greedy seneschal... Setup
-#	  1009 The crooked apothecary Setup
-#	  1010 The Bold Bloodletter Setup
-#	  1011 The Foreign Warrior Setup
-#	  1012 The Masked Assassin Setup
-#	  1013 Your Champion's blade Setup
-#	  1014 A Chance Encounter... Setup
-#	  1015 Band of Horsemen Setup
-#	1016 The ol Carriage Switch Setup
-#	1017 A hunting accident Setup
-#	1018 Kidnapped and killed in the woods Setup
-#	1019 Tortured by assassin Setup
-#	1020 Poisoned While Sleeping Setup
-# 1200 - 1299 CHILD MURDER SETUP
-#	1201 Tossed In The Sea Setup
-# 1202 Trojan Rocking Horse Setup
-# 2000 - 2999 SUCCESSFUL OUTCOME
-#  Regular
-#	2001 A Toasty Inn Success
-#	2002 Arrow to the Balcony Success
-#	2003 A Gift of Poisoned Wine Success
-# 2004 Throat slit in the dark Success
-#	2005 A slinger on a hillside Success
-#	2006 Betrayed by household guard Success
-#	2007 A daring night time raid Success
-#	2008 A greedy seneschal... Success
-#	2009 The crooked apothecary Success
-#	2010 The Bold Bloodletter Success
-#	2011 The Foreign Warrior Success
-#	2012 The Masked Assassin Success
-#	2013 Your Champion's blade Success
-#	2014 A Chance Encounter... Success
-#	2015 Band of Horsemen Success
-#	2016 The ol Carriage Switch Success
-#	2017 A hunting accident Success
-#	2018 Kidnapped and killed in the woods Success
-#	2019 Tortured by assassin Success
-#	2020 Poisoned While Sleeping Success
-# 4000 - 4999 FAILURE OUTCOMES 
-#  Regular
-#	4001 A Toasty Inn Failure
-#	4002 Arrow to the Balcony Failure
-#	4003 A Gift of Poisoned Wine Failure
-# 	4004 Throat slit in the dark Failure
-#	4005 A slinger on a hillside Failure
-#	4006 Betrayed by household guard Failure
-#	4007 A daring night time raid Failure
-#	4008 A greedy seneschal... Failure
-#	4009 The crooked apothecary Failure
-#	4010 The Bold Bloodletter Failure
-#	4011 The Foreign Warrior Failure
-#	4012 The Masked Assassin Failure
-#	4013 Your Champion's blade Failure
-#	4014 A Chance Encounter... Failure
-#	4015 Band of Horsemen Failure
-#	4016 The ol Carriage Switch Failure
-#	4017 A hunting accident Failure
-#	4018 Kidnapped and killed in the woods Failure
-#	4019 Tortured by assassin Failure
-#	4020 Poisoned While Sleeping Failure
+ #################
+ # 1000 - 1199 "REGULAR" MURDER SETUPS 
+ #################
 
-#################
-# 1000 - 1199 "REGULAR" MURDER SETUPS 
-#################
-
-# 1001 A Toasty Inn...
+ # 1001 A Toasty Inn...
  quix_murder_outcome.1001.t:0 "A Toasty Inn..."
  quix_murder_outcome.1001.d:0 "An opportunity arises. My agents have discovered [target.GetTitledFirstName] and entourage will be staying at an inn on an upcoming trip. This inn is made entirely from timber and has an old thatched roof. If we cannot easily get past [target.GetTitledFirstNamePossessive] guards, they can just go up in the blaze as well. The best part about the plan is it leaves no evidence.\n\nIt could even have been an accident..."
  quix_murder_outcome.1001.a:0 "Burn, baby, burn."
  quix_murder_outcome.1001.b:0 "I happen to like that inn..."
 
-# 1002 Arrow to the Balcony Setup
-quix_murder_outcome.1002.t:0 "An Arrow to the Balcony..."
-quix_murder_outcome.1002.d:0 "In our efforts to rid the world of [target.GetTitledFirstName], a window of opportunity has appeared. Or, more fittingly, a balcony. It would appear that [target.GetTitledFirstName] has a favorite spot to take the most afternoons. This balcony is across a small courtyard from a tavern. Even a mediocre bowman could make the shot..."
+  # 1002 Arrow to the Balcony Setup
+ quix_murder_outcome.1002.t:0 "An Arrow to the Balcony..."
+ quix_murder_outcome.1002.d:0 "In our efforts to rid the world of [target.GetTitledFirstName], a window of opportunity has appeared. Or, more fittingly, a balcony. It would appear that [target.GetTitledFirstName] has a favorite spot to take the most afternoons. This balcony is across a small courtyard from a tavern. Even a mediocre bowman could make the shot..."
  quix_murder_outcome.1002.a:0 "Send word for my best archer."
  quix_murder_outcome.1002.b:0 "No, that's too dignified for[target.GetTitledFirstName]."
 
-#	1003 A Gift of Poisoned Wine Setup
-quix_murder_outcome.1003.t:0 "Dead Drunk."
-quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle of wine, a thought occurred to me. Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
+ #	1003 A Gift of Poisoned Wine Setup
+ quix_murder_outcome.1003.t:0 "Dead Drunk."
+ quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle of wine, a thought occurred to me. Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
  quix_murder_outcome.1003.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
  quix_murder_outcome.1003.b:0 "On second thought, I'll save it for a special occasion."
-
-#################
-#2000 - 2999 Successes
-#################
-
-# 2001 A Toasty Inn... Success
+ #################
+ #2000 - 2999 Successes
+ ################# 
+ # 2001 A Toasty Inn... Success
  quix_murder_outcome.2001.t:0 "A Toasty Inn..."
  quix_murder_outcome.2001.opening_1:0 "[target.GetName] went up in a towering inferno!"
  quix_murder_outcome.2001.opening_2:0 "Although not everything went to plan, the Arsonist was able to make due by barricading a few patrons inside with [target.GetName]. Wrong place, wrong time!"
@@ -117,18 +43,16 @@ quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle
  quix_murder_outcome.2001.no_awareness_2:0 "\n\nAny witnesses burned up with the inn!"
  quix_murder_outcome.2001.a.discovered:0 "But you are mistaken, he was merely an incompetent lamplighter!"
  quix_murder_outcome.2001.a:0 "From now on I believe I will sleep with a pale of water beside my bed..."
-
-# 2002 Arrow to the Balcony Success
+ # 2002 Arrow to the Balcony Success
  quix_murder_outcome.2002.t:0 "An Arrow to the Balcony."
  quix_murder_outcome.2002.opening_1:0 "I'm told the arrow caught [target.GetName] in the throat, and they died choking on their own blood."
  quix_murder_outcome.2002.opening_2:0 "It seems when my assassin hit [target.GetName], [target.GetHisorHer] body fell from that beloved balcony onto a maneur cart!."
-quix_murder_outcome.2002.owner_is_known_1:0 "\n\nUnfortunately, the bowman was apprehended and has accused me!!"
+ quix_murder_outcome.2002.owner_is_known_1:0 "\n\nUnfortunately, the bowman was apprehended and has accused me!!"
  quix_murder_outcome.2002.owner_is_known_2:0 "\n\nAlthough the feat so impressed the bowman that he has been bragging that you paid him to kill [target.GetTitledFirstName]!"
  quix_murder_outcome.2002.no_awareness_1:0 "\n\nDespite the obvious assassination, it seems no one has caught on to me."
  quix_murder_outcome.2002.no_awareness_2:0 "\n\nAnd best of all, the bowman got away cleanly!"
  quix_murder_outcome.2002.a.discovered:0 "Me? Why would I want to kill [target.GetName]? I told him to shoot an old blind donkey, he misunderstood!"
-
-# 2003 Dead Drunk Success
+ # 2003 Dead Drunk Success
  quix_murder_outcome.2003.t:0 "Dead Drunk."
  quix_murder_outcome.2003.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
  quix_murder_outcome.2003.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
@@ -138,16 +62,41 @@ quix_murder_outcome.2002.owner_is_known_1:0 "\n\nUnfortunately, the bowman was a
  quix_murder_outcome.2003.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
  quix_murder_outcome.2003.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
 
-# 4000 Failure Outcomes
+ #######################
+ # 4000 Failure Outcomes
+ #######################
 
-# 4001 A Toasty Inn Failure
+ # 4001 A Toasty Inn Failure
  quix_murder_outcome.4001.t:0 "A Toasty Inn..."
  quix_murder_outcome.4001.failure_declaration_1:0 "[target.GetTitledFirstName] yet lives!"
  quix_murder_outcome.4001.failure_declaration_2:0 "Our plot to end [target.GetTitledFirstName]'s life has failed!"
  quix_murder_outcome.4001.failure_declaration_3:0 "Killing [target.GetTitledFirstName] won't be as easy as I thought. [target.GetTitledName] still lives."
  quix_murder_outcome.4001.desc:0 "\n\nOur arsonist torched the wrong inn! [target.GetName] came out into the street to watch the inferno."
  quix_murder_outcome.4001.exposed_scheme:0 "The arsonist was captured, and the plot has been exposed!"
- quix_murder_outcome.4001.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
- quix_murder_outcome.4001.a.discovered:0 "[dummy_assassin_gender.GetSheHe|U] was actually there to scare off the #EMP real#! assassin! And succeeded!"
- quix_murder_outcome.4001.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
- quix_murder_outcome.4001.b:0 "If at first you don't succeed..."
+ quix_murder_outcome.4001.not_exposed_scheme:0 "The arsonist was nearly captured but was able to escape on foot. [target.GetName] will surely be on guard now."
+ quix_murder_outcome.4001.a.discovered:0 "I would never stoop so so low as to murder [target.GetTitledFirstName]! This is all some wild misunderstanding. "
+ quix_murder_outcome.4001.a:0 "[target.GetFirstNameNoTooltip] should count their blessings!"
+ quix_murder_outcome.4001.b:0 "I guess no plan is truly foolproof..."
+ # 4002 Arrow to the Balcony Failure
+ quix_murder_outcome.4002.t:0 "An Arrow to the Balcony."
+ quix_murder_outcome.4002.failure_declaration_1:0 "The arrow did not strike home! Just as the assassin loosed his arrow, a pigeon passed between them,[target.GetTitledFirstName]!"
+ #quix_murder_outcome.4002.failure_declaration_2:0 "Our plot to end [target.GetTitledFirstName]'s life has failed!"
+ #quix_murder_outcome.4002.failure_declaration_3:0 "Killing [target.GetTitledFirstName] won't be as easy as I thought. [target.GetTitledName] still lives."
+ quix_murder_outcome.4002.desc:0 "\n\nOur arsonist torched the wrong inn! [target.GetName] came out into the street to watch the inferno."
+ quix_murder_outcome.4002.exposed_scheme:0 "The arsonist was captured, and the plot has been exposed!"
+ quix_murder_outcome.4002.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
+ quix_murder_outcome.4002.a.discovered:0 "[dummy_assassin_gender.GetSheHe|U] was actually there to scare off the #EMP real#! assassin! And succeeded!"
+ quix_murder_outcome.4002.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
+ quix_murder_outcome.4002.b:0 "If at first you don't succeed..."
+ # 4001 Dead Drunk Success
+ quix_murder_outcome.4003.t:0 "Dead Drunk."
+ quix_murder_outcome.4003.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
+ quix_murder_outcome.4003.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
+ quix_murder_outcome.4003.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
+ quix_murder_outcome.4003.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
+ quix_murder_outcome.4003.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
+ quix_murder_outcome.4003.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
+ quix_murder_outcome.4003.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
+ quix_murder_outcome.4003.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
+ quix_murder_outcome.4003.b:0 "If at first you don't succeed..."
+
