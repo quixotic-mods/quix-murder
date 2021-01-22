@@ -27,3 +27,4 @@ Additions:
 * 10+ New role based murder saves
 * 10+ New murder maintenance events
 * 10+ Post-murder event chains
+* Eventually more scheme event mods for schemes other than murder, eventually extending to all schemes! Stay tuned, my friends.
