@@ -717,7 +717,206 @@ quix_murder_outcome.2003 = {
 ###############################
 
 
-# Arsonist failure
+# 4001 A Toasty Inn Failure
+quix_murder_outcome.4001 = {
+	type = character_event
+	title = quix_murder_outcome.4001.t
+		### START DESC
+		desc = {
+		
+			# Start off with declaration of failure
+			# Include Target's name!
+			random_valid = {
+				desc = quix_murder_outcome.4001.failure_declaration_1
+				desc = quix_murder_outcome.4001.failure_declaration_2
+				desc = quix_murder_outcome.4001.failure_declaration_3
+			}
+		
+			desc = quix_murder_outcome.4001.desc
+
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:scheme_discovered
+					}
+					desc = quix_murder_outcome.4001.exposed_scheme
+				}
+				desc = quix_murder_outcome.4001.not_exposed_scheme
+			}
+		}
+	### END DESC
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:hired_arsonist
+	}
+
+	immediate = {
+		random_dummy_gender_assassin_effect = yes
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4001.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4001.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4001.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+# 4002 Arrow to the Balcony Failure
+quix_murder_outcome.4002 = {
+	type = character_event
+	title = quix_murder_outcome.4002.t
+		### START DESC
+		desc = {
+			random_valid = {
+				desc = quix_murder_outcome.4002.failure_declaration_1
+				desc = quix_murder_outcome.4002.failure_declaration_2
+				desc = quix_murder_outcome.4002.failure_declaration_3
+			}
+		
+			desc = quix_murder_outcome.4002.desc
+
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:scheme_discovered
+					}
+					desc = quix_murder_outcome.4002.exposed_scheme
+				}
+				desc = quix_murder_outcome.4002.not_exposed_scheme
+			}
+		}
+	### END DESC
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:archery_balcony
+	}
+
+	immediate = {
+		random_dummy_gender_assassin_effect = yes
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4002.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4002.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4001.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+# 4001 A Toasty Inn Failure
 quix_murder_outcome.4001 = {
 	type = character_event
 	title = quix_murder_outcome.4001.t
