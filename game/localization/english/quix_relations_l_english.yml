@@ -1,0 +1,19 @@
+##################################
+# Quixotic Murder
+# quix_relations_l_english.txt
+# Version:alpha1
+# by El Ingenioso Hidalgo Don Quixote de la Mancha
+# https://DonQuixote.Games/
+##################################
+
+ #Scripted relations
+l_english: 
+ liege:1 "[liege|E]"
+ spy:1 "[spy|E]"
+ bodyguard:1 "[bodyguard|E]"
+ elite_bodyguard:1 "[bodyguard|E]"
+ assassin:1 "[assassin|E]"
+ skilled_assassin:1 "[assassin|E]"
+ master_assassin:1 "[assassin|E]"
+ poisoner:1 "[poisoner|E]"
+ food_taster:1 "[food taster]"
