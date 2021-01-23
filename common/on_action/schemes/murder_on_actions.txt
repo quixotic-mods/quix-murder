@@ -2,7 +2,7 @@
 # Quixotic Murder
 # quix_murder_on_actions.txt
 # Version:alpha1
-# by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
+# by El Ingenioso Caballero Don Quixote de la Mancha
 # https://DonQuixote.Games/
 ##################################
 
@@ -86,9 +86,9 @@ standard_murder_method_selection = {
 		#100 = murder_outcome.0105 # A riled-up mob
 		#100 = murder_outcome.0106 # Immurement
 		#100 = murder_outcome.0107 # Sink a boat they're on
-		100 = quix_murder_outcome.0101 # Hire an assassin
-		100 = quix_murder_outcome.0102 # Hire an assassin
-		100 = quix_murder_outcome.0103 # Hire an assassin
+		100 = quix_murder_outcome.0101 
+		100 = quix_murder_outcome.0102 
+		100 = quix_murder_outcome.0103 
 	}
 }
 

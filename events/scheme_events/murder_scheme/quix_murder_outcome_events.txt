@@ -2,7 +2,7 @@
 # Quixotic Murder
 # quix_murder_outcome_events.txt
 # Version:alpha1
-# by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
+# by El Ingenioso Hidalgo Don Quixote de la Mancha
 # https://DonQuixote.Games/
 ##################################
 namespace = quix_murder_outcome
@@ -10,7 +10,7 @@ namespace = quix_murder_outcome
 #################
 # INDEX
 #################
-# 0100-0199 Method Selection Events
+# 0100-0100 Non-Assassin Method Selection Events
 # 	0101 A Toasty Inn...
 #	0102 Arrow to the Balcony
 #	0103 Dead Drunk
@@ -31,6 +31,7 @@ namespace = quix_murder_outcome
 #	0118 Kidnapped and killed in the woods
 #	0119 Tortured by assassin
 #	0120 Poisoned While Sleeping
+# 0150 Assassin Method Selection Events
 # 0201-0299 CHILD AND INFANT MURDERS
 #	0201 Tossed In The Sea
 #   0202 Trojan Rocking Horse
@@ -160,39 +161,6 @@ quix_murder_outcome.0103 = {
 		trigger_event = { on_action = murder_setup }
 	}
 }
-#104 Throat slit in the dark
-
-#105 A slinger on a hillside
-
-#106 Betrayed by household guard
-
-#107 A daring night time raid
-
-#108 A greedy seneschal...
-
-#109 The crooked apothecary
-
-#110 The Bold Bloodletter
-
-#111 The Foreign Warrior
-
-#112 The Masked Assassin
-
-#113 Your Champion's blade
-
-#114 A Chance Encounter...
-
-#115 Band of Horsemen
-
-#116 The ol Carriage Switch
-
-#117 A hunting accident
-
-#118 Kidnapped and killed in the woods
-
-#119 Tortured by assassin
-
-#120 Poisoned While Sleeping
 
 #############################
 # CHILD AND INFANT MURDERS
@@ -481,7 +449,6 @@ quix_murder_outcome.2002 = {
 		successful_murder_outcome_event_option_effect = yes
 	}
 }
-
 
 # 2003 Dead Drunk
 quix_murder_outcome.2003 = {
