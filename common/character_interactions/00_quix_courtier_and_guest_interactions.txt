@@ -42,7 +42,7 @@ hire_bodyguard_interaction = {
 		scope:actor = {
 			send_interface_message = {
 				type = event_generic_neutral
-				title = msg_hired_court_assassin_title
+				title = msg_hired_court_bodyguard_title
 				right_icon = scope:recipient
 
 				set_bodyguard_effect = {
