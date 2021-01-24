@@ -1,0 +1,105 @@
+##################################
+# Quixotic Murder
+# 00_quix_courtier_and_guest_interactions.txt
+# Version:alpha1
+# by El Ingenioso Caballero Don Quixote de la Mancha
+# https://DonQuixote.Games/
+##################################
+
+
+# Bodyguard
+hire_bodyguard_interaction = {
+	category = interaction_category_vassal
+
+	desc = hire_bodyguard_desc
+
+	is_shown = {
+		scope:recipient = {
+			is_courtier_of = scope:actor
+			is_adult = yes
+		}
+		scope:actor = {
+			NOT = {
+				any_relation = {
+					type = bodyguard
+					this = scope:recipient
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			can_be_bodyguard_of = { EMPLOYER = scope:actor }
+		}
+	}
+
+	cost = {
+		gold = 10
+	}
+	
+	on_accept = {
+		scope:actor = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = msg_hired_court_assassin_title
+				right_icon = scope:recipient
+
+				set_bodyguard_effect = {
+					BODYGUARD = scope:recipient
+					EMPLOYER = scope:actor
+				}
+			}
+		}
+		scope:recipient = {
+			add_opinion = {
+				target = scope:actor
+				modifier = grateful_opinion
+				opinion = 15 #Should match the amount lost when fired so it's not a way to farm opinion
+			}
+			add_gold = 10
+		}
+	}
+	
+	auto_accept = yes
+}
+
+fire_bodyguard_interaction = {
+	category = interaction_category_vassal
+
+	desc = fire_bodyguard_interaction_desc
+
+	is_shown = {
+		scope:recipient = {
+			is_courtier_of = scope:actor
+		}
+		scope:actor = {
+			any_relation = {
+				type = bodyguard
+				this = scope:recipient
+			}
+		}
+	}
+
+	cost = {
+
+	}
+	
+	on_accept = {
+		scope:actor = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = msg_fired_court_physician_interaction_title
+				right_icon = scope:recipient
+
+				fire_bodyguard_effect = {
+					BODYGUARD = scope:recipient
+					EMPLOYER = scope:actor
+				}
+			}
+		}
+	}
+	
+	auto_accept = yes
+}
+

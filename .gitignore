@@ -1,7 +1,1 @@
-events/scheme_events/murder_scheme/murder_ongoing_events.txt
-events/scheme_events/murder_scheme/murder_outcome_events.txt
-events/scheme_events/murder_scheme/murder_scheme_maintenance_events.txt
-events/scheme_events/murder_scheme/murder_saves/murder_save_events.txt
-localization/murder_ongoing_events_l_english.yml
-localization/murder_outcome_events_l_english.yml
-localization/murder_save_events_l_english.yml
+.gitignore

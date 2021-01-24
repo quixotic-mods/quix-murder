@@ -1,0 +1,39 @@
+##################################
+# Quixotic Murder
+# 00_quix_character_effects.txt
+# Version:alpha1
+# by El Ingenioso Caballero Don Quixote de la Mancha
+# https://DonQuixote.Games/
+##################################
+
+set_relation_court_physician = {
+	global = GET_BODYGUARD
+	first = YOU_GET_BODYGUARD
+	third = THEY_GET_BODYGUARD
+	first_past = YOU_GOT_BODYGUARD
+	third_past = THEY_GOT_BODYGUARD
+}
+
+remove_relation_court_physician = {
+	global = LOSE_BODYGUARD
+	first = YOU_LOSE_BODYGUARD
+	third = THEY_LOSE_BODYGUARD
+	first_past = YOU_LOST_BODYGUARD
+	third_past = THEY_LOST_BODYGUARD
+}
+
+set_relation_court_physician = {
+	global = GET_ASSASSIN
+	first = YOU_GET_ASSASSIN
+	third = THEY_GET_ASSASSIN
+	first_past = YOU_GOT_ASSASSIN
+	third_past = THEY_GOT_ASSASSIN
+}
+
+remove_relation_court_physician = {
+	global = LOSE_ASSASSIN
+	first = YOU_LOSE_ASSASSIN
+	third = THEY_LOSE_ASSASSIN
+	first_past = YOU_LOST_ASSASSIN
+	third_past = THEY_LOST_ASSASSIN
+}
