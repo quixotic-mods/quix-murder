@@ -20,13 +20,14 @@ If you install the mod manually, be sure to delete any previous versions.
 
 ## Mod Content
 Additions:
-* 3 new regular murder outcome event chains
-* New Assassin Role - Hire your own personal assassin to hunt your enemeis to the edge of diplomatic range!
-* New Bodyguard Role - Hire a trusted bodyguard to protect you from assassins!
+* 7 new regular murder outcome event chains
+
 
 ## Roadmap
 * New Role Based Interactions & Decisions (Search for/Hire/Dismiss)
-* 25+ new murder outcome event chains
+* 20+ new murder outcome event chains
+* New Assassin Role - Hire your own personal assassin to hunt your enemeis to the edge of diplomatic range!
+* New Bodyguard Role - Hire a trusted bodyguard to protect you from assassins!
 * New Spy Role - Hire spies to help your plots and foil your rivals!
 * New Poisoner role - Craft devious poisions to help in your murder schemes!
 * New Food Taster role - The only way to make sure its safe is to have someone *else* eat it!
