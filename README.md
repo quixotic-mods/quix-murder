@@ -36,6 +36,9 @@ Additions:
 * 10+ New random character interaction events
 * Eventually more scheme event mods for schemes other than murder, eventually extending to all schemes! Stay tuned, my friends.
 
+## Content Warning
+This is a murder mod, and, as such, you will not be surprised to learn it contains depictions of violence and murder, with an occasionally flippant take on these subjects.
+
 ## Fine Print
 Cruasder Kings 3 is property of Paradox Interactive. Mod is made in compliance with Paradox Interactive Mod Policy.
 
