@@ -7,6 +7,18 @@
 ##################################
 l_english:
 
+#################
+# INDEX
+#################
+# 0100-0100 Non-Assassin Method Selection Events
+# 	0101 A Toasty Inn...
+#	0102 Arrow to the Balcony
+#	0103 Dead Drunk
+#	0104 Night Terror
+#	0105 Stone Cold
+#	0106 Betrayed by household guard
+#	0107 A Daring Raid
+
  #################
  # 1000 - 1199 "REGULAR" MURDER SETUPS 
  #################
@@ -28,6 +40,32 @@ l_english:
  quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle of wine, a thought occurred to me. Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
  quix_murder_outcome.1003.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
  quix_murder_outcome.1003.b:0 "On second thought, I'll save it for a special occasion."
+
+ #	1004 Night Terror
+ quix_murder_outcome.1004.t:0 "Night Terrors"
+ quix_murder_outcome.1004.d:0 "Our agents have detected . Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
+ quix_murder_outcome.1004.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
+ quix_murder_outcome.1004.b:0 "On second thought, I'll save it for a special occasion."
+
+ #	1005 Stone Cold
+ quix_murder_outcome.1005.t:0 "Night Terrors"
+ quix_murder_outcome.1005.d:0 "Our agents have detected . Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
+ quix_murder_outcome.1005.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
+ quix_murder_outcome.1005.b:0 "On second thought, I'll save it for a special occasion."
+
+ #	1006 dereliction of duty
+ quix_murder_outcome.1006.t:0 "Night Terrors"
+ quix_murder_outcome.1006.d:0 "Our agents have detected . Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
+ quix_murder_outcome.1006.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
+ quix_murder_outcome.1006.b:0 "On second thought, I'll save it for a special occasion."
+
+ #	1007 Daring Raid
+ quix_murder_outcome.1007.t:0 "Night Terrors"
+ quix_murder_outcome.1007.d:0 "Our agents have detected . Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
+ quix_murder_outcome.1007.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
+ quix_murder_outcome.1007.b:0 "On second thought, I'll save it for a special occasion."
+
+
  #################
  #2000 - 2999 Successes
  ################# 
@@ -43,6 +81,7 @@ l_english:
  quix_murder_outcome.2001.no_awareness_2:0 "\n\nAny witnesses burned up with the inn!"
  quix_murder_outcome.2001.a.discovered:0 "But you are mistaken, he was merely an incompetent lamplighter!"
  quix_murder_outcome.2001.a:0 "From now on I believe I will sleep with a pale of water beside my bed..."
+
  # 2002 Arrow to the Balcony Success
  quix_murder_outcome.2002.t:0 "An Arrow to the Balcony."
  quix_murder_outcome.2002.opening_1:0 "I'm told the arrow caught [target.GetName] in the throat, and they died choking on their own blood."
@@ -52,6 +91,7 @@ l_english:
  quix_murder_outcome.2002.no_awareness_1:0 "\n\nDespite the obvious assassination, it seems no one has caught on to me."
  quix_murder_outcome.2002.no_awareness_2:0 "\n\nAnd best of all, the bowman got away cleanly!"
  quix_murder_outcome.2002.a.discovered:0 "Me? Why would I want to kill [target.GetName]? I told him to shoot an old blind donkey, he misunderstood!"
+
  # 2003 Dead Drunk Success
  quix_murder_outcome.2003.t:0 "Dead Drunk."
  quix_murder_outcome.2003.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
@@ -61,6 +101,48 @@ l_english:
  quix_murder_outcome.2003.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
  quix_murder_outcome.2003.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
  quix_murder_outcome.2003.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+
+ # 2004 Dead Drunk Success
+ quix_murder_outcome.2004.t:0 "Dead Drunk."
+ quix_murder_outcome.2004.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
+ quix_murder_outcome.2004.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
+ quix_murder_outcome.2004.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
+ quix_murder_outcome.2004.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
+ quix_murder_outcome.2004.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
+ quix_murder_outcome.2004.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
+ quix_murder_outcome.2004.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+
+ # 2005 Dead Drunk Success
+ quix_murder_outcome.2005.t:0 "Dead Drunk."
+ quix_murder_outcome.2005.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
+ quix_murder_outcome.2005.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
+ quix_murder_outcome.2005.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
+ quix_murder_outcome.2005.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
+ quix_murder_outcome.2005.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
+ quix_murder_outcome.2005.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
+ quix_murder_outcome.2005.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+
+ # 2006 Dead Drunk Success
+ quix_murder_outcome.2006.t:0 "Dead Drunk."
+ quix_murder_outcome.2006.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
+ quix_murder_outcome.2006.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
+ quix_murder_outcome.2006.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
+ quix_murder_outcome.2006.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
+ quix_murder_outcome.2006.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
+ quix_murder_outcome.2006.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
+ quix_murder_outcome.2006.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+
+
+ # 2007 Dead Drunk Success
+ quix_murder_outcome.2007.t:0 "Dead Drunk."
+ quix_murder_outcome.2007.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
+ quix_murder_outcome.2007.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
+ quix_murder_outcome.2007.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
+ quix_murder_outcome.2007.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
+ quix_murder_outcome.2007.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
+ quix_murder_outcome.2007.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
+ quix_murder_outcome.2007.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+
 
  #######################
  # 4000 Failure Outcomes
@@ -77,6 +159,7 @@ l_english:
  quix_murder_outcome.4001.a.discovered:0 "I would never stoop so so low as to murder [target.GetTitledFirstName]! This is all some wild misunderstanding. "
  quix_murder_outcome.4001.a:0 "[target.GetFirstNameNoTooltip] should count their blessings!"
  quix_murder_outcome.4001.b:0 "I guess no plan is truly foolproof..."
+
  # 4002 Arrow to the Balcony Failure
  quix_murder_outcome.4002.t:0 "An Arrow to the Balcony."
  quix_murder_outcome.4002.failure_declaration_1:0 "The arrow did not strike home! Just as the assassin loosed his arrow, a pigeon passed between them,[target.GetTitledFirstName]!"
@@ -88,7 +171,8 @@ l_english:
  quix_murder_outcome.4002.a.discovered:0 "[dummy_assassin_gender.GetSheHe|U] was actually there to scare off the #EMP real#! assassin! And succeeded!"
  quix_murder_outcome.4002.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4002.b:0 "If at first you don't succeed..."
- # 4001 Dead Drunk Success
+
+ # 4003 Dead Drunk Failure
  quix_murder_outcome.4003.t:0 "Dead Drunk."
  quix_murder_outcome.4003.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
  quix_murder_outcome.4003.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
@@ -99,4 +183,52 @@ l_english:
  quix_murder_outcome.4003.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
  quix_murder_outcome.4003.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4003.b:0 "If at first you don't succeed..."
+
+ # 4004 Dead Drunk Failure
+ quix_murder_outcome.4004.t:0 "Dead Drunk."
+ quix_murder_outcome.4004.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
+ quix_murder_outcome.4004.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
+ quix_murder_outcome.4004.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
+ quix_murder_outcome.4004.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
+ quix_murder_outcome.4004.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
+ quix_murder_outcome.4004.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
+ quix_murder_outcome.4004.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
+ quix_murder_outcome.4004.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
+ quix_murder_outcome.4004.b:0 "If at first you don't succeed..."
+
+ # 4005 Dead Drunk Failure
+ quix_murder_outcome.4005.t:0 "Dead Drunk."
+ quix_murder_outcome.4005.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
+ quix_murder_outcome.4005.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
+ quix_murder_outcome.4005.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
+ quix_murder_outcome.4005.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
+ quix_murder_outcome.4005.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
+ quix_murder_outcome.4005.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
+ quix_murder_outcome.4005.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
+ quix_murder_outcome.4005.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
+ quix_murder_outcome.4005.b:0 "If at first you don't succeed..."
+
+ # 4006 Dead Drunk Failure
+ quix_murder_outcome.4006.t:0 "Dead Drunk."
+ quix_murder_outcome.4006.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
+ quix_murder_outcome.4006.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
+ quix_murder_outcome.4006.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
+ quix_murder_outcome.4006.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
+ quix_murder_outcome.4006.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
+ quix_murder_outcome.4006.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
+ quix_murder_outcome.4006.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
+ quix_murder_outcome.4006.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
+ quix_murder_outcome.4006.b:0 "If at first you don't succeed..."
+
+ # 4007 Dead Drunk Failure
+ quix_murder_outcome.4007.t:0 "Dead Drunk."
+ quix_murder_outcome.4007.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
+ quix_murder_outcome.4007.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
+ quix_murder_outcome.4007.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
+ quix_murder_outcome.4007.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
+ quix_murder_outcome.4007.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
+ quix_murder_outcome.4007.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
+ quix_murder_outcome.4007.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
+ quix_murder_outcome.4007.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
+ quix_murder_outcome.4007.b:0 "If at first you don't succeed..."
 

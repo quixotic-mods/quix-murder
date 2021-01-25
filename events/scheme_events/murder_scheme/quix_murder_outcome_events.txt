@@ -14,10 +14,10 @@ namespace = quix_murder_outcome
 # 	0101 A Toasty Inn...
 #	0102 Arrow to the Balcony
 #	0103 Dead Drunk
-#	0104 Throat slit in the dark
-#	0105 A slinger on a hillside
+#	0104 Night Terror
+#	0105 Stone Cold
 #	0106 Betrayed by household guard
-#	0107 A daring night time raid
+#	0107 A Daring Raid
 #	0108 A greedy seneschal...
 #	0109 The crooked apothecary
 #	0110 The Bold Bloodletter
@@ -162,6 +162,61 @@ quix_murder_outcome.0103 = {
 	}
 }
 
+# 104 Night Terror...
+quix_murder_outcome.0104 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:night_murder
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 105 Stone Cold
+quix_murder_outcome.0105 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:loose_stone
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 106 Dereliction of Duty
+quix_murder_outcome.0106 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:traitor_guard
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 107 A Daring Raid
+quix_murder_outcome.0107 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:daring_raid
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
 #############################
 # CHILD AND INFANT MURDERS
 # 0201-0299
@@ -286,6 +341,166 @@ quix_murder_outcome.1003 = {
 
 	option = {
 		name = quix_murder_outcome.1003.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+# 1004 Night Terror
+quix_murder_outcome.1004 = {
+	title = quix_murder_outcome.1004.t
+	desc = quix_murder_outcome.1004.d
+	theme = murder_scheme
+	left_portrait = scope:target
+
+	trigger = {
+		scope:murder_method = flag:night_murder
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1004.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1004.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+# 1005 Stone Cold
+quix_murder_outcome.1005 = {
+	title = quix_murder_outcome.1005.t
+	desc = quix_murder_outcome.1005.d
+	theme = murder_scheme
+	left_portrait = scope:target
+
+	trigger = {
+		scope:murder_method = flag:loose_stone
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1005.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1005.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+# 1006 Dereliction of Duty
+quix_murder_outcome.1006 = {
+	title = quix_murder_outcome.1006.t
+	desc = quix_murder_outcome.1006.d
+	theme = murder_scheme
+	left_portrait = scope:target
+
+	trigger = {
+		scope:murder_method = flag:traitor_guard
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1006.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1006.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+# 1007 A Daring Raid
+quix_murder_outcome.1007 = {
+	title = quix_murder_outcome.1007.t
+	desc = quix_murder_outcome.1007.d
+	theme = murder_scheme
+	left_portrait = scope:target
+
+	trigger = {
+		scope:murder_method = flag:daring_raid
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1007.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1007.b
 		ai_chance = {
 			base = 0
 		}
@@ -491,7 +706,7 @@ quix_murder_outcome.2003 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:archery_balcony
+		scope:murder_method = flag:poisoned_wine
 	}
 
 	immediate = {
@@ -515,10 +730,270 @@ quix_murder_outcome.2003 = {
 	}
 }
 
+# 2004 Night Terror
+quix_murder_outcome.2004 = {
+	type = character_event
+	title = quix_murder_outcome.2004.t
+	desc = {
+		# Open with a statement celebrating success
+		random_valid = {
+			desc = quix_murder_outcome.2004.opening_1
+			desc = quix_murder_outcome.2004.opening_2
+			desc = quix_murder_outcome.2004.opening_3
+		}
+		
+		first_valid = {
+			# If the Scheme Owner is known:
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = {
+					random_valid = {
+						desc = quix_murder_outcome.2004.owner_is_known_1
+						desc = quix_murder_outcome.2004.owner_is_known_2
+					}
+				}
+			}
+			desc = {
+				random_valid = {
+					desc = quix_murder_outcome.2004.no_awareness_1
+					desc = quix_murder_outcome.2004.no_awareness_2
+				}
+			}
+		}
+	}
+
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = sick
+	}
+
+	trigger = {
+		scope:murder_method = flag:night_murder
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2004.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2004.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+	}
+}
+
+# 2005 Stone Cold outcome
+quix_murder_outcome.2005 = {
+	type = character_event
+	title = quix_murder_outcome.2005.t
+	desc = {
+		# Open with a statement celebrating success
+		random_valid = {
+			desc = quix_murder_outcome.2005.opening_1
+			desc = quix_murder_outcome.2005.opening_2
+			desc = quix_murder_outcome.2005.opening_3
+		}
+		
+		first_valid = {
+			# If the Scheme Owner is known:
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = {
+					random_valid = {
+						desc = quix_murder_outcome.2005.owner_is_known_1
+						desc = quix_murder_outcome.2005.owner_is_known_2
+					}
+				}
+			}
+			desc = {
+				random_valid = {
+					desc = quix_murder_outcome.2005.no_awareness_1
+					desc = quix_murder_outcome.2005.no_awareness_2
+				}
+			}
+		}
+	}
+
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = sick
+	}
+
+	trigger = {
+		scope:murder_method = flag:loose_stone
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2005.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2005.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+	}
+}
+
+# 2006 Dereliction of Duty outcomes
+quix_murder_outcome.2006 = {
+	type = character_event
+	title = quix_murder_outcome.2006.t
+	desc = {
+		# Open with a statement celebrating success
+		random_valid = {
+			desc = quix_murder_outcome.2006.opening_1
+			desc = quix_murder_outcome.2006.opening_2
+			desc = quix_murder_outcome.2006.opening_3
+		}
+		
+		first_valid = {
+			# If the Scheme Owner is known:
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = {
+					random_valid = {
+						desc = quix_murder_outcome.2006.owner_is_known_1
+						desc = quix_murder_outcome.2006.owner_is_known_2
+					}
+				}
+			}
+			desc = {
+				random_valid = {
+					desc = quix_murder_outcome.2006.no_awareness_1
+					desc = quix_murder_outcome.2006.no_awareness_2
+				}
+			}
+		}
+	}
+
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = sick
+	}
+
+	trigger = {
+		scope:murder_method = flag:traitor_guard
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2006.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2006.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+	}
+}
+
+# 2007 A daring raid successes
+quix_murder_outcome.2007 = {
+	type = character_event
+	title = quix_murder_outcome.2007.t
+	desc = {
+		# Open with a statement celebrating success
+		random_valid = {
+			desc = quix_murder_outcome.2007.opening_1
+			desc = quix_murder_outcome.2007.opening_2
+			desc = quix_murder_outcome.2007.opening_3
+		}
+		
+		first_valid = {
+			# If the Scheme Owner is known:
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = {
+					random_valid = {
+						desc = quix_murder_outcome.2007.owner_is_known_1
+						desc = quix_murder_outcome.2007.owner_is_known_2
+					}
+				}
+			}
+			desc = {
+				random_valid = {
+					desc = quix_murder_outcome.2007.no_awareness_1
+					desc = quix_murder_outcome.2007.no_awareness_2
+				}
+			}
+		}
+	}
+
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = sick
+	}
+
+	trigger = {
+		scope:murder_method = flag:daring_raid
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2007.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2007.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+	}
+}
+
+
 ###############################
 # FAILURE OUTCOMES 4000 - 4999
 ###############################
-
 
 # 4001 A Toasty Inn Failure
 quix_murder_outcome.4001 = {
@@ -790,6 +1265,410 @@ quix_murder_outcome.4003 = {
 
 	option = {
 		name = quix_murder_outcome.4003.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+# 4004 Night Terror
+quix_murder_outcome.4004 = {
+	type = character_event
+	title = quix_murder_outcome.4004.t
+		### START DESC
+		desc = {
+		
+			# Start off with declaration of failure
+			# Include Target's name!
+			random_valid = {
+				desc = quix_murder_outcome.4004.failure_declaration_1
+				desc = quix_murder_outcome.4004.failure_declaration_2
+				desc = quix_murder_outcome.4004.failure_declaration_3
+			}
+		
+			desc = quix_murder_outcome.4004.desc
+
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:scheme_discovered
+					}
+					desc = quix_murder_outcome.4004.exposed_scheme
+				}
+				desc = quix_murder_outcome.4004.not_exposed_scheme
+			}
+		}
+	### END DESC
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:night_murder
+	}
+
+	immediate = {
+		random_dummy_gender_assassin_effect = yes
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4004.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4004.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4004.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+# 4005 Stone Cold
+quix_murder_outcome.4005 = {
+	type = character_event
+	title = quix_murder_outcome.4005.t
+		### START DESC
+		desc = {
+		
+			# Start off with declaration of failure
+			# Include Target's name!
+			random_valid = {
+				desc = quix_murder_outcome.4005.failure_declaration_1
+				desc = quix_murder_outcome.4005.failure_declaration_2
+				desc = quix_murder_outcome.4005.failure_declaration_3
+			}
+		
+			desc = quix_murder_outcome.4005.desc
+
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:scheme_discovered
+					}
+					desc = quix_murder_outcome.4005.exposed_scheme
+				}
+				desc = quix_murder_outcome.4005.not_exposed_scheme
+			}
+		}
+	### END DESC
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:loose_stone
+	}
+
+	immediate = {
+		random_dummy_gender_assassin_effect = yes
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4005.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4005.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4005.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+# 4006 Dead Drunk
+quix_murder_outcome.4006 = {
+	type = character_event
+	title = quix_murder_outcome.4006.t
+		### START DESC
+		desc = {
+		
+			# Start off with declaration of failure
+			# Include Target's name!
+			random_valid = {
+				desc = quix_murder_outcome.4006.failure_declaration_1
+				desc = quix_murder_outcome.4006.failure_declaration_2
+				desc = quix_murder_outcome.4006.failure_declaration_3
+			}
+		
+			desc = quix_murder_outcome.4006.desc
+
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:scheme_discovered
+					}
+					desc = quix_murder_outcome.4006.exposed_scheme
+				}
+				desc = quix_murder_outcome.4006.not_exposed_scheme
+			}
+		}
+	### END DESC
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:traitor_guard
+	}
+
+	immediate = {
+		random_dummy_gender_assassin_effect = yes
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4006.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4006.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4006.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+# 4007 A Daring Raid failures
+quix_murder_outcome.4007 = {
+	type = character_event
+	title = quix_murder_outcome.4007.t
+		### START DESC
+		desc = {
+		
+			# Start off with declaration of failure
+			# Include Target's name!
+			random_valid = {
+				desc = quix_murder_outcome.4007.failure_declaration_1
+				desc = quix_murder_outcome.4007.failure_declaration_2
+				desc = quix_murder_outcome.4007.failure_declaration_3
+			}
+		
+			desc = quix_murder_outcome.4007.desc
+
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:scheme_discovered
+					}
+					desc = quix_murder_outcome.4007.exposed_scheme
+				}
+				desc = quix_murder_outcome.4007.not_exposed_scheme
+			}
+		}
+	### END DESC
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:daring_raid
+	}
+
+	immediate = {
+		random_dummy_gender_assassin_effect = yes
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4007.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4007.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4007.b
 		trigger = {
 			NOT = { exists = scope:scheme_discovered }
 		}
