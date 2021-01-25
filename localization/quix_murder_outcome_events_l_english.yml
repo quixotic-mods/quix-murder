@@ -43,27 +43,27 @@ l_english:
 
  #	1004 Night Terror
  quix_murder_outcome.1004.t:0 "Night Terrors"
- quix_murder_outcome.1004.d:0 "Our agents have detected . Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
- quix_murder_outcome.1004.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
- quix_murder_outcome.1004.b:0 "On second thought, I'll save it for a special occasion."
+ quix_murder_outcome.1004.d:0 "Our agents have come up with a plan to rid oursleves of [target.GetName]. It would appear they like to take long walks most evenings, completely alone. It's a prime opportunity to make them disappear into the darkness..."
+ quix_murder_outcome.1004.a:0 "I will only regret they shall not see the look upon [target.GetTitledFirstNamePossessive] face!"
+ quix_murder_outcome.1004.b:0 "Perhaps it is too simple."
 
  #	1005 Stone Cold
- quix_murder_outcome.1005.t:0 "Night Terrors"
- quix_murder_outcome.1005.d:0 "Our agents have detected . Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
- quix_murder_outcome.1005.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
- quix_murder_outcome.1005.b:0 "On second thought, I'll save it for a special occasion."
+ quix_murder_outcome.1005.t:0 "Stone Cold"
+ quix_murder_outcome.1005.d:0 "[target.GetName] enjoys taking the air in a particular courtyard, beneath some particular walls. Our agents have found that one of the massive stones could be loosed from the old wall, sending it crashing upon [target.GetTitledFirstNamePossessive] head!"
+ quix_murder_outcome.1005.a:0 "Then allow this rock to roll!"
+ quix_murder_outcome.1005.b:0 "This is wrong, [target.GetTitledFirstName] isn't worth the damaged masonry."
 
  #	1006 dereliction of duty
- quix_murder_outcome.1006.t:0 "Night Terrors"
- quix_murder_outcome.1006.d:0 "Our agents have detected . Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
- quix_murder_outcome.1006.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
- quix_murder_outcome.1006.b:0 "On second thought, I'll save it for a special occasion."
+ quix_murder_outcome.1006.t:0 "Dereliction of Duty"
+ quix_murder_outcome.1006.d:0 "[target.GetTitledFirstNamePossessive] fate draws near! Our agents have an in to [target.GetTitledFirstNamePossessive] own home. A servant, apparently offended by how they are treated by [target.GetTitledFirstName], has accepted a...small token of our appreciation, in exchange for allowing our an agent in at night! "
+ quix_murder_outcome.1006.a:0 "Just make sure this servent doesn't talk."
+ quix_murder_outcome.1006.b:0 "No, this could be a trap."
 
  #	1007 Daring Raid
- quix_murder_outcome.1007.t:0 "Night Terrors"
- quix_murder_outcome.1007.d:0 "Our agents have detected . Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
- quix_murder_outcome.1007.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
- quix_murder_outcome.1007.b:0 "On second thought, I'll save it for a special occasion."
+ quix_murder_outcome.1007.t:0 "A Daring Raid"
+ quix_murder_outcome.1007.d:0 "A bold plan to eliminate [target.GetName] is being discussed by my agents. It would appear there is a way into [target.GetTitledFirstNamePossessive] quarters from the jakes, of all places. A few picked soldiers would swarm in, with veils on their faces, striking down any opposition, before dispatching [target.GetName] and fleeing into the night on horses staged nearby before the hue and cry can be raised."
+ quix_murder_outcome.1007.a:0 "Fortune favors the bold!"
+ quix_murder_outcome.1007.b:0 "This is foolhardy. Murder should be more...subtle."
 
 
  #################
@@ -102,31 +102,31 @@ l_english:
  quix_murder_outcome.2003.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
  quix_murder_outcome.2003.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
 
- # 2004 Dead Drunk Success
- quix_murder_outcome.2004.t:0 "Dead Drunk."
- quix_murder_outcome.2004.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
- quix_murder_outcome.2004.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
- quix_murder_outcome.2004.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
- quix_murder_outcome.2004.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
- quix_murder_outcome.2004.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
- quix_murder_outcome.2004.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
- quix_murder_outcome.2004.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+ # 2004 Night Terrors Success
+ quix_murder_outcome.2004.t:0 "Night Terrors."
+ quix_murder_outcome.2004.opening_1:0 "[target.GetName] was enjoying their usual evening stroll when our agent appeared from the shadows with a dagger. [target.GetTitledFirstName] tried to flee but was run down and stabbed to death in the darkness"
+ quix_murder_outcome.2004.opening_2:0 "[target.GetTitledFirstName] was taken by surprise, the cold kiss of steel upon their throat their first indication something was awry. A moment later, they laid dead in their own blood. The deed is done."
+ quix_murder_outcome.2004.owner_is_known_1:0 "\n\nIn a cruel twist of fate, just a few feet from the attack was a guard in the shadows, my involvement is known!"
+ quix_murder_outcome.2004.owner_is_known_2:0 "\n\nUnfortunately the body was found shortly thereafter and our agent was caught!"
+ quix_murder_outcome.2004.no_awareness_1:0 "\n\nAnd after emptying [target.GetTitledFirstNamePossessive] coin purse, it looked like a robbery!"
+ quix_murder_outcome.2004.no_awareness_2:0 "\n\nOur agent slipped away into the shadows, completely unseen."
+ quix_murder_outcome.2004.a.discovered:0 "It was dark! All just a case of mistaken identity..."
 
- # 2005 Dead Drunk Success
- quix_murder_outcome.2005.t:0 "Dead Drunk."
- quix_murder_outcome.2005.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
- quix_murder_outcome.2005.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
- quix_murder_outcome.2005.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
- quix_murder_outcome.2005.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
- quix_murder_outcome.2005.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
- quix_murder_outcome.2005.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
- quix_murder_outcome.2005.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+ # 2005 Stone Cold Success
+ quix_murder_outcome.2005.t:0 "Stone Cold."
+ quix_murder_outcome.2005.opening_1:0 "[target.GetName] was killed instantly under the weight of the falling stone, never even knowing their fate!"
+ quix_murder_outcome.2005.opening_2:0 "[target.GetName] is dead! They were crushed by the stone, their bottom legs shattered, and they died when guards lifted it!"
+ quix_murder_outcome.2005.owner_is_known_1:0 "\n\nUnfortunately, our agent fell off the wall too, and our involvement is known!"
+ quix_murder_outcome.2005.owner_is_known_2:0 "\n\nHowever, our agent was captured, and our involvement is known!"
+ quix_murder_outcome.2005.no_awareness_1:0 "\n\nEveryone seems to have attributed it to some sort of accident..."
+ quix_murder_outcome.2005.no_awareness_2:0 "\n\nJust a tragic accident, it would seem!"
+ quix_murder_outcome.2005.a.discovered:0 "This reminds me, call in the mason, I'd like him to inspect our walls again..."
 
- # 2006 Dead Drunk Success
- quix_murder_outcome.2006.t:0 "Dead Drunk."
- quix_murder_outcome.2006.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
- quix_murder_outcome.2006.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
- quix_murder_outcome.2006.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
+ # 2006 Dereliction of Duty
+ quix_murder_outcome.2006.t:0 "Dereliction of Duty."
+ quix_murder_outcome.2006.opening_1:0 "The plan to kill[target.GetName] has succeeded. The servant upheld the deal, and our agent was in and out before the sun rose."
+ quix_murder_outcome.2006.opening_2:0 "[target.GetName] caught their servant recieving money for letting the assassin in. Their dying breath was spent cursing the traitor rather than the assassin."
+ quix_murder_outcome.2006.owner_is_known_1:0 "\n\nUnfortunately, the "
  quix_murder_outcome.2006.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
  quix_murder_outcome.2006.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
  quix_murder_outcome.2006.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
