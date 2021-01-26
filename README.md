@@ -14,7 +14,7 @@ If you want it to load Quixotic Murder events into another mod, like a total con
 
 ## Installation
 Put in your CK3 Mods Folder. Usually this is:
-C:\users\yourwindowsusername\documents\Paradox Interactive\Crusader Kings III\mod
+C:\users\%username%\documents\Paradox Interactive\Crusader Kings III\mod
 
 If you install the mod manually, be sure to delete any previous versions.
 
