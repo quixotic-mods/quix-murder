@@ -16,14 +16,14 @@ namespace = quix_murder_outcome
 #	0103 Dead Drunk
 #	0104 Night Terror
 #	0105 Stone Cold
-#	0106 Betrayed by household guard
+#	0106 Dereliction of duty
 #	0107 A Daring Raid
-#	0108 A greedy seneschal...
-#	0109 The crooked apothecary
-#	0110 The Bold Bloodletter
-#	0111 The Foreign Warrior
-#	0112 The Masked Assassin
-#	0113 Your Champion's blade
+#	0108 Night Rider
+#	0109 The Bold Bloodletter
+#	0110 The Masqued Murderers
+#	0111 Masqued Murderers
+#	0112 Foreign Warrior
+#	0113 A pool of blood
 #	0114 A Chance Encounter...
 #	0115 Band of Horsemen
 #	0116 The ol Carriage Switch
@@ -33,13 +33,22 @@ namespace = quix_murder_outcome
 #	0120 Poisoned While Sleeping
 # 0150 Assassin Method Selection Events
 # 0201-0299 CHILD AND INFANT MURDERS
-#	0201 Tossed In The Sea
+#	0201 Tossed In A Lake
 #   0202 Trojan Rocking Horse
+#   0203 Stranger Danger
+#   0204 The Secret Friend
+#   0205 Under the bed... 
 # 0301-0399 IMPRISONMENT MURDERS
 #	0301 Fileted Skin
 #	0302 Hot Irons
 #	0303 The Most Dangerous Game
 #	0304 Drowned in Basin
+#	0305 Stoned
+#	0306 The Old Fashioned Way
+#	0307 Hanged in the cell
+#   0308 Staged Escape
+#   0309 Smoked Out
+#	0310 Simply Vanished
 # 1000 - 1199 "REGULAR" MURDER SETUPS 
 #	1001 A Toasty Inn Setup
 #	1002 Arrow to the Balcony Setup
@@ -110,8 +119,8 @@ namespace = quix_murder_outcome
 #	4020 Poisoned While Sleeping Failure
 
 #################
-# METHOD SELECTION EVENTS
-# 0100-0199
+# METHOD SELECTION EVENTS - General
+# 0100-0150
 #################
 
 # 101 A Toasty Inn...
@@ -217,6 +226,193 @@ quix_murder_outcome.0107 = {
 		trigger_event = { on_action = murder_setup }
 	}
 }
+
+# 108 Night Rider
+quix_murder_outcome.0108 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:horseman_ambush
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 109 The Bold Bloodletter
+quix_murder_outcome.0109 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:imposter_healer
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 110 Masqued Murderers
+quix_murder_outcome.0110 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:masked_men
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 111 The Foreign Warrior
+quix_murder_outcome.0111 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:foreign_warrior
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+
+# 112 Cry Havoc
+quix_murder_outcome.0112 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:dog_attack
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 113 A Pool of Blood... (killed in a bath house)
+quix_murder_outcome.0113 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:bath_house
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 114 A Chance Encounter... 
+quix_murder_outcome.0113 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:pushed_off_ledge
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 115 Broad Daylight (an attack in a public market)
+quix_murder_outcome.0113 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:market_murder
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 116 Captive Kill
+quix_murder_outcome.0116 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:captive_kill
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 117 Poisoned Dart
+quix_murder_outcome.0117 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:poison_dart
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 118 Do It Yourself...
+quix_murder_outcome.0118 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:diy_murder
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 119 The Mute Brawler
+quix_murder_outcome.0119 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:hired_brawler
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 120 A Shadowy Organization
+quix_murder_outcome.0120 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:assassins_guild
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+
+
+
 #############################
 # CHILD AND INFANT MURDERS
 # 0201-0299

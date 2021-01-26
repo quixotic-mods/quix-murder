@@ -1,5 +1,5 @@
 ﻿##################################
-# Quixotic Murder
+# Quixotic Murderfff
 # quix_murder_outcome_events_l_english.yml
 # Version:alpha1
 # by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
@@ -184,7 +184,7 @@ l_english:
  quix_murder_outcome.4003.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4003.b:0 "If at first you don't succeed..."
 
- # 4004 Dead Drunk Failure
+ # 4004 Night Terror
  quix_murder_outcome.4004.t:0 "Dead Drunk."
  quix_murder_outcome.4004.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
  quix_murder_outcome.4004.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
@@ -196,7 +196,7 @@ l_english:
  quix_murder_outcome.4004.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4004.b:0 "If at first you don't succeed..."
 
- # 4005 Dead Drunk Failure
+ # 4005 Stone Cold Failure
  quix_murder_outcome.4005.t:0 "Dead Drunk."
  quix_murder_outcome.4005.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
  quix_murder_outcome.4005.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
@@ -208,8 +208,8 @@ l_english:
  quix_murder_outcome.4005.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4005.b:0 "If at first you don't succeed..."
 
- # 4006 Dead Drunk Failure
- quix_murder_outcome.4006.t:0 "Dead Drunk."
+ # 4006 Dereliction of Duty failure
+ quix_murder_outcome.4006.t:0 "Dereliction of Duty."
  quix_murder_outcome.4006.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
  quix_murder_outcome.4006.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
  quix_murder_outcome.4006.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
@@ -220,8 +220,8 @@ l_english:
  quix_murder_outcome.4006.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4006.b:0 "If at first you don't succeed..."
 
- # 4007 Dead Drunk Failure
- quix_murder_outcome.4007.t:0 "Dead Drunk."
+ # 4007 A Daring Raid Failure
+ quix_murder_outcome.4007.t:0 "A Daring Raid."
  quix_murder_outcome.4007.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
  quix_murder_outcome.4007.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
  quix_murder_outcome.4007.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
