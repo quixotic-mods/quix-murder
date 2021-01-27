@@ -1,16 +1,21 @@
 # Quixotic Murder - Crusader Kings 3 Mod
-**Version: Alpha 1**
+**Version: Alpha 2**
 
 *by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*
 
-Events mod for Crusader Kings 3 by Paradox Interactive. Will add dozens of new murder events focused on immersion, roleplaying, and flavor, while not affecting overall game tone or balance.
+**Adds 20 NEW Murder Scheme Events**
 
-Still in very early access. Will be posted to steam workshop when it's done tm.
+Tired of killing people the same few ways for HUNDREDS OF YEARS!?
+
+This mod is intended to greatly enhance the variety of murder schemes in the game. In vanilla, there are only 7 standard murder scheme outcomes. This mod nearly triples that, adding 20 new events in addition to the vanilla events. It was designed with an attempt to keep the tone and writing style close to vanilla, while not affecting game balance at all. It is intended for roleplay and immersion. I hope you enjoy it!
+
+Your Humble Servant,
+Don Quixote de la Mancha
 
 ## Compatibility
-This mod is NOT compatible with other murder scheme event mods. Technically speaking, I am overwriting murder_on_actions.txt because this is the only way I can figure out to insert the custom events into schemes. If you know a better way, please let me know. Mod authors, I would be happy to release a patch for your mod and give you everything you need to release one for mine, hit me up.
+This mod is NOT compatible with other murder scheme event mods. Technically speaking, I am overwriting murder_on_actions.txt because this is the only way I can figure out to insert the custom events into schemes. If you know a better way, please let me know. Mod authors, I would be happy to release a patch for your mod and give you everything you need to release one for mine, hit me up. If you want it to load Quixotic Murder events into another mod, like a total conversion, run it lower in the load order.
 
-If you want it to load Quixotic Murder events into another mod, like a total conversion, run it lower in the load order.
+Beyond murder scheme mods, this mod should be fully compatible with just about everything. If the mod doesn't contain murder_on_actions.txt - it's fully compatible!
 
 ## Installation
 Put in your CK3 Mods Folder. Usually this is:
@@ -20,12 +25,10 @@ If you install the mod manually, be sure to delete any previous versions.
 
 ## Mod Content
 Additions:
-* 7 new regular murder outcome event chains
-
+* 20 new regular "regular" murder outcome event chains
 
 ## Roadmap
 * New Role Based Interactions & Decisions (Search for/Hire/Dismiss)
-* 20+ new murder outcome event chains
 * New Assassin Role - Hire your own personal assassin to hunt your enemeis to the edge of diplomatic range!
 * New Bodyguard Role - Hire a trusted bodyguard to protect you from assassins!
 * New Spy Role - Hire spies to help your plots and foil your rivals!
