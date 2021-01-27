@@ -19,7 +19,7 @@ Beyond murder scheme mods, this mod should be fully compatible with just about e
 
 ## Installation
 Put in your CK3 Mods Folder. Usually this is:
-C:\users\`%username%\documents\Paradox Interactive\Crusader Kings III\mod
+C:\users\\%username%\documents\Paradox Interactive\Crusader Kings III\mod
 
 If you install the mod manually, be sure to delete any previous versions.
 
