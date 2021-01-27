@@ -726,7 +726,7 @@ quix_murder_outcome.1008 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:horseman_ambush
 	}
 
 	immediate = {
@@ -766,7 +766,7 @@ quix_murder_outcome.1009 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:imposter_healer
 	}
 
 	immediate = {
@@ -806,7 +806,7 @@ quix_murder_outcome.1010 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:masked_men
 	}
 
 	immediate = {
@@ -846,7 +846,7 @@ quix_murder_outcome.1011 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:masked_men
 	}
 
 	immediate = {
@@ -886,7 +886,7 @@ quix_murder_outcome.1012 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:dog_attack
 	}
 
 	immediate = {
@@ -926,7 +926,7 @@ quix_murder_outcome.1013 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:bath_house
 	}
 
 	immediate = {
@@ -966,7 +966,7 @@ quix_murder_outcome.1014 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:pushed_off_ledge
 	}
 
 	immediate = {
@@ -1006,7 +1006,7 @@ quix_murder_outcome.1015 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:market_murder
 	}
 
 	immediate = {
@@ -1046,7 +1046,7 @@ quix_murder_outcome.1016 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:captive_kill
 	}
 
 	immediate = {
@@ -1086,7 +1086,7 @@ quix_murder_outcome.1017 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:poison_dart
 	}
 
 	immediate = {
@@ -1126,7 +1126,7 @@ quix_murder_outcome.1018 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:diy_murder
 	}
 
 	immediate = {
@@ -1166,7 +1166,7 @@ quix_murder_outcome.1019 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:hired_brawler
 	}
 
 	immediate = {
@@ -1206,7 +1206,7 @@ quix_murder_outcome.1020 = {
 	left_portrait = scope:target
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:assassins_guild
 	}
 
 	immediate = {
@@ -1298,7 +1298,7 @@ quix_murder_outcome.2001 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:hired_assassin
+		scope:murder_method = flag:hired_arsonist
 	}
 
 	immediate = {
@@ -1621,7 +1621,7 @@ quix_murder_outcome.2006 = {
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
-		animation = sick
+		animation = pain
 	}
 
 	trigger = {
@@ -1686,7 +1686,7 @@ quix_murder_outcome.2007 = {
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
-		animation = sick
+		animation = pain
 	}
 
 	trigger = {
@@ -1751,11 +1751,11 @@ quix_murder_outcome.2008 = {
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
-		animation = sick
+		animation = pain
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:horseman_ambush
 	}
 
 	immediate = {
@@ -1820,7 +1820,7 @@ quix_murder_outcome.2009 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:imposter_healer
 	}
 
 	immediate = {
@@ -1885,7 +1885,7 @@ quix_murder_outcome.2010 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:masked_men
 	}
 
 	immediate = {
@@ -1950,7 +1950,7 @@ quix_murder_outcome.2011 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:foreign_warrior
 	}
 
 	immediate = {
@@ -2015,7 +2015,7 @@ quix_murder_outcome.2012 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:dog_attack
 	}
 
 	immediate = {
@@ -2080,7 +2080,7 @@ quix_murder_outcome.2013 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:bath_house
 	}
 
 	immediate = {
@@ -2145,7 +2145,7 @@ quix_murder_outcome.2014 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:pushed_off_ledge
 	}
 
 	immediate = {
@@ -2210,7 +2210,7 @@ quix_murder_outcome.2015 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:market_murder
 	}
 
 	immediate = {
@@ -2275,7 +2275,7 @@ quix_murder_outcome.2016 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:captive_kill
 	}
 
 	immediate = {
@@ -2340,7 +2340,7 @@ quix_murder_outcome.2017 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:poison_dart
 	}
 
 	immediate = {
@@ -2405,7 +2405,7 @@ quix_murder_outcome.2018 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:diy_murder
 	}
 
 	immediate = {
@@ -2470,7 +2470,7 @@ quix_murder_outcome.2019 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:hired_brawler
 	}
 
 	immediate = {
@@ -2535,7 +2535,7 @@ quix_murder_outcome.2020 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:assassins_guild
 	}
 
 	immediate = {
@@ -3303,7 +3303,7 @@ quix_murder_outcome.4008 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:horseman_ambush
 	}
 
 	immediate = {
@@ -3404,7 +3404,7 @@ quix_murder_outcome.4009 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:imposter_healer
 	}
 
 	immediate = {
@@ -3505,7 +3505,7 @@ quix_murder_outcome.4010 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:masked_men
 	}
 
 	immediate = {
@@ -3606,7 +3606,7 @@ quix_murder_outcome.4011 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:foreign_warrior
 	}
 
 	immediate = {
@@ -3707,7 +3707,7 @@ quix_murder_outcome.4012 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:dog_attack
 	}
 
 	immediate = {
@@ -3808,7 +3808,7 @@ quix_murder_outcome.4013 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:bath_house
 	}
 
 	immediate = {
@@ -3909,7 +3909,7 @@ quix_murder_outcome.4014 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:pushed_off_ledge
 	}
 
 	immediate = {
@@ -4010,7 +4010,7 @@ quix_murder_outcome.4015 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:market_murder
 	}
 
 	immediate = {
@@ -4111,7 +4111,7 @@ quix_murder_outcome.4016 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:daptive_kill
 	}
 
 	immediate = {
@@ -4414,7 +4414,7 @@ quix_murder_outcome.4019 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:hired_brawler
 	}
 
 	immediate = {
@@ -4515,7 +4515,7 @@ quix_murder_outcome.4020 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:daring_raid
+		scope:murder_method = flag:assassins_guild
 	}
 
 	immediate = {
