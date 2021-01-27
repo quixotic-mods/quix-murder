@@ -278,7 +278,17 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.2009.no_awareness_2:0 "\n\nOur rider was away before any even knew what was happening!"
  quix_murder_outcome.2009.a.discovered:0 "I sent my best bloodletter, they should be honored!"
 
-#	0110 Masqued Murderers (maked_men)
+#	0110 
+#	2010 Masqued Murderers (maked_men)
+ quix_murder_outcome.2010.t:0 "Masqued Murderers"
+ quix_murder_outcome.2010.opening_1:0 "At the height of the masquerade, [target.getname] was slain upon the dance floor! Our agents, interspersed within the crowd, caused a distraction and drove a dagger into [target.GetTitledFirstNamePossessive] back!"
+ quix_murder_outcome.2010.opening_2:0 "[target.getname] was killed in the middle of the ball, in front of everyone in attendance. They stood shocked as the dagger plunged into their chest, "
+ quix_murder_outcome.2010.owner_is_known_1:0 "\n\nHowever, before our imposter could leave, someone familiar with the real bloodletter spotted them! Our scheming is known!"
+ quix_murder_outcome.2010.owner_is_known_2:0 "\n\nBut before leaving the house, the death was discovered, and our man was captured!"
+ quix_murder_outcome.2010.no_awareness_1:0 "\n\nOur fake bloodletter "
+ quix_murder_outcome.2010.no_awareness_2:0 "\n\nOur rider was away before any even knew what was happening!"
+ quix_murder_outcome.2010.a.discovered:0 "I sent my best bloodletter, they should be honored!"
+
 #	0111 The Foreign Warrior (foreign_warrior)
 #	0112 Cry Havoc (dog_attack)
 #	0113 A pool of blood (bath_house)
