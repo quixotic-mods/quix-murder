@@ -11,26 +11,26 @@ l_english:
 # INDEX
 #################
 # 0100-0100 Non-Assassin Method Selection Events
-# 	0101 A Toasty Inn...
-#	0102 Arrow to the Balcony
-#	0103 Dead Drunk
-#	0104 Night Terror
-#	0105 Stone Cold
-#	0106 Dereliction of duty
-#	0107 A Daring Raid
-#	0108 Night Rider
-#	0109 The Bold Bloodletter
-#	0110 Masqued Murderers
-#	0111 The Foreign Warrior
-#	0112 Cry Havoc (dog attack)
-#	0113 A pool of blood (bath house)
-#	0114 A Chance Encounter...
-#	0115 Broad Daylight
-#	0116 Captive Kill
-#	0117 Poisoned Dart
-#	0118 Do It Yourself
-#	0119 The Mute Brawler
-#	0120 A Shadowy Organization
+# 	0101 A Toasty Inn... (hired_arsonist)
+#	0102 Arrow to the Balcony (archery_balcony)
+#	0103 Dead Drunk (poisoned_wine)
+#	0104 Night Terror (night_murder)
+#	0105 Stone Cold (loose_stone)
+#	0106 Dereliction of duty (traitor_guard)
+#	0107 A Daring Raid (daring_raid)
+#	0108 Night Rider (horseman_ambush)
+#	0109 The Bold Bloodletter (imposter_healer)
+#	0110 Masqued Murderers (maked_men)
+#	0111 The Foreign Warrior (foreign_warrior)
+#	0112 Cry Havoc (dog_attack)
+#	0113 A pool of blood (bath_house)
+#	0114 A Chance Encounter... (pushed_off_ledge)
+#	0115 Broad Daylight (market_murder)
+#	0116 Captive Kill (captive_kill)
+#	0117 Poisoned Dart (poison_dart)
+#	0118 Do It Yourself (diy_murder)
+#	0119 The Mute Brawler (hired_brawler)
+#	0120 A Shadowy (assassins_guild)
 # 0150 Assassin Method Selection Events
 # 0201-0299 CHILD AND INFANT MURDERS
 #	0201 Tossed In A Lake

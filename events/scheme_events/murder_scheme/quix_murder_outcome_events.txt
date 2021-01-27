@@ -56,7 +56,6 @@ namespace = quix_murder_outcome
 #   0328 The Most Dangerous Game (house arrest)
 #   0329 Body Double (release an imposter who "vanishes")
 
-
 # 1000 - 1199 "REGULAR" MURDER SETUPS 
 #	1001 A Toasty Inn Setup
 #	1002 Arrow to the Balcony Setup
