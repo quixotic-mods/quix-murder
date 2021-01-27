@@ -102,13 +102,84 @@ l_english:
  quix_murder_outcome.1007.a:0 "Fortune favors the bold!"
  quix_murder_outcome.1007.b:0 "This is foolhardy. Murder should be more...subtle."
 
-
  #	1008 Night Rider
  quix_murder_outcome.1008.t:0 "Night Rider"
  quix_murder_outcome.1008.d:0 "[target.GetName] is planning and small trip to a nearby town. The trip will take the better part of the day, and so [Target.Getname] will be arriving at their destination after nightfall. The roads are a dangerous place; a rider on a fresh horse could likely dispatch [Target.GetFirstName] and disappear into the night, any pursuers unable to keep up on tired mounts..."
  quix_murder_outcome.1008.a:0 "Well then, send my best rider upon my fastest horse!"
  quix_murder_outcome.1008.b:0 "No, this is to brazen a plan..."
 
+ #	1009 The Bold bloodletter
+ quix_murder_outcome.1009.t:0 "The Bold Bloodletter"
+ quix_murder_outcome.1009.d:0 "Lately, a healer has caused quite a stir with his supposed knowledge of physic. He claims that, by bleeding his patients, he can cure them of all ills.
+Our agents have learned that [target.GetName] has attempted to contact this healer, and have intercepted this communication. We could send an imposter and  [target.GetTitledFirstName] would gladly open their veins for us!"
+ quix_murder_outcome.1009.a:0 "When I decided I wanted [target.GetTitledFirstNamePossessive] blood , I had no idea it would be this easy..."
+ quix_murder_outcome.1009.b:0 "No, the risk we accidentally cure [target.GetTitledFirstNamePossessive] ailment is too great."
+
+ #	1010 Masqued Murderers
+ quix_murder_outcome.1010.t:0 "Masqued Murderers"
+ quix_murder_outcome.1010.d:0 "Our agents have learned that [target.GetTitledFirst] will be attending social event where everyone will be wearing masks! It would be easy enough for our men to slip in unnoticed and then blend into the crowd."
+ quix_murder_outcome.1010.a:0 "How thoughtful of [target.GetTitledFirstName]! May as well send a whole band of men!"
+ quix_murder_outcome.10.b:0 "It sounds like a trap. Too easy."
+
+#	1011 The Foreign Warrior (foreign_warrior)
+ quix_murder_outcome.1011.t:0 "The Foreign Warrior"
+ quix_murder_outcome.1011.d:0 "Our agents have been in contact with a warrior from a foreign land. His methods and ways are strange, but he is purpotedly as fierce with his strange blade as he is stealthy. Perhaps we could employ them to help [target.GetTitledFirstNamePossessive] along their way..."
+ quix_murder_outcome.1011.a:0 "All the better to hire someone with no connections or interests here..."
+ quix_murder_outcome.1011.b:0 "This task is far too important to trust to some strange man."
+
+#	1012 Cry Havoc (dog_attack)
+ quix_murder_outcome.1012.t:0 "Cry Havoc!"
+ quix_murder_outcome.1012.d:0 "[target.GetName] seems to enjoy walks alone in the wilderness, where wild beasts are abound. It's quite dangerous, so perhaps we should send a trainer and some war dogs to...protect them. We certainly wouldn't want them to be mauled to death."
+ quix_murder_outcome.1012.a:0 "Pick the biggest ones, and... Make sure they're hungry."
+ quix_murder_outcome.1012.b:0 "No. I can't trust a beast to do a human's job."
+
+#	0113 A pool of blood (bath_house)
+ quix_murder_outcome.1013.t:0 "A Pool of Blood"
+ quix_murder_outcome.1013.d:0 "We've learned [target.GetName] visits local healing pools every week, for a seculded bath. Naked, defenseless, and alone sounds like the perfect recipe for a successful assassination..."
+ quix_murder_outcome.1013.a:0 "I do enjoy the irony of dying in a healing pool..."
+ quix_murder_outcome.1013.b:0 "I have a bad feeling about this."
+
+#	0114 A Chance Encounter... (pushed_off_ledge)
+ quix_murder_outcome.1014.t:0 "A Chance Encounter"
+ quix_murder_outcome.1014.d:0 "On a leisurely trip away from my domain, I was taking a pleasant stroll a river, and who do I see, but none other than [target.GetName] standing by a bluff over the rushing water. The flow of the river is very strong today, it's doubtful anybody would ever be able to make it out..."
+ quix_murder_outcome.1014.a:0 "Perhaps we should go help [target.GetTitledFirstName] on their way..."
+ quix_murder_outcome.1014.b:0 "As tempting as it is, I should not get my hands dirty. Or wet, for that matter."
+
+#	0115 Broad Daylight (market_murder)
+ quix_murder_outcome.1015.t:0 "In Broad Daylight"
+ quix_murder_outcome.1015.d:0 "Enough waiting. I want [target.GetTitledFirstName] dead. If we cannot find some clever way to dispatch them, then perhaps we should do it the old fashioned way. We'll "
+ quix_murder_outcome.1015.a:0 "Perhaps we should go help [target.GetTitledFirstName] on their way..."
+ quix_murder_outcome.1015.b:0 "As tempting as it is, I should not get my hands dirty. Or wet, for that matter."
+
+#	0116 Catch and Decease (captive_kill)
+ quix_murder_outcome.1016.t:0 "In Broad Daylight"
+ quix_murder_outcome.1016.d:0 "A plan has been formed by our agents to finally kill [target.GetTitledFirstName]. The plan is to catch [target.GetName] in the street and then taken them into custody, attempting to make it seem official to onlookers. After apprehending [target.GetTitledFirstName], we bring them here, and we can lop off their head as we please."
+ quix_murder_outcome.1016.a:0 "It sounds like a solid plan."
+ quix_murder_outcome.1016.b:0 "It sounds like a terrible plan."
+
+#	0117 Poisoned Dart (poison_dart)
+ quix_murder_outcome.1017.t:0 "In Broad Daylight"
+ quix_murder_outcome.1017.d:0 "A plan has been formed by our agents to finally kill [target.GetTitledFirstName]. The plan is to catch [target.GetName] in the street and then taken them into custody, attempting to make it seem official to onlookers. After apprehending [target.GetTitledFirstName], we bring them here, and we can lop off their head as we please."
+ quix_murder_outcome.1017.a:0 "It sounds like a solid plan."
+ quix_murder_outcome.1017.b:0 "It sounds like a terrible plan."
+
+#	0118 Do It Yourself (diy_murder)
+ quix_murder_outcome.1018.t:0 "Do It Yourself"
+ quix_murder_outcome.1018.d:0 "I have grown sick of hearing my agents bicker over bad plans to kill [target.GetName]. If I want this done right, I'm going to have to do it myself. We know where [target.GetTitledFirstName] sleeps. I'll let myself in through a window, slip into the bedroom, and be done with it."
+ quix_murder_outcome.1018.a:0 "Now where is my cowl..."
+ quix_murder_outcome.1018.b:0 "On second thought, the weather just isn't right for this. Back to the infernal drawing board."
+
+#	0119 The Mute Brawler (hired_brawler)
+ quix_murder_outcome.1019.t:0 "The Prize Fighter"
+ quix_murder_outcome.1019.d:0 "A foreign peasant, famous in their land as a pit fighter, has arrived in my realm seeking employ. His tognue was cut out long ago, and even then, he can't speak the language to begin with. He is built like a bear, and may just be the perfect one to deal with [target.GetTitledFirstName]."
+ quix_murder_outcome.1019.a:0 "He sounds lovely!"
+ quix_murder_outcome.1019.b:0 "This is not the calibur of professional I have come to expect."
+
+#	0120 A Shadowy Organization (assassins_guild)
+ quix_murder_outcome.1020.t:0 "A Shadowy Organization..."
+ quix_murder_outcome.1020.d:0 "Our agents have made contact with some people who say they can help with our [target.GetTitledFirstName] problem. Unfortunately we don’t know anything about this group, they are very secretive. But they do come with a glowing recommendation for efficiency and professionalism..."
+ quix_murder_outcome.1020.a:0 "How Very Mysterious. I am Intrigued."
+ quix_murder_outcome.1020.b:0 "Another word for Shadowy is Shady. I’ll pass."
 
  #################
  #2000 - 2999 Successes
@@ -131,7 +202,7 @@ l_english:
  quix_murder_outcome.2002.opening_1:0 "I'm told the arrow caught [target.GetName] in the throat, and they died choking on their own blood."
  quix_murder_outcome.2002.opening_2:0 "It seems when my assassin hit [target.GetName], [target.GetHisorHer] body fell from that beloved balcony onto a maneur cart!."
  quix_murder_outcome.2002.owner_is_known_1:0 "\n\nUnfortunately, the bowman was apprehended and has accused me!!"
- quix_murder_outcome.2002.owner_is_known_2:0 "\n\nAlthough the feat so impressed the bowman that he has been bragging that you paid him to kill [target.GetTitledFirstName]!"
+ quix_murder_outcome.2002.owner_is_known_2:0 "\n\nAlthough the feat so impressed the bowman that he has been bragging that I paid him to kill [target.GetTitledFirstName]!"
  quix_murder_outcome.2002.no_awareness_1:0 "\n\nDespite the obvious assassination, it seems no one has caught on to me."
  quix_murder_outcome.2002.no_awareness_2:0 "\n\nAnd best of all, the bowman got away cleanly!"
  quix_murder_outcome.2002.a.discovered:0 "Me? Why would I want to kill [target.GetName]? I told him to shoot an old blind donkey, he misunderstood!"
@@ -190,14 +261,34 @@ l_english:
  # 2008 Night Rider Success
  quix_murder_outcome.2008.t:0 "Night Rider"
  quix_murder_outcome.2008.opening_1:0 "Our rider has slain [target.getname]! Emerging from an abandoned hut, he charged past [target.Getfirstnameand]'s companions, driving his lance into [Target]'s heart before anyone knew what was happening!"
- quix_murder_outcome.2008.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
- quix_murder_outcome.2008.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
- quix_murder_outcome.2008.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
- quix_murder_outcome.2008.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
- quix_murder_outcome.2008.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
- quix_murder_outcome.2008.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+ quix_murder_outcome.2008.opening_2:0 "[target.getname] has been killed! Our horseman loosed an arrow from the woods, killing [target.getname] instantly!"
+ quix_murder_outcome.2008.owner_is_known_1:0 "\n\nUnfortunately, the horse stumbled, and the rider lost his seat! He was taken, the plot is known!"
+ quix_murder_outcome.2008.owner_is_known_2:0 "\n\nIn a bit of terrible luck, the rider fled directly into a guard patrol who had heard the screaming! The plot has been exposed."
+ quix_murder_outcome.2008.no_awareness_1:0 "\n\nUpon our finest steed, our rider was no match for the pursuers, and he vanished into the trees!"
+ quix_murder_outcome.2008.no_awareness_2:0 "\n\nOur rider was away before any even knew what was happening!"
+ quix_murder_outcome.2008.a.discovered:0 "The poor man just mistook [target.getname] for a wicked beast, a forgivable mistake!"
 
+#	2009 The Bold Bloodletter (imposter_healer)
+ quix_murder_outcome.2009.t:0 "The Bold Bloodletter"
+ quix_murder_outcome.2009.opening_1:0 "[target.getname] is dead! Our fake bloodletter bled them clean, and told the caretakers that they was going to be in a deep sleep and should not be disturbed for many hours."
+ quix_murder_outcome.2009.opening_2:0 "[target.getname] has been eliminated by our imposter bloodletter! In the end, they turned their wrist to the assassin, and closed their eyes!"
+ quix_murder_outcome.2009.owner_is_known_1:0 "\n\nHowever, before our imposter could leave, someone familiar with the real bloodletter spotted them! Our scheming is known!"
+ quix_murder_outcome.2009.owner_is_known_2:0 "\n\nBut before leaving the house, the death was discovered, and our man was captured!"
+ quix_murder_outcome.2009.no_awareness_1:0 "\n\nOur fake bloodletter "
+ quix_murder_outcome.2009.no_awareness_2:0 "\n\nOur rider was away before any even knew what was happening!"
+ quix_murder_outcome.2009.a.discovered:0 "I sent my best bloodletter, they should be honored!"
 
+#	0110 Masqued Murderers (maked_men)
+#	0111 The Foreign Warrior (foreign_warrior)
+#	0112 Cry Havoc (dog_attack)
+#	0113 A pool of blood (bath_house)
+#	0114 A Chance Encounter... (pushed_off_ledge)
+#	0115 Broad Daylight (market_murder)
+#	0116 Captive Kill (captive_kill)
+#	0117 Poisoned Dart (poison_dart)
+#	0118 Do It Yourself (diy_murder)
+#	0119 The Mute Brawler (hired_brawler)
+#	0120 A Shadowy (assassins_guild)
 
  #######################
  # 4000 Failure Outcomes
@@ -287,3 +378,16 @@ l_english:
  quix_murder_outcome.4007.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4007.b:0 "If at first you don't succeed..."
 
+# 4008 Night Rider Failure
+#	0109 The Bold Bloodletter (imposter_healer)
+#	0110 Masqued Murderers (maked_men)
+#	0111 The Foreign Warrior (foreign_warrior)
+#	0112 Cry Havoc (dog_attack)
+#	0113 A pool of blood (bath_house)
+#	0114 A Chance Encounter... (pushed_off_ledge)
+#	0115 Broad Daylight (market_murder)
+#	0116 Captive Kill (captive_kill)
+#	0117 Poisoned Dart (poison_dart)
+#	0118 Do It Yourself (diy_murder)
+#	0119 The Mute Brawler (hired_brawler)
+#	0120 A Shadowy (assassins_guild)
