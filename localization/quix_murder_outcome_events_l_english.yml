@@ -16,8 +16,45 @@ l_english:
 #	0103 Dead Drunk
 #	0104 Night Terror
 #	0105 Stone Cold
-#	0106 Betrayed by household guard
+#	0106 Dereliction of duty
 #	0107 A Daring Raid
+#	0108 Night Rider
+#	0109 The Bold Bloodletter
+#	0110 Masqued Murderers
+#	0111 The Foreign Warrior
+#	0112 Cry Havoc (dog attack)
+#	0113 A pool of blood (bath house)
+#	0114 A Chance Encounter...
+#	0115 Broad Daylight
+#	0116 Captive Kill
+#	0117 Poisoned Dart
+#	0118 Do It Yourself
+#	0119 The Mute Brawler
+#	0120 A Shadowy Organization
+# 0150 Assassin Method Selection Events
+# 0201-0299 CHILD AND INFANT MURDERS
+#	0201 Tossed In A Lake
+#   0202 Trojan Rocking Horse
+#   0203 Stranger Danger
+#   0204 The Secret Friend
+#   0205 Under the bed... 
+# 0301-0399 IMPRISONMENT MURDERS
+#	0301 Fileted Skin
+#	0302 Hot Irons
+#	0303 The Most Dangerous Game
+#	0304 Drowned in Basin
+#	0305 Stoned
+#	0306 The Old Fashioned Way
+#	0307 Hanged in the cell
+#   0308 Staged Escape
+#   0309 Smoked Out
+#	0310 Simply Vanished
+# 0325 House Arrest Murders
+#	0325 Burning Down The House
+#	0326 The Suicide Note.
+#	0327 Final Works (dig your own grave)
+#   0328 The Most Dangerous Game (house arrest)
+#   0329 Body Double (release an imposter who "vanishes")
 
  #################
  # 1000 - 1199 "REGULAR" MURDER SETUPS 
@@ -66,12 +103,19 @@ l_english:
  quix_murder_outcome.1007.b:0 "This is foolhardy. Murder should be more...subtle."
 
 
+ #	1008 Night Rider
+ quix_murder_outcome.1008.t:0 "Night Rider"
+ quix_murder_outcome.1008.d:0 "[target.GetName] is planning and small trip to a nearby town. The trip will take the better part of the day, and so [Target.Getname] will be arriving at their destination after nightfall. The roads are a dangerous place; a rider on a fresh horse could likely dispatch [Target.GetFirstName] and disappear into the night, any pursuers unable to keep up on tired mounts..."
+ quix_murder_outcome.1008.a:0 "Well then, send my best rider upon my fastest horse!"
+ quix_murder_outcome.1008.b:0 "No, this is to brazen a plan..."
+
+
  #################
  #2000 - 2999 Successes
  ################# 
  # 2001 A Toasty Inn... Success
  quix_murder_outcome.2001.t:0 "A Toasty Inn..."
- quix_murder_outcome.2001.opening_1:0 "[target.GetName] went up in a towering inferno!"
+ quix_murder_outcome.2001.opening_1:0 "[target.GetName] died in a towering inferno!"
  quix_murder_outcome.2001.opening_2:0 "Although not everything went to plan, the Arsonist was able to make due by barricading a few patrons inside with [target.GetName]. Wrong place, wrong time!"
  quix_murder_outcome.2001.opening_3:0 "The plan worked so well, the blaze took several other buildings along with the Inn. [target.GetName] Had no chance!"
  quix_murder_outcome.2001.heh:0 "\nHot."
@@ -135,13 +179,24 @@ l_english:
 
  # 2007 Dead Drunk Success
  quix_murder_outcome.2007.t:0 "Dead Drunk."
- quix_murder_outcome.2007.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
+ quix_murder_outcome.2007.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep, having drank all the wine!"
  quix_murder_outcome.2007.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
  quix_murder_outcome.2007.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
  quix_murder_outcome.2007.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
  quix_murder_outcome.2007.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
  quix_murder_outcome.2007.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
  quix_murder_outcome.2007.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+
+ # 2008 Night Rider Success
+ quix_murder_outcome.2008.t:0 "Night Rider"
+ quix_murder_outcome.2008.opening_1:0 "Our rider has slain [target.getname]! Emerging from an abandoned hut, he charged past [target.Getfirstnameand]'s companions, driving his lance into [Target]'s heart before anyone knew what was happening!"
+ quix_murder_outcome.2008.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
+ quix_murder_outcome.2008.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
+ quix_murder_outcome.2008.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
+ quix_murder_outcome.2008.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
+ quix_murder_outcome.2008.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
+ quix_murder_outcome.2008.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+
 
 
  #######################
