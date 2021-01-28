@@ -29,7 +29,7 @@ l_english:
 #	0116 Captive Kill (captive_kill)
 #	0117 Poisoned Dart (poison_dart)
 #	0118 Do It Yourself (diy_murder)
-#	0119 The Mute Brawler (hired_brawler)
+#	0119 The Prize Fighter (hired_brawler)
 #	0120 A Shadowy (assassins_guild)
 # 0150 Assassin Method Selection Events
 # 0201-0299 CHILD AND INFANT MURDERS
@@ -133,35 +133,35 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.1012.a:0 "Pick the biggest ones, and... Make sure they're hungry."
  quix_murder_outcome.1012.b:0 "No. I can't trust a beast to do a human's job."
 
-#	0113 A pool of blood (bath_house)
+#	1013 A pool of blood (bath_house)
  quix_murder_outcome.1013.t:0 "A Pool of Blood"
  quix_murder_outcome.1013.d:0 "We've learned [target.GetName] visits local healing pools every week, for a seculded bath. Naked, defenseless, and alone sounds like the perfect recipe for a successful assassination..."
  quix_murder_outcome.1013.a:0 "I do enjoy the irony of dying in a healing pool..."
  quix_murder_outcome.1013.b:0 "I have a bad feeling about this."
 
-#	0114 A Chance Encounter... (pushed_off_ledge)
+#	1014 A Chance Encounter... (pushed_off_ledge)
  quix_murder_outcome.1014.t:0 "A Chance Encounter"
  quix_murder_outcome.1014.d:0 "On a leisurely trip away from my domain, I was taking a pleasant stroll a river, and who do I see, but none other than [target.GetName] standing by a bluff over the rushing water. The flow of the river is very strong today, it's doubtful anybody would ever be able to make it out..."
  quix_murder_outcome.1014.a:0 "Perhaps we should go help [target.GetTitledFirstName] on their way..."
  quix_murder_outcome.1014.b:0 "As tempting as it is, I should not get my hands dirty. Or wet, for that matter."
 
-#	0115 Broad Daylight (market_murder)
+#	1015 Broad Daylight (market_murder)
  quix_murder_outcome.1015.t:0 "In Broad Daylight"
- quix_murder_outcome.1015.d:0 "Enough waiting. I want [target.GetTitledFirstName] dead. If we cannot find some clever way to dispatch them, then perhaps we should do it the old fashioned way. We'll "
- quix_murder_outcome.1015.a:0 "Perhaps we should go help [target.GetTitledFirstName] on their way..."
- quix_murder_outcome.1015.b:0 "As tempting as it is, I should not get my hands dirty. Or wet, for that matter."
+ quix_murder_outcome.1015.d:0 "Enough waiting. I want [target.GetTitledFirstName] dead. If we cannot find some clever way to dispatch them, then perhaps we should do it the old fashioned way. We'll send men with full helmets, who will simply cut them down at the first opportunity. It doesn't get any simpler than that."
+ quix_murder_outcome.1015.a:0 "Yes, I've grown impatient over [Target.GetTitledFirstNamePossessive] continued existence. Send them now."
+ quix_murder_outcome.1015.b:0 "No, no. We must devise a better plan."
 
-#	0116 Catch and Decease (captive_kill)
- quix_murder_outcome.1016.t:0 "In Broad Daylight"
+#	1016 Catch and Decease (captive_kill)
+ quix_murder_outcome.1016.t:0 "Catch and Decease"
  quix_murder_outcome.1016.d:0 "A plan has been formed by our agents to finally kill [target.GetTitledFirstName]. The plan is to catch [target.GetName] in the street and then taken them into custody, attempting to make it seem official to onlookers. After apprehending [target.GetTitledFirstName], we bring them here, and we can lop off their head as we please."
  quix_murder_outcome.1016.a:0 "It sounds like a solid plan."
  quix_murder_outcome.1016.b:0 "It sounds like a terrible plan."
 
-#	0117 Poisoned Dart (poison_dart)
- quix_murder_outcome.1017.t:0 "In Broad Daylight"
- quix_murder_outcome.1017.d:0 "A plan has been formed by our agents to finally kill [target.GetTitledFirstName]. The plan is to catch [target.GetName] in the street and then taken them into custody, attempting to make it seem official to onlookers. After apprehending [target.GetTitledFirstName], we bring them here, and we can lop off their head as we please."
- quix_murder_outcome.1017.a:0 "It sounds like a solid plan."
- quix_murder_outcome.1017.b:0 "It sounds like a terrible plan."
+#	1017 Poisoned Dart (poison_dart)
+ quix_murder_outcome.1017.t:0 "A Poisoned Dart"
+ quix_murder_outcome.1017.d:0 "Our agents have acquired a novel weapon. It is a small reed that allows a small poisoned art to be launched at quite remarkable distances towards a target, and can deliver a fatal dose of poison. Perhaps this could be the method by which we dispatch [Target.Getname]?"
+ quix_murder_outcome.1017.a:0 "What a marvelous tool."
+ quix_murder_outcome.1017.b:0 "I won't trust something this important to a mere hollow stick!"
 
 #	0118 Do It Yourself (diy_murder)
  quix_murder_outcome.1018.t:0 "Do It Yourself"
@@ -169,7 +169,7 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.1018.a:0 "Now where is my cowl..."
  quix_murder_outcome.1018.b:0 "On second thought, the weather just isn't right for this. Back to the infernal drawing board."
 
-#	0119 The Mute Brawler (hired_brawler)
+#	0119 The Prize Fighter (hired_brawler)
  quix_murder_outcome.1019.t:0 "The Prize Fighter"
  quix_murder_outcome.1019.d:0 "A foreign peasant, famous in their land as a pit fighter, has arrived in my realm seeking employ. His tognue was cut out long ago, and even then, he can't speak the language to begin with. He is built like a bear, and may just be the perfect one to deal with [target.GetTitledFirstName]."
  quix_murder_outcome.1019.a:0 "He sounds lovely!"
@@ -274,31 +274,121 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.2009.opening_2:0 "[target.getname] has been eliminated by our imposter bloodletter! In the end, they turned their wrist to the assassin, and closed their eyes!"
  quix_murder_outcome.2009.owner_is_known_1:0 "\n\nHowever, before our imposter could leave, someone familiar with the real bloodletter spotted them! Our scheming is known!"
  quix_murder_outcome.2009.owner_is_known_2:0 "\n\nBut before leaving the house, the death was discovered, and our man was captured!"
- quix_murder_outcome.2009.no_awareness_1:0 "\n\nOur fake bloodletter "
- quix_murder_outcome.2009.no_awareness_2:0 "\n\nOur rider was away before any even knew what was happening!"
+ quix_murder_outcome.2009.no_awareness_1:0 "\n\nOur fake bloodletter then simply walked out the front door and vanished into the night!"
+ quix_murder_outcome.2009.no_awareness_2:0 "\n\nBefore our man could escape, however, several others in the residence requested his services! He spent the night bleeding others before escaping in the wee hours of the morning."
  quix_murder_outcome.2009.a.discovered:0 "I sent my best bloodletter, they should be honored!"
 
-#	0110 
+ 
 #	2010 Masqued Murderers (maked_men)
  quix_murder_outcome.2010.t:0 "Masqued Murderers"
  quix_murder_outcome.2010.opening_1:0 "At the height of the masquerade, [target.getname] was slain upon the dance floor! Our agents, interspersed within the crowd, caused a distraction and drove a dagger into [target.GetTitledFirstNamePossessive] back!"
- quix_murder_outcome.2010.opening_2:0 "[target.getname] was killed in the middle of the ball, in front of everyone in attendance. They stood shocked as the dagger plunged into their chest, "
- quix_murder_outcome.2010.owner_is_known_1:0 "\n\nHowever, before our imposter could leave, someone familiar with the real bloodletter spotted them! Our scheming is known!"
- quix_murder_outcome.2010.owner_is_known_2:0 "\n\nBut before leaving the house, the death was discovered, and our man was captured!"
- quix_murder_outcome.2010.no_awareness_1:0 "\n\nOur fake bloodletter "
- quix_murder_outcome.2010.no_awareness_2:0 "\n\nOur rider was away before any even knew what was happening!"
- quix_murder_outcome.2010.a.discovered:0 "I sent my best bloodletter, they should be honored!"
+ quix_murder_outcome.2010.opening_2:0 "[target.getname] was killed in the middle of the ball, in front of everyone in attendance. They stood shocked as our daggers plunged into their chest, assuming it to be some bizarre folly! "
+ quix_murder_outcome.2010.owner_is_known_1:0 "\n\nOur men fled, but one, with blood on his hands, was caught! Our involvement is known!"
+ quix_murder_outcome.2010.owner_is_known_2:0 "\n\nHowever, a number of fighting men were in the crowd, and a melee broke out! Several of our men were injured and captured, and the scheme is know public knowledge!"
+ quix_murder_outcome.2010.no_awareness_1:0 "\n\nOur men fled in the chaos with the masked crowd, and once in the shadows, they dumped their masks and robes, wiped off the blood, and promptly left one by one. None were caught!"
+ quix_murder_outcome.2010.no_awareness_2:0 "\n\nThe men then valiantly fought their way from the event, able to overwhelm any who stood against them due to their anonynmity within the crowd. Not a single man was taken!"
+ quix_murder_outcome.2010.a.discovered:0 "It sounds like it was merely a raucous party, what does that have to do with me?"
 
-#	0111 The Foreign Warrior (foreign_warrior)
-#	0112 Cry Havoc (dog_attack)
-#	0113 A pool of blood (bath_house)
-#	0114 A Chance Encounter... (pushed_off_ledge)
-#	0115 Broad Daylight (market_murder)
-#	0116 Captive Kill (captive_kill)
+#	02011 The Foreign Warrior 
+ quix_murder_outcome.2011.t:0 "The Foreign Warrior"
+ quix_murder_outcome.2011.opening_1:0 "[target.getname] is dead! The stranger turned out to be as effective of a killer as we were informed."
+ quix_murder_outcome.2011.opening_2:0 "[target.getname]'s throat was slit by that strange curved blade of our hired assassin, completing the contract. "
+ quix_murder_outcome.2011.owner_is_known_1:0 "\n\nHowever, it turns out this foreigner was not as skilled at escape away as we were informed, and he was captured!"
+ quix_murder_outcome.2011.owner_is_known_2:0 "\n\nUnfortunately, although the assassin was able to escape the residence, he was captured a short ways away, due to his unfamiliararity with the area!"
+ quix_murder_outcome.2011.no_awareness_1:0 "\n\nOur men fled in the chaos with the masked crowd, and once in the shadows, they dumped their masks and robes, wiped off the blood, and promptly left one by one. None were caught."
+ quix_murder_outcome.2011.no_awareness_2:0 "\n\nThe men then valiantly fought their way from the event, able to overwhelm any who stood against them due to their anonynmity within the crowd. Not a single man was taken!"
+ quix_murder_outcome.2011.a.discovered:0 "Perhaps next time we should just keep it in-house..."
+
+#	2012 Cry Havoc (dog_attack)
+ quix_murder_outcome.2012.t:0 "Cry Havoc!"
+ quix_murder_outcome.2012.opening_1:0 "[target.getname] died screaming, torn apart by viscious war dogs."
+ quix_murder_outcome.2012.opening_2:0 "[target.getname] ran from the dogs, but was no match for the beasts."
+ quix_murder_outcome.2012.owner_is_known_1:0 "\n\nHowever, they made such a racket that guards were alerted, who killed the guards and captured their handler, who has named you as the mastermind!"
+ quix_murder_outcome.2012.owner_is_known_2:0 "\n\nThe hungry dogs then, despite the timid insistence of their handler, began to devour their quarry, and within a few minutes the macabre scene was spotted, which lead to the handler being apprehended! Under duress, he seems to have given my name."
+ quix_murder_outcome.2012.no_awareness_1:0 "\n\nThe dogs and their trainer merely walked back to the road, and back here, without being stopped."
+ quix_murder_outcome.2012.no_awareness_2:0 "\n\nThe plan went off without a hitch, and presumably, it will be attributed to wolves, lions, chimeras and the like."
+ quix_murder_outcome.2012.a.discovered:0 "How could I be blamed for what an animal did?"
+
+#	2013 A pool of blood (bath_house)
+ quix_murder_outcome.2013.t:0 "A Pool of Blood"
+ quix_murder_outcome.2013.opening_1:0 "[target.getname] died screaming, torn apart by viscious war dogs."
+ quix_murder_outcome.2013.opening_2:0 "[target.getname] ran from the dogs, but was no match for the beasts."
+ quix_murder_outcome.2013.owner_is_known_1:0 "\n\nHowever, they made such a racket that guards were alerted, who killed the guards and captured their handler, who has named you as the mastermind!"
+ quix_murder_outcome.2013.owner_is_known_2:0 "\n\nThe hungry dogs then, despite the timid insistence of their handler, began to devour their quarry, and within a few minutes the macabre scene was spotted, which lead to the handler being apprehended! Under duress, he seems to have given my name."
+ quix_murder_outcome.2013.no_awareness_1:0 "\n\nThe dogs and their trainer merely walked back to the road, and back here, without being stopped."
+ quix_murder_outcome.2013.no_awareness_2:0 "\n\nThe plan went off without a hitch, and presumably, it will be attributed to wolves, lions, chimeras and the like."
+ quix_murder_outcome.2013.a.discovered:0 "How could I be blamed for what an animal did?"
+
+#	2014 A Chance Encounter... (pushed_off_ledge)
+ quix_murder_outcome.2014.t:0 "A Chance Encounter"
+ quix_murder_outcome.2014.opening_1:0 "I walked right up behind [target.getname], who stood motionless, caught in thought beside the river, and with a single sove, sent them tumbling to the rushing waters below! We made eye contact for just a moment before their head went under one last time. I do believe I was smiling."
+ quix_murder_outcome.2014.opening_2:0 "Although I tried to move silently, [target.getname] must have heard me approach, and turned around at the last moment. Farewell, I said, as I shoved them backwards into the rushing river!"
+ quix_murder_outcome.2014.owner_is_known_1:0 "\n\nUnfortunately, I was far too bold, and there was an unseen witness to my crime!"
+ quix_murder_outcome.2014.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
+ quix_murder_outcome.2014.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
+ quix_murder_outcome.2014.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
+ quix_murder_outcome.2014.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
+
+#	2015 Broad Daylight (market_murder)
+ quix_murder_outcome.2015.t:0 "Broad Daylight"
+ quix_murder_outcome.2014.opening_1:0 "[target.getname] was apprehended by our men in the marketplace, taken around a corner, and swiftly dispatched!"
+ quix_murder_outcome.2014.opening_2:0 "It seems a struggle broke out between our men and [target.getname], and they slew them there in the street, shocking the crowd."
+ quix_murder_outcome.2014.owner_is_known_1:0 "\n\nThe hue and cry went up quickly, and one of our men was captured. It seems that he has divulged my name!"
+ quix_murder_outcome.2014.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
+ quix_murder_outcome.2014.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
+ quix_murder_outcome.2014.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
+ quix_murder_outcome.2014.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
+
+#	2016 Captive Kill (captive_kill)
+ quix_murder_outcome.2016.t:0 "Captive Kill"
+ quix_murder_outcome.2016.opening_1:0 "[target.getname] was apprehended by our men in the marketplace, taken around a corner, and swiftly dispatched!"
+ quix_murder_outcome.2016.opening_2:0 "It seems a struggle broke out between our men and [target.getname], and they slew them there in the street, shocking the crowd."
+ quix_murder_outcome.2016.owner_is_known_1:0 "\n\nThe hue and cry went up quickly, and one of our men was captured. It seems that he has divulged my name!"
+ quix_murder_outcome.2016.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
+ quix_murder_outcome.2016.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
+ quix_murder_outcome.2016.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
+ quix_murder_outcome.2016.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
+
 #	0117 Poisoned Dart (poison_dart)
+ quix_murder_outcome.2017.t:0 "Poisoned Dart"
+ quix_murder_outcome.2017.opening_1:0 "[target.getname] was apprehended by our men in the marketplace, taken around a corner, and swiftly dispatched!"
+ quix_murder_outcome.2017.opening_2:0 "It seems a struggle broke out between our men and [target.getname], and they slew them there in the street, shocking the crowd."
+ quix_murder_outcome.2017.owner_is_known_1:0 "\n\nThe hue and cry went up quickly, and one of our men was captured. It seems that he has divulged my name!"
+ quix_murder_outcome.2017.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
+ quix_murder_outcome.2017.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
+ quix_murder_outcome.2017.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
+ quix_murder_outcome.2017.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
+
 #	0118 Do It Yourself (diy_murder)
-#	0119 The Mute Brawler (hired_brawler)
-#	0120 A Shadowy (assassins_guild)
+ quix_murder_outcome.2018.t:0 "Do It Yourself"
+ quix_murder_outcome.2018.opening_1:0 "[target.getname] was apprehended by our men in the marketplace, taken around a corner, and swiftly dispatched!"
+ quix_murder_outcome.2018.opening_2:0 "It seems a struggle broke out between our men and [target.getname], and they slew them there in the street, shocking the crowd."
+ quix_murder_outcome.2018.owner_is_known_1:0 "\n\nThe hue and cry went up quickly, and one of our men was captured. It seems that he has divulged my name!"
+ quix_murder_outcome.2018.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
+ quix_murder_outcome.2018.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
+ quix_murder_outcome.2018.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
+ quix_murder_outcome.2018.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
+
+#	2019 The Prize Fighter (hired_brawler)
+ quix_murder_outcome.2019.t:0 "The Prize Fighter"
+ quix_murder_outcome.2019.opening_1:0 "[target.getname] was apprehended by our men in the marketplace, taken around a corner, and swiftly dispatched!"
+ quix_murder_outcome.2019.opening_2:0 "It seems a struggle broke out between our men and [target.getname], and they slew them there in the street, shocking the crowd."
+ quix_murder_outcome.2019.owner_is_known_1:0 "\n\nThe hue and cry went up quickly, and one of our men was captured. It seems that he has divulged my name!"
+ quix_murder_outcome.2019.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
+ quix_murder_outcome.2019.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
+ quix_murder_outcome.2019.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
+ quix_murder_outcome.2019.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
+
+#	2020 A Shadowy (assassins_guild)
+ quix_murder_outcome.2019.t:0 "A Shadowy Organization"
+ quix_murder_outcome.2019.opening_1:0 "[target.GetName] is dead! An unknown assassin."
+ quix_murder_outcome.2019.opening_2:0 "It seems a struggle broke out between our men and [target.getname], and they slew them there in the street, shocking the crowd."
+ quix_murder_outcome.2019.owner_is_known_1:0 "\n\nThe hue and cry went up quickly, and one of our men was captured. It seems that he has divulged my name!"
+ quix_murder_outcome.2019.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
+ quix_murder_outcome.2019.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
+ quix_murder_outcome.2019.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
+ quix_murder_outcome.2019.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
+
 
  #######################
  # 4000 Failure Outcomes
@@ -399,5 +489,5 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
 #	0116 Captive Kill (captive_kill)
 #	0117 Poisoned Dart (poison_dart)
 #	0118 Do It Yourself (diy_murder)
-#	0119 The Mute Brawler (hired_brawler)
+#	0119 The Prize Fighter (hired_brawler)
 #	0120 A Shadowy (assassins_guild)
