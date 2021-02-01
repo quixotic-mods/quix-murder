@@ -389,7 +389,6 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.2019.no_awareness_2:0 "\n\nThe assassin was like a ghost, completely undetected. No one has the slightest clue of my involvement."
  quix_murder_outcome.2019.a.discovered:0 "This is clearly the work of some evil mastermind, not me!"
 
-
  #######################
  # 4000 Failure Outcomes
  #######################
@@ -408,43 +407,43 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
 
  # 4002 Arrow to the Balcony Failure
  quix_murder_outcome.4002.t:0 "An Arrow to the Balcony."
- quix_murder_outcome.4002.failure_declaration_1:0 "The arrow did not strike home! Just as the assassin loosed his arrow, a pigeon passed between them,[target.GetTitledFirstName]!"
+ quix_murder_outcome.4002.failure_declaration_1:0 "The arrow did not strike home! [Target.GetName] is still alive."
  #quix_murder_outcome.4002.failure_declaration_2:0 "Our plot to end [target.GetTitledFirstName]'s life has failed!"
- #quix_murder_outcome.4002.failure_declaration_3:0 "Killing [target.GetTitledFirstName] won't be as easy as I thought. [target.GetTitledName] still lives."
- quix_murder_outcome.4002.desc:0 "\n\nOur arsonist torched the wrong inn! [target.GetName] came out into the street to watch the inferno."
- quix_murder_outcome.4002.exposed_scheme:0 "The arsonist was captured, and the plot has been exposed!"
- quix_murder_outcome.4002.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
- quix_murder_outcome.4002.a.discovered:0 "[dummy_assassin_gender.GetSheHe|U] was actually there to scare off the #EMP real#! assassin! And succeeded!"
- quix_murder_outcome.4002.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
- quix_murder_outcome.4002.b:0 "If at first you don't succeed..."
+ #quix_murder_outcome.4002.failure_declaration_3:0 "The plan to take [Target.GetTitledFirstName]'s life with an arrow has failed, alas."
+ quix_murder_outcome.4002.desc:0 "\n\nJust as the assassin loosed his arrow, a pigeon passed between them, and recieved the arrow intended for [target.GetTitledFirstName]!"
+ quix_murder_outcome.4002.exposed_scheme:0 "This drew [Target.GetName]'s attention, and the assassin was spotted and captured!"
+ quix_murder_outcome.4002.not_exposed_scheme:0 "Fortunately for me, the bowman was quick on his feet, and was able to flee before being apprehended, so our part in this is safe."
+ quix_murder_outcome.4002.a.discovered:0 "My man was just hunting for food! Leave us be!"
+ quix_murder_outcome.4002.a:0 "I'm getting sick of [target.GetFirstNameNoTooltip]!"
+ quix_murder_outcome.4002.b:0 "The archer should have shot again..."
 
  # 4003 Dead Drunk Failure
- quix_murder_outcome.4003.t:0 "Dead Drunk."
+ quix_murder_outcome.4003.t:0 "Dead Drunk"
  quix_murder_outcome.4003.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
  quix_murder_outcome.4003.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
  quix_murder_outcome.4003.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
- quix_murder_outcome.4003.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
- quix_murder_outcome.4003.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
- quix_murder_outcome.4003.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
- quix_murder_outcome.4003.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
- quix_murder_outcome.4003.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
- quix_murder_outcome.4003.b:0 "If at first you don't succeed..."
+ quix_murder_outcome.4003.desc:0 "\n\n[target.GetName] was so familiar with the smell of that particular wine that the poison was immediately detected. Unfortunately, it seems it was the lust for their cups that saved them."
+ quix_murder_outcome.4003.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter! What a stupid mistake!"
+ quix_murder_outcome.4003.not_exposed_scheme:0 "Fortuanately, there's no way to know that I sent it. We'll just pretend it never happened!"
+ quix_murder_outcome.4003.a.discovered:0 "It's not poison...try it!"
+ quix_murder_outcome.4003.a:0 "Well at least it gave me an occasion to drink it..."
+ quix_murder_outcome.4003.b:0 "Next time will be more...enterprising."
 
  # 4004 Night Terror
- quix_murder_outcome.4004.t:0 "Night Terror."
- quix_murder_outcome.4004.failure_declaration_1:0 "It would appear that [target.GetTitledFirstName] has developed some keen night vision by going on these walks. Our assassin was spotted, and the attack failed!"
- quix_murder_outcome.4004.failure_declaration_2:0 "Our attempt to kill [target.GetTitledFirstName] has failed, as."
- quix_murder_outcome.4004.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
- quix_murder_outcome.4004.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
- quix_murder_outcome.4004.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
- quix_murder_outcome.4004.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
- quix_murder_outcome.4004.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
- quix_murder_outcome.4004.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
- quix_murder_outcome.4004.b:0 "If at first you don't succeed..."
+ quix_murder_outcome.4004.t:0 "Night Terror"
+ quix_murder_outcome.4004.failure_declaration_1:0 "It would appear that the attempt to take [Target.GetTitledFirstName] on an evening walk has failed!"
+ quix_murder_outcome.4004.failure_declaration_2:0 "Our assassin was unable to end [Target.GetTitledFirstNamePoessessive] life!."
+ quix_murder_outcome.4004.failure_declaration_3:0 "The plot to kill [Target.GetFirstName] has failed! The whole thing was for naught!"
+ quix_murder_outcome.4004.desc:0 "\n\nIt seems that [target.GetName] has developed a keen night sight while upon these walks, and spotted our assassin from a safe distance!"
+ quix_murder_outcome.4004.exposed_scheme:0 "The guards caught him, and the traitor has talked! The scheme is known to all now."
+ quix_murder_outcome.4004.not_exposed_scheme:0 "Fortunately, our assassin was able to steal off into the night before he could be caught!."
+ quix_murder_outcome.4004.a.discovered:0 "This absolutely ruins my evening!"
+ quix_murder_outcome.4004.a:0 "I'm growing tired of this game."
+ quix_murder_outcome.4004.b:0 "You won't be so lucky next time..."
 
  # 4005 Stone Cold Failure
- quix_murder_outcome.4005.t:0 "Dead Drunk."
- quix_murder_outcome.4005.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
+ quix_murder_outcome.4005.t:0 "Stone Cold"
+ quix_murder_outcome.4005.failure_declaration_1:0 "Our plot to squash [target.GetTitledFirstName] under a rock, like the insect they are, has failed."
  quix_murder_outcome.4005.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
  quix_murder_outcome.4005.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
  quix_murder_outcome.4005.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
