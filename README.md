@@ -4,7 +4,7 @@ NOT FULLY WORKING YET.
 
 *by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*
 
-**Adds 20 NEW Murder Scheme Events**
+**Adds 20 NEW Murder Scheme Outcome Event Chains**
 
 Tired of killing people the same few ways for HUNDREDS OF YEARS!?
 
@@ -26,11 +26,11 @@ If you install the mod manually, be sure to delete any previous versions rather 
 
 ## Mod Content
 Additions:
-* 20 new regular murder outcome event chains (60 individual events!)
+* 20 new regular murder scheme outcome event chains (60 individual events!)
 
 ## Roadmap
 Near Future:
-* 10+ New role based murder saves
+* 10+ New murder saves
 * 10+ New murder maintenance events
 * 10+ New Child & Prisoner murder outcomes
 * 10+ New random character interaction events
