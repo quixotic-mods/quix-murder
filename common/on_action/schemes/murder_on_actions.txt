@@ -89,6 +89,23 @@ standard_murder_method_selection = {
 		100 = quix_murder_outcome.0101 
 		100 = quix_murder_outcome.0102 
 		100 = quix_murder_outcome.0103 
+		100 = quix_murder_outcome.0104
+		100 = quix_murder_outcome.0105
+		100 = quix_murder_outcome.0106
+		100 = quix_murder_outcome.0107
+		100 = quix_murder_outcome.0108
+		100 = quix_murder_outcome.0109
+		100 = quix_murder_outcome.0110
+		100 = quix_murder_outcome.0111
+		100 = quix_murder_outcome.0112
+		100 = quix_murder_outcome.0113
+		100 = quix_murder_outcome.0114
+		100 = quix_murder_outcome.0115
+		100 = quix_murder_outcome.0116
+		100 = quix_murder_outcome.0117
+		100 = quix_murder_outcome.0118
+		100 = quix_murder_outcome.0119
+		100 = quix_murder_outcome.0120
 	}
 }
 
@@ -105,6 +122,23 @@ murder_setup = {
 		quix_murder_outcome.1001
 		quix_murder_outcome.1002
 		quix_murder_outcome.1003 
+		quix_murder_outcome.1004 
+		quix_murder_outcome.1005 
+		quix_murder_outcome.1006 
+		quix_murder_outcome.1007 
+		quix_murder_outcome.1008 
+		quix_murder_outcome.1009
+		quix_murder_outcome.1010
+		quix_murder_outcome.1011
+		quix_murder_outcome.1012
+		quix_murder_outcome.1013
+		quix_murder_outcome.1014
+		quix_murder_outcome.1015
+		quix_murder_outcome.1016
+		quix_murder_outcome.1017
+		quix_murder_outcome.1018
+		quix_murder_outcome.1019
+		quix_murder_outcome.1020 
 		murder_outcome.1201 #Lure child into forest
 		murder_outcome.1202 #Stab infant
 		murder_outcome.1203 #Infant bitten by creepy crawly
@@ -191,6 +225,23 @@ murder_succeeded = {
 		quix_murder_outcome.2001
 		quix_murder_outcome.2002
 		quix_murder_outcome.2003
+		quix_murder_outcome.2004
+		quix_murder_outcome.2005
+		quix_murder_outcome.2006
+		quix_murder_outcome.2007
+		quix_murder_outcome.2008
+		quix_murder_outcome.2009
+		quix_murder_outcome.2010
+		quix_murder_outcome.2011
+		quix_murder_outcome.2012
+		quix_murder_outcome.2013
+		quix_murder_outcome.2014
+		quix_murder_outcome.2015
+		quix_murder_outcome.2016
+		quix_murder_outcome.2017
+		quix_murder_outcome.2018
+		quix_murder_outcome.2019
+		quix_murder_outcome.2020
 		murder_outcome.2201 #Leave a child in the forest
 		murder_outcome.2202 #Stab infant
 		murder_outcome.2203 #Creepy crawly bites infant
@@ -261,6 +312,23 @@ murder_failed = {
 		quix_murder_outcome.4001
 		quix_murder_outcome.4002
 		quix_murder_outcome.4003
+		quix_murder_outcome.4004
+		quix_murder_outcome.4005
+		quix_murder_outcome.4006
+		quix_murder_outcome.4007
+		quix_murder_outcome.4008
+		quix_murder_outcome.4009
+		quix_murder_outcome.4010
+		quix_murder_outcome.4011
+		quix_murder_outcome.4012
+		quix_murder_outcome.4013
+		quix_murder_outcome.4014
+		quix_murder_outcome.4015
+		quix_murder_outcome.4016
+		quix_murder_outcome.4017
+		quix_murder_outcome.4018
+		quix_murder_outcome.4019
+		quix_murder_outcome.4020
 		murder_outcome.4201 #Lured child into forest
 		murder_outcome.4202 #Stab infant
 		murder_outcome.4203 #Creepy crawly bites infant
