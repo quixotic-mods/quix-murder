@@ -4,7 +4,7 @@ NOT FULLY WORKING YET.
 
 *by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*
 
-**Adds 20 NEW Murder Scheme Events**
+**Adds 20 NEW Murder Scheme Outcome Event Chains**
 
 Tired of killing people the same few ways for HUNDREDS OF YEARS!?
 
@@ -22,24 +22,31 @@ Beyond murder scheme mods, this mod should be fully compatible with just about e
 Put in your CK3 Mods Folder. Usually this is:
 C:\users\\%username%\documents\Paradox Interactive\Crusader Kings III\mod
 
-If you install the mod manually, be sure to delete any previous versions.
+If you install the mod manually, be sure to delete any previous versions rather than overwriting (as some files are subject to removal).
 
 ## Mod Content
 Additions:
-* 20 new regular "regular" murder outcome event chains
+* 20 new regular murder scheme outcome event chains (60 individual events!)
 
 ## Roadmap
-* New Role Based Interactions & Decisions (Search for/Hire/Dismiss)
+Near Future:
+* 10+ New murder saves
+* 10+ New murder maintenance events
+* 10+ New Child & Prisoner murder outcomes
+* 10+ New random character interaction events
+* 10+ Post-murder event chains
+
+Eventually:
+* Lots of conditional murder outcomes and saves based on era/culture/religion/war status/historical bookmarks etc - this will be the goal after all "generic" style events are complete.
 * New Assassin Role - Hire your own personal assassin to hunt your enemeis to the edge of diplomatic range!
 * New Bodyguard Role - Hire a trusted bodyguard to protect you from assassins!
 * New Spy Role - Hire spies to help your plots and foil your rivals!
 * New Poisoner role - Craft devious poisions to help in your murder schemes!
 * New Food Taster role - The only way to make sure its safe is to have someone *else* eat it!
-* 10+ New role based murder saves
-* 10+ New murder maintenance events
-* 10+ Post-murder event chains
-* 10+ New random character interaction events
-* Eventually more scheme event mods for schemes other than murder, eventually extending to all schemes! Stay tuned, my friends.
+* New Role Based Interactions & Decisions (Search for/Hire/Dismiss)
+* New Roles Based Murder Scheme outcomes, saves, and random events
+
+More scheme event mods for schemes other than murder coming soon, eventually extending to all schemes! Stay tuned, my friends.
 
 ## Content Warning
 This is a murder mod, and, as such, you will not be surprised to learn it contains depictions of violence and murder, with an occasionally flippant take on these subjects.
