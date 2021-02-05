@@ -51,7 +51,15 @@ More scheme event mods for schemes other than murder coming soon, eventually ext
 ## Content Warning
 This is a murder mod, and, as such, you will not be surprised to learn it contains depictions of violence and murder, with an occasionally flippant take on these subjects.
 
+## Special Thanks
+Thanks to:
+* Dulcinea, her most serene beauty, for always being my creative muse.
+* My most noble squire, Sancho Panza.
+
 ## Fine Print
 Cruasder Kings 3 is property of Paradox Interactive. Mod is made in compliance with Paradox Interactive Mod Policy.
 
-Feel free to modify this mod. If you want to distribute your fork, all I ask is please don't use the "Quixotic" name in the title, but do give attribution to me (Don Quixote) in the description. Link to my site https://DonQuixote.Games/ for maximum honor gain.
+This mod, to the extent I have to do so under the law, is published under the Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA 4.0) license. This means you can copy it, distribute it, and modify it, as long as you do not use it in a commercial work (which would be against Paradox mod policy as well), you attribute me (Don Quixote) in your readme file and descriptions, and any forks or submods are shared under the same license. I would also ask a personal favor that you do not use the name Quixotic in the title just to not confuse people as I will hopefully be publishing many more mods under this moniker. And of course, I would be always indebted to you for sharing my web page: https://www.donquixote.games/
+
+For more information on the license terms see:
+https://creativecommons.org/licenses/by-nc-sa/4.0/
