@@ -1,5 +1,5 @@
 # Quixotic Murder - Crusader Kings 3 Mod
-**Version: Alpha 2**
+**Version: 1.2.2.001**
 NOT FULLY WORKING YET.
 
 *by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*

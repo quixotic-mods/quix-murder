@@ -1,7 +1,7 @@
 ﻿##################################
 # Quixotic Murder
 # quix_murder_on_actions.txt
-# Version:alpha1
+# Version:1.2.2.001
 # by El Ingenioso Caballero Don Quixote de la Mancha
 # https://DonQuixote.Games/
 ##################################
