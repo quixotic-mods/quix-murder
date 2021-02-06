@@ -432,7 +432,7 @@ quix_murder_outcome.0120 = {
 #######################################
 # Remember to set flags for reference when generating event text in success or failure event.
 
-# 1001 A Toasty Inn Setupxxx
+# 1001 A Toasty Inn Setup
 quix_murder_outcome.1001 = {
 	title = quix_murder_outcome.1001.t
 	desc = quix_murder_outcome.1001.d
@@ -472,7 +472,7 @@ quix_murder_outcome.1001 = {
 	}
 }
 
-# 1002 Arrow to the Balcony Setupxxx
+# 1002 Arrow to the Balcony Setup
 quix_murder_outcome.1002 = {
 	title = quix_murder_outcome.1002.t
 	desc = quix_murder_outcome.1002.d
