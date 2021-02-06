@@ -1,7 +1,7 @@
 ﻿##################################
 # Quixotic Murder
 # quix_murder_outcome_events_l_english.yml
-# Version:alpha1
+# Version:1.2.2b1
 # by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
 # https://DonQuixote.Games
 ##################################
@@ -600,33 +600,33 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4018.failure_declaration_1:0 "How could I have been so bold? So foolish? The plot to kill [target.GetTitledFirstName] has failed."
  quix_murder_outcome.4018.failure_declaration_2:0 "Oh cruel fate! I have failed to kill [Target.Gettileedfirstname]"
  quix_murder_outcome.4018.failure_declaration_3:0 "My plan to kill [target.GetTitledFirstName] was not a solid one..."
- quix_murder_outcome.4018.desc:0 "\n\n[target.GetTitledFirstName] was asleep as I crept in through the open window. I took my dagger from it's sheath and, for some reason... I stood there, just admiring the thing I was about to do. I was so relieved to finally be ready to dispatch [Target.GetTtitledFirstName]. I raised the dagger above my head, and began to creep slowly towards the bed... When I heard a scream from the door! A chambermaid had chosen exactly this moment to come stoke the fire! As [Target.Gettitledfirstname] awoke, I turned to run from the room. "
- quix_murder_outcome.4017.exposed_scheme:0 ""
- quix_murder_outcome.4018.not_exposed_scheme:0 "."
- quix_murder_outcome.4018.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
+ quix_murder_outcome.4018.desc:0 "\n\n[target.GetTitledFirstName] was asleep as I crept in through the open window. I took my dagger from it's sheath and, for some reason... I stood there, just admiring the thing I was about to do. I was so relieved to finally be ready to dispatch [Target.GetTtitledFirstName]. I raised the dagger above my head, and began to creep slowly towards the bed... When I heard a scream from the door! A chambermaid had chosen exactly this moment to come stoke the fire! As [Target.Gettitledfirstname] awoke, I turned to run from the room... "
+ quix_murder_outcome.4017.exposed_scheme:0 "Unfortunately, I turned directly into a wooden beam - head first! I was knocked down for a moment and sat on the floor staring. [target.GetName] sat up in [Target.GetHerHis] bed and, in disbelief, we made eye contact for a long moment, until I heard the sound of crashing feet outside, and I came to my senses, and stumbled out the window. They sent the hounds after me, and I had to spend the night hiding in a marsh! "
+ quix_murder_outcome.4018.not_exposed_scheme:0 "I was able to pull up my hood and leap from the window onto a nearby rooftop in an instant. I've never seen the chambermaid before, and it was dark, so I am certain my identity was not seen. I shall not be so cavalier in the future..."
+ quix_murder_outcome.4018.a.discovered:0 "I was such a fool!"
  quix_murder_outcome.4018.a:0 "The old addage is wrong!"
- quix_murder_outcome.4018.b:0 "If at first you don't succeed..."
+ quix_murder_outcome.4018.b:0 "Perhaps this is best left to professionals..."
 
-#	0119 The Prize Fighter (hired_brawler)
- quix_murder_outcome.4019.t:0 "A Daring Raid."
- quix_murder_outcome.4019.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
- quix_murder_outcome.4019.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
- quix_murder_outcome.4019.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
- quix_murder_outcome.4019.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
- quix_murder_outcome.4019.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
- quix_murder_outcome.4019.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
- quix_murder_outcome.4019.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
- quix_murder_outcome.4019.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
- quix_murder_outcome.4019.b:0 "If at first you don't succeed..."
+#	4019 The Prize Fighter (hired_brawler)
+ quix_murder_outcome.4019.t:0 "The Prize Fighter"
+ quix_murder_outcome.4019.failure_declaration_1:0 "[target.GetTitledFirstName] was not killed by our hired brawler!"
+ quix_murder_outcome.4019.failure_declaration_2:0 "The man we hired to kill [target.GetTitledFirstName] has not succeeded."
+ quix_murder_outcome.4019.failure_declaration_3:0 "[target.GetTitledFirstName] is still alive, thanks to the incompetence of the hired brawler."
+ quix_murder_outcome.4019.desc:0 "\n\nUpon locating [target.GetName], the fighter closed in, and asked [target.GetTitledFirstName] to confirm their identity. [target.GetTitledFirstName] seems to have not liked this prospect, and outwitted our fighter by denying their identity, proclaiming the real [target.GetTitledFirstName] to be in their living quarters. It seems our brawler had taken a few too many blows to the head in his career, as he fell for this simple deception!"
+ quix_murder_outcome.4019.exposed_scheme:0 "[target.GetTitledFirstName] immediately went to the guards, and they apprehended the fool, who has given us up! My involvement in the plot is now known to all."
+ quix_murder_outcome.4019.not_exposed_scheme:0 "[target.GetTitledFirstName] sent up the hue and cry, and our brawler was forced to hide in an empty grave on the outskirts until nightfall! Fortunately, he was able to evade capture, and has made it back here with his tail between his legs. At least our involvement in this folly is unknown."
+ quix_murder_outcome.4019.a.discovered:0 "Why would you believe the words of man who clearly has severe brain damage!?"
+ quix_murder_outcome.4019.a:0 "What a pity. But, there are more important things in life."
+ quix_murder_outcome.4019.b:0 "It makes no matter, this is just part of the process..."
 
 #	4020 A Shadowy Organization (assassins_guild)
- quix_murder_outcome.4020.t:0 "A Daring Raid."
- quix_murder_outcome.4020.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
- quix_murder_outcome.4020.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
- quix_murder_outcome.4020.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk their last glass. They live, at least for now, until their habits put them in the grave!"
- quix_murder_outcome.4020.desc:0 "\n\n[target.GetName] was so familiar with the smell of wine, that the poison was immediately detected."
- quix_murder_outcome.4020.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter!"
- quix_murder_outcome.4020.not_exposed_scheme:0 "The arsonist was briefly.\n\n[target.GetTitledFirstName] is now on [target.GetHerHis] guard."
- quix_murder_outcome.4020.a.discovered:0 "was actually there to scare off the #EMP real#! assassin! And succeeded!"
- quix_murder_outcome.4020.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
- quix_murder_outcome.4020.b:0 "If at first you don't succeed..."
+ quix_murder_outcome.4020.t:0 "A Shadowy Organization"
+ quix_murder_outcome.4020.failure_declaration_1:0 "[target.GetTitledFirstName] was not killed by our group of assassins!"
+ quix_murder_outcome.4020.failure_declaration_2:0 "[target.GetTitledFirstName] was not killed!"
+ quix_murder_outcome.4020.failure_declaration_3:0 "[target.GetTitledFirstName] is, regrettably, still alive."
+ quix_murder_outcome.4020.desc:0 "\n\n It would seem as if the entire thing were a deception all along."
+ quix_murder_outcome.4020.exposed_scheme:0 "Perhaps we were dealing with forces loyal to [Target.GetTitledFirstName] all along? Perhaps it was some unknown third party? But whomever it was, they have given the details of the scheme to [Target.GetTitledFirstName], and now the whole thing is public knowledge."
+ quix_murder_outcome.4020.not_exposed_scheme:0 "Our agents lost all contact with the group through the appointed channels. Our observers report there was no attempt to carry out the planned plot. They simply vanished. Perhaps it was a scam? A hoax? A plot that did not come to fruition? I can only wonder. Fortunately, nothing seems to have come of it either way, as no one has attempted to blackmail me over it, nor has [Target.GetTitledFirstName] caught wind. It will, for now, remain a mystery..."
+ quix_murder_outcome.4020.a.discovered:0 "Can't you see this whole thing is manufacturered? The intrigues of some unknown webweaver."
+ quix_murder_outcome.4020.a:0 "I've been had!"
+ quix_murder_outcome.4020.b:0 "It may have been a hoax...but what an intriguing business model..."
