@@ -417,9 +417,6 @@ quix_murder_outcome.0120 = {
 	}
 }
 
-
-
-
 #############################
 # CHILD AND INFANT MURDERS
 # 0201-0299
@@ -430,14 +427,12 @@ quix_murder_outcome.0120 = {
 # 0301-0399
 ################################
 
-
-
 #######################################
 # "REGULAR" MURDER SETUPS 1000 - 1999
 #######################################
 # Remember to set flags for reference when generating event text in success or failure event.
 
-# 1001 A Toasty Inn Setup
+# 1001 A Toasty Inn Setupxxx
 quix_murder_outcome.1001 = {
 	title = quix_murder_outcome.1001.t
 	desc = quix_murder_outcome.1001.d
@@ -477,7 +472,7 @@ quix_murder_outcome.1001 = {
 	}
 }
 
-# 1002 Arrow to the Balcony Setup
+# 1002 Arrow to the Balcony Setupxxx
 quix_murder_outcome.1002 = {
 	title = quix_murder_outcome.1002.t
 	desc = quix_murder_outcome.1002.d
