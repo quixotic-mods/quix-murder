@@ -1,14 +1,12 @@
 # Quixotic Murder - Crusader Kings 3 Mod
 **Version: 1.2.2.001**
-NOT FULLY WORKING YET.
-
 *by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*
 
 **Adds 20 NEW Murder Scheme Outcome Event Chains**
 
 Tired of killing people the same few ways for HUNDREDS OF YEARS!?
 
-This mod is intended to greatly enhance the variety of murder schemes in the game. In vanilla, there are only 7 standard murder scheme outcomes. This mod nearly triples that, adding 20 new events in addition to the vanilla events. It was designed with an attempt to keep the tone and writing style close to vanilla, while not affecting game balance at all. It is intended for roleplay and immersion. I hope you enjoy it!
+This mod is intended to greatly enhance the variety of murder schemes in the game. In vanilla, there are only 7 standard murder scheme outcomes. This mod nearly triples that, adding 20 new events in addition to the vanilla events. It was designed with an attempt to keep the tone and writing style close to vanilla, while not affecting game balance at all. It is intended for roleplay, flavor, and immersion. I hope you enjoy it!
 
 Your Humble Servant,
 Don Quixote de la Mancha
@@ -26,7 +24,7 @@ If you install the mod manually, be sure to delete any previous versions rather 
 
 ## Mod Content
 Additions:
-* 20 new regular murder scheme outcome event chains (60 individual events!)
+* 20 new regular murder scheme outcome event chains - 60 individual events, each with multiple variations - over 500 lines of custom dialog.
 
 ## Roadmap
 Near Future:
