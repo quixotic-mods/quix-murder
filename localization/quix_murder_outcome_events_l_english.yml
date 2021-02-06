@@ -1,190 +1,103 @@
-﻿##################################
-# Quixotic Murder
-# quix_murder_outcome_events_l_english.yml
-# Version:1.2.2.001
-# by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha
-# https://DonQuixote.Games
-##################################
-l_english:
-
-#################
-# INDEX
-#################
-# 0100-0100 Non-Assassin Method Selection Events
-# 	0101 A Toasty Inn... (hired_arsonist)
-#	0102 Arrow to the Balcony (archery_balcony)
-#	0103 Dead Drunk (poisoned_wine)
-#	0104 Night Terror (night_murder)
-#	0105 Stone Cold (loose_stone)
-#	0106 Dereliction of duty (traitor_guard)
-#	0107 A Daring Raid (daring_raid)
-#	0108 Night Rider (horseman_ambush)
-#	0109 The Bold Bloodletter (imposter_healer)
-#	0110 Masqued Murderers (maked_men)
-#	0111 The Foreign Warrior (foreign_warrior)
-#	0112 Cry Havoc (dog_attack)
-#	0113 A pool of blood (bath_house)
-#	0114 A Chance Encounter... (pushed_off_ledge)
-#	0115 Broad Daylight (market_murder)
-#	0116 Captive Kill (captive_kill)
-#	0117 Poisoned Dart (poison_dart)
-#	0118 Do It Yourself (diy_murder)
-#	0119 The Prize Fighter (hired_brawler)
-#	0120 A Shadowy (assassins_guild)
-# 0150 Assassin Method Selection Events
-# 0201-0299 CHILD AND INFANT MURDERS
-#	0201 Tossed In A Lake
-#   0202 Trojan Rocking Horse
-#   0203 Stranger Danger
-#   0204 The Secret Friend
-#   0205 Under the bed... 
-# 0301-0399 IMPRISONMENT MURDERS
-#	0301 Fileted Skin
-#	0302 Hot Irons
-#	0303 The Most Dangerous Game
-#	0304 Drowned in Basin
-#	0305 Stoned
-#	0306 The Old Fashioned Way
-#	0307 Hanged in the cell
-#   0308 Staged Escape
-#   0309 Smoked Out
-#	0310 Simply Vanished
-# 0325 House Arrest Murders
-#	0325 Burning Down The House
-#	0326 The Suicide Note.
-#	0327 Final Works (dig your own grave)
-#   0328 The Most Dangerous Game (house arrest)
-#   0329 Body Double (release an imposter who "vanishes")
-
- #################
- # 1000 - 1199 "REGULAR" MURDER SETUPS 
- #################
-
- # 1001 A Toasty Inn...
+﻿l_english:
  quix_murder_outcome.1001.t:0 "A Toasty Inn..."
- quix_murder_outcome.1001.d:0 "An opportunity arises. My agents have discovered [target.GetTitledFirstName] and entourage will be staying at an inn on an upcoming trip. This inn is made entirely from timber and has an old thatched roof. If we cannot easily get past [target.GetTitledFirstNamePossessive] guards, they can just go up in the blaze as well. The best part about the plan is it leaves no evidence.\n\nIt could even have been an accident..."
+ quix_murder_outcome.1001.d:0 "An opportunity arises. My agents have discovered [target.GetTitledFirstName] and entourage will be staying at an inn on an upcoming trip. This inn is made entirely from timber and has an old thatched roof. If we cannot easily get past [target.GetTitledFirstNamePossessive] guards, [target.GetSheHe] can just go up in the blaze as well. The best part about the plan is it leaves no evidence.\n\nIt could even have been an accident..."
  quix_murder_outcome.1001.a:0 "Burn, baby, burn."
  quix_murder_outcome.1001.b:0 "I happen to like that inn..."
 
-  # 1002 Arrow to the Balcony Setup
  quix_murder_outcome.1002.t:0 "An Arrow to the Balcony..."
- quix_murder_outcome.1002.d:0 "In our efforts to rid the world of [target.GetTitledFirstName], a window of opportunity has appeared. Or, more fittingly, a balcony. It would appear that [target.GetTitledFirstName] has a favorite spot to take the most afternoons. This balcony is across a small courtyard from a tavern. Even a mediocre bowman could make the shot..."
+ quix_murder_outcome.1002.d:0 "In our efforts to rid the world of [target.GetTitledFirstName], a window of opportunity has appeared. Or, more fittingly, a balcony.\n\n It would appear that [target.GetTitledFirstName] has a favorite spot to take the air most afternoons. This balcony is across a small courtyard from a tavern.\n\n Even a mediocre bowman could make the shot..."
  quix_murder_outcome.1002.a:0 "Send word for my best archer."
- quix_murder_outcome.1002.b:0 "No, that's too dignified for[target.GetTitledFirstName]."
+ quix_murder_outcome.1002.b:0 "No, that's too dignified for [target.GetTitledFirstName]."
 
- #	1003 A Gift of Poisoned Wine Setup
  quix_murder_outcome.1003.t:0 "Dead Drunk."
- quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle of wine, a thought occurred to me. Everyone knows that [target.GetName] is very fond of [target.GetHisorHers] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
+ quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle of wine, a thought occurred to me. Everyone knows that [target.GetName] is very fond of [target.GetHersHis] cups. This vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
  quix_murder_outcome.1003.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff!"
  quix_murder_outcome.1003.b:0 "On second thought, I'll save it for a special occasion."
 
- #	1004 Night Terror
- quix_murder_outcome.1004.t:0 "Night Terrors"
- quix_murder_outcome.1004.d:0 "Our agents have come up with a plan to rid oursleves of [target.GetName]. It would appear they like to take long walks most evenings, completely alone. It's a prime opportunity to make them disappear into the darkness..."
- quix_murder_outcome.1004.a:0 "I will only regret they shall not see the look upon [target.GetTitledFirstNamePossessive] face!"
- quix_murder_outcome.1004.b:0 "Perhaps it is too simple."
+ quix_murder_outcome.1004.t:0 "Night Terror"
+ quix_murder_outcome.1004.d:0 "Our agents have come up with a plan to rid oursleves of [target.GetName]. It would appear [target.GetSheHe] likes to take long walks most evenings, completely alone. It's a prime opportunity to make [target.GetHerHim] disappear into the darkness..."
+ quix_murder_outcome.1004.a:0 "Pity no one will see the terror on [target.GetTitledFirstNamePossessive] face!"
+ quix_murder_outcome.1004.b:0 "Perhaps it is too simple. There is a better way."
 
- #	1005 Stone Cold
  quix_murder_outcome.1005.t:0 "Stone Cold"
- quix_murder_outcome.1005.d:0 "[target.GetName] enjoys taking the air in a particular courtyard, beneath some particular walls. Our agents have found that one of the massive stones could be loosed from the old wall, sending it crashing upon [target.GetTitledFirstNamePossessive] head!"
+ quix_murder_outcome.1005.d:0 "[target.GetName] enjoys taking the air in a particular courtyard, beneath some the walls. Our agents have found that one of the massive stones could be loosed from the old wall, sending it crashing upon [target.GetTitledFirstNamePossessive] head!"
  quix_murder_outcome.1005.a:0 "Then allow this rock to roll!"
- quix_murder_outcome.1005.b:0 "This is wrong, [target.GetTitledFirstName] isn't worth the damaged masonry."
+ quix_murder_outcome.1005.b:0 "This is wrong, [target.GetFirstNameNoTooltip] isn't worth damaging masonry."
 
- #	1006 dereliction of duty
  quix_murder_outcome.1006.t:0 "Dereliction of Duty"
- quix_murder_outcome.1006.d:0 "[target.GetTitledFirstNamePossessive] fate draws near! Our agents have an in to [target.GetTitledFirstNamePossessive] own home. A servant, apparently offended by how they are treated by [target.GetTitledFirstName], has accepted a...small token of our appreciation, in exchange for allowing our an agent in at night! "
- quix_murder_outcome.1006.a:0 "Just make sure this servent doesn't talk."
+ quix_murder_outcome.1006.d:0 "[target.GetTitledFirstNamePossessive] fate draws near! Our agents have way in to [target.GetTitledFirstNamePossessive] own home. A servant, apparently offended by how they are treated by [target.GetTitledFirstName], has accepted a...small token of our appreciation, in exchange for allowing our an agent in at night! "
+ quix_murder_outcome.1006.a:0 "Just make sure this servant doesn't talk."
  quix_murder_outcome.1006.b:0 "No, this could be a trap."
 
- #	1007 Daring Raid
  quix_murder_outcome.1007.t:0 "A Daring Raid"
- quix_murder_outcome.1007.d:0 "A bold plan to eliminate [target.GetName] is being discussed by my agents. It would appear there is a way into [target.GetTitledFirstNamePossessive] quarters from the jakes, of all places. A few picked soldiers would swarm in, with veils on their faces, striking down any opposition, before dispatching [target.GetName] and fleeing into the night on horses staged nearby before the hue and cry can be raised."
+ quix_murder_outcome.1007.d:0 "A bold plan to eliminate [target.GetName] is being discussed by my agents. It would appear there is a way into [target.GetTitledFirstNamePossessive] quarters from the privy, of all places. A few picked soldiers would swarm in, with veils on their faces, striking down any opposition, before dispatching [target.GetTitledFirstName]. They will then escape into the night the way they came before they know what hit them."
  quix_murder_outcome.1007.a:0 "Fortune favors the bold!"
  quix_murder_outcome.1007.b:0 "This is foolhardy. Murder should be more...subtle."
 
- #	1008 Night Rider
  quix_murder_outcome.1008.t:0 "Night Rider"
- quix_murder_outcome.1008.d:0 "[target.GetName] is planning and small trip to a nearby town. The trip will take the better part of the day, and so [Target.Getname] will be arriving at their destination after nightfall. The roads are a dangerous place; a rider on a fresh horse could likely dispatch [Target.GetFirstName] and disappear into the night, any pursuers unable to keep up on tired mounts..."
+ quix_murder_outcome.1008.d:0 "[target.GetName] is planning and small trip to a nearby town. The trip will take the better part of the day, and so [target.GetTitledFirstName] will be arriving at [target.GetHerHis] destination after nightfall. The roads are a dangerous place; a rider on a fresh horse could likely dispatch [target.GetTitledFirstName and disappear into the night, any pursuers unable to keep up on tired mounts..."
  quix_murder_outcome.1008.a:0 "Well then, send my best rider upon my fastest horse!"
- quix_murder_outcome.1008.b:0 "No, this is to brazen a plan..."
+ quix_murder_outcome.1008.b:0 "No, this is far too brazen a plan..."
 
- #	1009 The Bold bloodletter
  quix_murder_outcome.1009.t:0 "The Bold Bloodletter"
- quix_murder_outcome.1009.d:0 "Lately, a healer has caused quite a stir with his supposed knowledge of physic. He claims that, by bleeding his patients, he can cure them of all ills.
-Our agents have learned that [target.GetName] has attempted to contact this healer, and have intercepted this communication. We could send an imposter and  [target.GetTitledFirstName] would gladly open their veins for us!"
- quix_murder_outcome.1009.a:0 "When I decided I wanted [target.GetTitledFirstNamePossessive] blood , I had no idea it would be this easy..."
+ quix_murder_outcome.1009.d:0 "Lately, a healer has caused quite a stir with his supposed knowledge of physic. He claims that, by bleeding his patients, he can cure them of all ills. Our agents have learned that [target.GetTitledFirstName] has attempted to contact this healer, and have intercepted this  communication. We could send an imposter and [target.GetTitledFirstName] would gladly open [target.GetHerHis] veins for us!"
+ quix_murder_outcome.1009.a:0 "[target.GetTitledFirstNameNoTooltip] will make this easy!"
  quix_murder_outcome.1009.b:0 "No, the risk we accidentally cure [target.GetTitledFirstNamePossessive] ailment is too great."
-
- #	1010 Masqued Murderers
  quix_murder_outcome.1010.t:0 "Masqued Murderers"
- quix_murder_outcome.1010.d:0 "Our agents have learned that [target.GetTitledFirst] will be attending social event where everyone will be wearing masks! It would be easy enough for our men to slip in unnoticed and then blend into the crowd."
- quix_murder_outcome.1010.a:0 "How thoughtful of [target.GetTitledFirstName]! May as well send a whole band of men!"
- quix_murder_outcome.10.b:0 "It sounds like a trap. Too easy."
+ quix_murder_outcome.1010.d:0 "Our agents have learned that [target.GetTitledFirstName] will be attending social event where everyone will be wearing masks! It would be easy enough for our men to slip in unnoticed and then blend into the crowd."
+ quix_murder_outcome.1010.a:0 "How thoughtful of [target.GetTitledFirstNameNoTooltip] to invite us! May as well send a whole band of men!"
+ quix_murder_outcome.10.b:0 "Too easy.It sounds like a trap."
 
-#	1011 The Foreign Warrior (foreign_warrior)
  quix_murder_outcome.1011.t:0 "The Foreign Warrior"
- quix_murder_outcome.1011.d:0 "Our agents have been in contact with a warrior from a foreign land. His methods and ways are strange, but he is purpotedly as fierce with his strange blade as he is stealthy. Perhaps we could employ them to help [target.GetTitledFirstNamePossessive] along their way..."
+ quix_murder_outcome.1011.d:0 "Our agents have been in contact with a warrior from a distant land. His tools and methods are strange, but he is purpotedly as fierce with his strange curved blade as he is stealthy. Perhaps we could employ them to help [target.GetTitledFirstNamePossessive] along [target.GetHerHis] way..."
  quix_murder_outcome.1011.a:0 "All the better to hire someone with no connections or interests here..."
  quix_murder_outcome.1011.b:0 "This task is far too important to trust to some strange man."
 
-#	1012 Cry Havoc (dog_attack)
  quix_murder_outcome.1012.t:0 "Cry Havoc!"
- quix_murder_outcome.1012.d:0 "[target.GetName] seems to enjoy walks alone in the wilderness, where wild beasts are abound. It's quite dangerous, so perhaps we should send a trainer and some war dogs to...protect them. We certainly wouldn't want them to be mauled to death."
+ quix_murder_outcome.1012.d:0 "[target.GetName] seems to enjoy walks alone in the wilderness, where wild beasts are abound. It's quite dangerous, so perhaps we should send a trainer and some war dogs to...protect [target.GetSheHe]? We certainly wouldn't want [target.GetSheHe] to be mauled to death by wild animals..."
  quix_murder_outcome.1012.a:0 "Pick the biggest ones, and... Make sure they're hungry."
  quix_murder_outcome.1012.b:0 "No. I can't trust a beast to do a human's job."
 
-#	1013 A pool of blood (bath_house)
  quix_murder_outcome.1013.t:0 "A Pool of Blood"
  quix_murder_outcome.1013.d:0 "We've learned [target.GetName] visits local healing pools every week, for a seculded bath. Naked, defenseless, and alone sounds like the perfect recipe for a successful assassination..."
  quix_murder_outcome.1013.a:0 "I do enjoy the irony of dying in a healing pool..."
  quix_murder_outcome.1013.b:0 "I have a bad feeling about this."
 
-#	1014 A Chance Encounter... (pushed_off_ledge)
  quix_murder_outcome.1014.t:0 "A Chance Encounter"
- quix_murder_outcome.1014.d:0 "On a leisurely trip away from my domain, I was taking a pleasant stroll a river, and who do I see, but none other than [target.GetName] standing by a bluff over the rushing water. The flow of the river is very strong today, it's doubtful anybody would ever be able to make it out..."
- quix_murder_outcome.1014.a:0 "Perhaps we should go help [target.GetTitledFirstName] on their way..."
+ quix_murder_outcome.1014.d:0 "On a leisurely trip away from my domain, I was taking a pleasant stroll along a river, and who do I see, but none other than [target.GetName] standing by a bluff over the rushing water. What incredible luck that we should both happen to be here. The flow of the river is very strong today, it's doubtful anybody would ever be able to make it out..."
+ quix_murder_outcome.1014.a:0 "Perhaps we should go help [target.GetTitledFirstName] on [target.GetHerHis] way..."
  quix_murder_outcome.1014.b:0 "As tempting as it is, I should not get my hands dirty. Or wet, for that matter."
 
-#	1015 Broad Daylight (market_murder)
  quix_murder_outcome.1015.t:0 "In Broad Daylight"
- quix_murder_outcome.1015.d:0 "Enough waiting. I want [target.GetTitledFirstName] dead. If we cannot find some clever way to dispatch them, then perhaps we should do it the old fashioned way. We'll send men with full helmets, who will simply cut them down at the first opportunity. It doesn't get any simpler than that."
- quix_murder_outcome.1015.a:0 "Yes, I've grown impatient over [Target.GetTitledFirstNamePossessive] continued existence. Send them now."
+ quix_murder_outcome.1015.d:0 "Enough waiting.\n\nI want [target.GetTitledFirstName] dead. \n\nIf we cannot find some clever way to dispatch [target.GetHerHim], then perhaps we should do it the old fashioned way. We'll send men with full helmets, who will simply cut [target.GetHerHim] down at the first opportunity. It doesn't get any simpler than that."
+ quix_murder_outcome.1015.a:0 "Send them now."
  quix_murder_outcome.1015.b:0 "No, no. We must devise a better plan."
 
-#	1016 Catch and Decease (captive_kill)
  quix_murder_outcome.1016.t:0 "Catch and Decease"
- quix_murder_outcome.1016.d:0 "A plan has been formed by our agents to finally kill [target.GetTitledFirstName]. The plan is to catch [target.GetName] in the street and then taken them into custody, attempting to make it seem official to onlookers. After apprehending [target.GetTitledFirstName], we bring them here, and we can lop off their head as we please."
+ quix_murder_outcome.1016.d:0 "A plan has been formed by our agents to finally kill [target.GetTitledFirstName]. The plan is to catch [target.GetName] in the street and then taken [target.GetHerHim] into custody, attempting to make it seem official to onlookers. After apprehending [target.GetTitledFirstName], we bring [target.GetHerHim] here, and we can lop off [target.GetHerHis] head as we please."
  quix_murder_outcome.1016.a:0 "It sounds like a solid plan."
  quix_murder_outcome.1016.b:0 "It sounds like a terrible plan."
 
-#	1017 Poisoned Dart (poison_dart)
  quix_murder_outcome.1017.t:0 "The Exotic Weapon..."
- quix_murder_outcome.1017.d:0 "Our agents have acquired a novel weapon. It is a small reed that allows a small poisoned art to be launched at quite remarkable distances towards a target, and can deliver a fatal dose of poison. Perhaps this could be the method by which we dispatch [Target.Getname]?"
+ quix_murder_outcome.1017.d:0 "Our agents have acquired a novel weapon. It is a thin reed that allows a small poisoned art to be launched at quite remarkable distances towards a target, and can deliver a fatal dose of poison. Perhaps this could be the method by which we dispatch [Target.Getname]?"
  quix_murder_outcome.1017.a:0 "What a marvelous tool."
  quix_murder_outcome.1017.b:0 "I won't trust something this important to a mere hollow stick!"
 
-#	0118 Do It Yourself (diy_murder)
  quix_murder_outcome.1018.t:0 "Do It Yourself"
  quix_murder_outcome.1018.d:0 "I have grown sick of hearing my agents bicker over bad plans to kill [target.GetName]. If I want this done right, I'm going to have to do it myself. We know where [target.GetTitledFirstName] sleeps. I'll let myself in through a window, slip into the bedroom, and be done with it."
  quix_murder_outcome.1018.a:0 "Now where is my cowl..."
  quix_murder_outcome.1018.b:0 "On second thought, the weather just isn't right for this. Back to the infernal drawing board."
 
-#	0119 The Prize Fighter (hired_brawler)
  quix_murder_outcome.1019.t:0 "The Prize Fighter"
- quix_murder_outcome.1019.d:0 "A foreign peasant, famous in their land as a pit fighter, has arrived in my realm seeking employ. His tognue was cut out long ago, and even then, he can't speak the language to begin with. He is built like a bear, and may just be the perfect one to deal with [target.GetTitledFirstName]."
+ quix_murder_outcome.1019.d:0 "A foreign peasant, famous in his land as a pit fighter, has arrived in my realm seeking employ. His tognue was cut out long ago, and even then, he can't speak the language to begin with. He is built like a bear, and may just be the perfect one to deal with [target.GetTitledFirstName]."
  quix_murder_outcome.1019.a:0 "He sounds lovely!"
  quix_murder_outcome.1019.b:0 "This is not the calibur of professional I have come to expect."
 
-#	0120 A Shadowy Organization (assassins_guild)
  quix_murder_outcome.1020.t:0 "A Shadowy Organization..."
  quix_murder_outcome.1020.d:0 "Our agents have made contact with some people who say they can help with our [target.GetTitledFirstName] problem. Unfortunately we don’t know anything about this group, they are very secretive. But they do come with a glowing recommendation for efficiency and professionalism..."
  quix_murder_outcome.1020.a:0 "How Very Mysterious. I am Intrigued."
  quix_murder_outcome.1020.b:0 "Another word for Shadowy is Shady. I’ll pass."
 
- #################
- #2000 - 2999 Successes
- ################# 
- # 2001 A Toasty Inn... Success
  quix_murder_outcome.2001.t:0 "A Toasty Inn..."
  quix_murder_outcome.2001.opening_1:0 "[target.GetName] died in a towering inferno!"
  quix_murder_outcome.2001.opening_2:0 "Although not everything went to plan, the Arsonist was able to make due by barricading a few patrons inside with [target.GetName]. Wrong place, wrong time!"
@@ -197,67 +110,66 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.2001.a.discovered:0 "But you are mistaken, he was merely an incompetent lamplighter!"
  quix_murder_outcome.2001.a:0 "From now on I believe I will sleep with a pale of water beside my bed..."
 
- # 2002 Arrow to the Balcony Success
  quix_murder_outcome.2002.t:0 "An Arrow to the Balcony."
- quix_murder_outcome.2002.opening_1:0 "I'm told the arrow caught [target.GetName] in the throat, and they died choking on their own blood."
- quix_murder_outcome.2002.opening_2:0 "It seems when my assassin hit [target.GetName], [target.GetHisorHer] body fell from that beloved balcony onto a maneur cart!."
+ quix_murder_outcome.2002.opening_1:0 "I'm told the arrow caught [target.GetName] in the throat, and [target.GetSheHe] died choking on [target.GetHerHis] own blood."
+ quix_murder_outcome.2002.opening_2:0 "It seems when my assassin hit [target.GetName], [target.GetHerHis] body fell from that beloved balcony onto a maneur cart!."
  quix_murder_outcome.2002.owner_is_known_1:0 "\n\nUnfortunately, the bowman was apprehended and has accused me!!"
  quix_murder_outcome.2002.owner_is_known_2:0 "\n\nAlthough the feat so impressed the bowman that he has been bragging that I paid him to kill [target.GetTitledFirstName]!"
  quix_murder_outcome.2002.no_awareness_1:0 "\n\nDespite the obvious assassination, it seems no one has caught on to me."
  quix_murder_outcome.2002.no_awareness_2:0 "\n\nAnd best of all, the bowman got away cleanly!"
- quix_murder_outcome.2002.a.discovered:0 "Me? Why would I want to kill [target.GetName]? I told him to shoot an old blind donkey, he misunderstood!"
+ quix_murder_outcome.2002.a.discovered:0 "I told him to put down an old stupid donkey, he misunderstood!"
+ quix_murder_outcome.2002.a:0 "I'll take my air in the interior courtyard this evening..."
 
- # 2003 Dead Drunk Success
  quix_murder_outcome.2003.t:0 "Dead Drunk."
- quix_murder_outcome.2003.opening_1:0 "[target.GetName] died in [target.GetHisorHer] sleep last night."
+ quix_murder_outcome.2003.opening_1:0 "[target.GetName] died in [target.GetHerHis] sleep last night."
  quix_murder_outcome.2003.opening_2:0 "Word is that a drunken [target.GetName] had a psychotic break, cursing family and blaspheming for hours, until [target.GetHeOrShe] died coughing up blood and raving."
  quix_murder_outcome.2003.owner_is_known_1:0 "\n\nThe bad news, however, is that the courier has implicated me!"
  quix_murder_outcome.2003.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
  quix_murder_outcome.2003.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
  quix_murder_outcome.2003.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
  quix_murder_outcome.2003.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+ quix_murder_outcome.2003.a:0 "[target.GetSheHe] should have known better."
 
- # 2004 Night Terrors Success
  quix_murder_outcome.2004.t:0 "Night Terrors."
- quix_murder_outcome.2004.opening_1:0 "[target.GetName] was enjoying their usual evening stroll when our agent appeared from the shadows with a dagger. [target.GetTitledFirstName] tried to flee but was run down and stabbed to death in the darkness"
- quix_murder_outcome.2004.opening_2:0 "[target.GetTitledFirstName] was taken by surprise, the cold kiss of steel upon their throat their first indication something was awry. A moment later, they laid dead in their own blood. The deed is done."
+ quix_murder_outcome.2004.opening_1:0 "[target.GetName] was enjoying [target.GetHerHis] usual evening stroll when our agent appeared from the shadows with a dagger. [target.GetTitledFirstName] tried to flee but was run down and stabbed to death in the darkness"
+ quix_murder_outcome.2004.opening_2:0 "[target.GetTitledFirstName] was taken by surprise, the cold kiss of steel upon [target.GetHerHis] throat the first indication something was awry. A moment later, [target.GetSheHe] laid dead in [target.GetHerHis] own blood. The deed is done."
  quix_murder_outcome.2004.owner_is_known_1:0 "\n\nIn a cruel twist of fate, just a few feet from the attack was a guard in the shadows, my involvement is known!"
  quix_murder_outcome.2004.owner_is_known_2:0 "\n\nUnfortunately the body was found shortly thereafter and our agent was caught!"
  quix_murder_outcome.2004.no_awareness_1:0 "\n\nAnd after emptying [target.GetTitledFirstNamePossessive] coin purse, it looked like a robbery!"
  quix_murder_outcome.2004.no_awareness_2:0 "\n\nOur agent slipped away into the shadows, completely unseen."
  quix_murder_outcome.2004.a.discovered:0 "It was dark! All just a case of mistaken identity..."
+ quix_murder_outcome.2004.a:0 "Excellent..."
 
- # 2005 Stone Cold Success
  quix_murder_outcome.2005.t:0 "Stone Cold."
- quix_murder_outcome.2005.opening_1:0 "[target.GetName] was killed instantly under the weight of the falling stone, never even knowing their fate!"
- quix_murder_outcome.2005.opening_2:0 "[target.GetName] is dead! They were crushed by the stone, their bottom legs shattered, and they died when guards lifted it!"
+ quix_murder_outcome.2005.opening_1:0 "[target.GetName] was killed instantly under the weight of the falling stone, never even knowing [target.GetHerHis] fate!"
+ quix_murder_outcome.2005.opening_2:0 "[target.GetName] is dead! [target.GetSheHeCap] were crushed by the stone, [target.GetHerHis] bottom legs shattered, and [target.GetSheHe] died when guards lifted it!"
  quix_murder_outcome.2005.owner_is_known_1:0 "\n\nUnfortunately, our agent fell off the wall too, and our involvement is known!"
  quix_murder_outcome.2005.owner_is_known_2:0 "\n\nHowever, our agent was captured, and our involvement is known!"
  quix_murder_outcome.2005.no_awareness_1:0 "\n\nEveryone seems to have attributed it to some sort of accident..."
  quix_murder_outcome.2005.no_awareness_2:0 "\n\nJust a tragic accident, it would seem!"
  quix_murder_outcome.2005.a.discovered:0 "This reminds me, call in the mason, I'd like him to inspect our walls again..."
+ quix_murder_outcome.2005.a:0 "How Crushing."
 
- # 2006 Dereliction of Duty
  quix_murder_outcome.2006.t:0 "Dereliction of Duty."
- quix_murder_outcome.2006.opening_1:0 "The plan to kill[target.GetName] has succeeded. The servant upheld the deal, and our agent was in and out before the sun rose."
- quix_murder_outcome.2006.opening_2:0 "[target.GetName] caught their servant recieving money for letting the assassin in. Their dying breath was spent cursing the traitor rather than the assassin."
+ quix_murder_outcome.2006.opening_1:0 "The plan to kill [target.GetName] has succeeded. The servant upheld the deal, and our agent was in and out before the sun rose."
+ quix_murder_outcome.2006.opening_2:0 "[target.GetName] caught [target.GetHerHis] servant recieving money for letting the assassin in. [target.GetHerHisCap] dying breath was spent cursing the traitor rather than the assassin."
  quix_murder_outcome.2006.owner_is_known_1:0 "\n\nUnfortunately, the "
  quix_murder_outcome.2006.owner_is_known_2:0 "\n\nAlthough, in a terrible oversight, I seem to have signed my name to the letter with the bottle of wine..."
  quix_murder_outcome.2006.no_awareness_1:0 "\n\nAnd it would appear that nobody suspects a thing!"
  quix_murder_outcome.2006.no_awareness_2:0 "\n\nA drunkard dying while drunk is the ultimate disguise!"
  quix_murder_outcome.2006.a.discovered:0 "Oh my... that bottle of wine I had was poisoned? Good thing I didn't drink it!"
+ quix_murder_outcome.2006.a:0 "It's so hard to find good help these days!"
 
- # 2007 Daring Raid Success
  quix_murder_outcome.2007.t:0 "A Daring Raid"
- quix_murder_outcome.2007.opening_1:0 "[target.GetName] was beheaded in their bedroom at the hands of our warriors! The raid was a success."
- quix_murder_outcome.2007.opening_2:0 "[target.GetName] was found asleep by our men, who slit their throat!"
+ quix_murder_outcome.2007.opening_1:0 "[target.GetName] was beheaded in [target.GetHerHis] bedroom at the hands of our warriors! The raid was a success."
+ quix_murder_outcome.2007.opening_2:0 "[target.GetName] was found asleep by our men, who slit [target.GetHerHis] throat!"
  quix_murder_outcome.2007.owner_is_known_1:0 "\n\nUnfortunately, not all went to plan. The men were spotted by a guard, and had to fight their way out! Some were injured and taken, and have talked!"
  quix_murder_outcome.2007.owner_is_known_2:0 "\n\nAlthough the raid went off without a hitch, it seems that some of the participants may have been wanting for loyalty. It would seem that, for a price, one of them has divulged the details of the scheme, and my involvement! Vile perfidy!"
  quix_murder_outcome.2007.no_awareness_1:0 "\n\nThe men were able to overpower any who stood in their way, and escaped the way they came, the whole thing just taking a few minutes!"
  quix_murder_outcome.2007.no_awareness_2:0 "\n\nAlthough the raid was successful, as the men attempted to flee, the alarm was raised, and they had to fight their way out! Fortunately, they were able to make it to the stables, and rode away in style, upon stolen mounts! None were taken, and the identity of the attackers remains unknown!"
  quix_murder_outcome.2007.a.discovered:0 "Let them hate me. So long as they fear me."
+ quix_murder_outcome.2006.a:0 "The men eat well tonight!"
 
- # 2008 Night Rider Success
  quix_murder_outcome.2008.t:0 "Night Rider"
  quix_murder_outcome.2008.opening_1:0 "Our rider has slain [target.getname]! Emerging from an abandoned hut, he charged past [target.Getfirstnameand]'s companions, driving his lance into [Target]'s heart before anyone knew what was happening!"
  quix_murder_outcome.2008.opening_2:0 "[target.getname] has been killed! Our horseman loosed an arrow from the woods, killing [target.getname] instantly!"
@@ -266,28 +178,26 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.2008.no_awareness_1:0 "\n\nUpon our finest steed, our rider was no match for the pursuers, and he vanished into the trees!"
  quix_murder_outcome.2008.no_awareness_2:0 "\n\nOur rider was away before any even knew what was happening!"
  quix_murder_outcome.2008.a.discovered:0 "The poor man just mistook [target.getname] for a wicked beast, a forgivable mistake!"
+ quix_murder_outcome.2006.a:0 "It's so hard to find good help these days!"
 
-#	2009 The Bold Bloodletter (imposter_healer)
  quix_murder_outcome.2009.t:0 "The Bold Bloodletter"
- quix_murder_outcome.2009.opening_1:0 "[target.getname] is dead! Our fake bloodletter bled them clean, and told the caretakers that they was going to be in a deep sleep and should not be disturbed for many hours."
- quix_murder_outcome.2009.opening_2:0 "[target.getname] has been eliminated by our imposter bloodletter! In the end, they turned their wrist to the assassin, and closed their eyes!"
+ quix_murder_outcome.2009.opening_1:0 "[target.GetName] is dead! Our fake bloodletter bled [target.GetHerHim] clean, and told the caretakers that [target.GetSheHe] was going to be in a deep sleep and should not be disturbed for many hours."
+ quix_murder_outcome.2009.opening_2:0 "[target.GetName] has been eliminated by our imposter! In the end, [target.GetSheHe] gave [target.GetHerHis] wrist to the assassin, and closed [target.GetHerHis] eyes for one last time, laying back on some pillows to relax."
  quix_murder_outcome.2009.owner_is_known_1:0 "\n\nHowever, before our imposter could leave, someone familiar with the real bloodletter spotted them! Our scheming is known!"
  quix_murder_outcome.2009.owner_is_known_2:0 "\n\nBut before leaving the house, the death was discovered, and our man was captured!"
  quix_murder_outcome.2009.no_awareness_1:0 "\n\nOur fake bloodletter then simply walked out the front door and vanished into the night!"
  quix_murder_outcome.2009.no_awareness_2:0 "\n\nBefore our man could escape, however, several others in the residence requested his services! He spent the night bleeding others before escaping in the wee hours of the morning."
- quix_murder_outcome.2009.a.discovered:0 "I sent my best bloodletter, they should be honored!"
+ quix_murder_outcome.2009.a.discovered:0 "I sent my best bloodletter, [target.GetSheHe] should be honored!"
  
-#	2010 Masqued Murderers (maked_men)
  quix_murder_outcome.2010.t:0 "Masqued Murderers"
  quix_murder_outcome.2010.opening_1:0 "At the height of the masquerade, [target.getname] was slain upon the dance floor! Our agents, interspersed within the crowd, caused a distraction and drove a dagger into [target.GetTitledFirstNamePossessive] back!"
- quix_murder_outcome.2010.opening_2:0 "[target.getname] was killed in the middle of the ball, in front of everyone in attendance. They stood shocked as our daggers plunged into their chest, assuming it to be some bizarre folly! "
+ quix_murder_outcome.2010.opening_2:0 "[target.getname] was killed in the middle of the ball, in front of everyone in attendance. They stood shocked as our daggers plunged into [target.GetHerHis] chest, assuming it to be some bizarre folly! "
  quix_murder_outcome.2010.owner_is_known_1:0 "\n\nOur men fled, but one, with blood on his hands, was caught! Our involvement is known!"
  quix_murder_outcome.2010.owner_is_known_2:0 "\n\nHowever, a number of fighting men were in the crowd, and a melee broke out! Several of our men were injured and captured, and the scheme is know public knowledge!"
  quix_murder_outcome.2010.no_awareness_1:0 "\n\nOur men fled in the chaos with the masked crowd, and once in the shadows, they dumped their masks and robes, wiped off the blood, and promptly left one by one. None were caught!"
  quix_murder_outcome.2010.no_awareness_2:0 "\n\nThe men then valiantly fought their way from the event, able to overwhelm any who stood against them due to their anonynmity within the crowd. Not a single man was taken!"
  quix_murder_outcome.2010.a.discovered:0 "It sounds like it was merely a raucous party, what does that have to do with me?"
 
-#	02011 The Foreign Warrior 
  quix_murder_outcome.2011.t:0 "The Foreign Warrior"
  quix_murder_outcome.2011.opening_1:0 "[target.getname] is dead! The stranger turned out to be as effective of a killer as we were informed."
  quix_murder_outcome.2011.opening_2:0 "[target.getname]'s throat was slit by that strange curved blade of our hired assassin, completing the contract. "
@@ -297,17 +207,15 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.2011.no_awareness_2:0 "\n\nThe men then valiantly fought their way from the event, able to overwhelm any who stood against them due to their anonynmity within the crowd. Not a single man was taken!"
  quix_murder_outcome.2011.a.discovered:0 "Perhaps next time we should just keep it in-house..."
 
-#	2012 Cry Havoc (dog_attack)
  quix_murder_outcome.2012.t:0 "Cry Havoc!"
  quix_murder_outcome.2012.opening_1:0 "[target.getname] died screaming, torn apart by viscious war dogs."
  quix_murder_outcome.2012.opening_2:0 "[target.getname] ran from the dogs, but was no match for the beasts."
- quix_murder_outcome.2012.owner_is_known_1:0 "\n\nHowever, they made such a racket that guards were alerted, who killed the guards and captured their handler, who has named you as the mastermind!"
+ quix_murder_outcome.2012.owner_is_known_1:0 "\n\nHowever, [target.GetSheHe] made such a racket that guards were alerted, who killed the dogs and captured their handler, and he has named you as the mastermind!"
  quix_murder_outcome.2012.owner_is_known_2:0 "\n\nThe hungry dogs then, despite the timid insistence of their handler, began to devour their quarry, and within a few minutes the macabre scene was spotted, which lead to the handler being apprehended! Under duress, he seems to have given my name."
  quix_murder_outcome.2012.no_awareness_1:0 "\n\nThe dogs and their trainer merely walked back to the road, and back here, without being stopped."
  quix_murder_outcome.2012.no_awareness_2:0 "\n\nThe plan went off without a hitch, and presumably, it will be attributed to wolves, lions, chimeras and the like."
  quix_murder_outcome.2012.a.discovered:0 "How could I be blamed for what an animal did?"
 
-#	2013 A pool of blood (bath_house)
  quix_murder_outcome.2013.t:0 "A Pool of Blood"
  quix_murder_outcome.2013.opening_1:0 "[target.getname] died screaming, torn apart by viscious war dogs."
  quix_murder_outcome.2013.opening_2:0 "[target.getname] ran from the dogs, but was no match for the beasts."
@@ -317,39 +225,35 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.2013.no_awareness_2:0 "\n\nThe plan went off without a hitch, and presumably, it will be attributed to wolves, lions, chimeras and the like."
  quix_murder_outcome.2013.a.discovered:0 "How could I be blamed for what an animal did?"
 
-#	2014 A Chance Encounter... (pushed_off_ledge)
  quix_murder_outcome.2014.t:0 "A Chance Encounter"
- quix_murder_outcome.2014.opening_1:0 "I walked right up behind [target.getname], who stood motionless, caught in thought beside the river, and with a single shove sent them tumbling to the rushing waters below! We made eye contact for just a moment before their head went under one last time. I do believe I was smiling."
- quix_murder_outcome.2014.opening_2:0 "Although I tried to move silently, [target.getname] must have heard me approach, and turned around at the last moment. Farewell, I said, as I shoved them backwards into the rushing river!"
+ quix_murder_outcome.2014.opening_1:0 "I walked right up behind [target.getname], who stood motionless, caught in thought beside the river, and with a single shove sent [target.GetHerHim] tumbling to the rushing waters below! We made eye contact for just a moment before [target.GetHerHis] head went under one last time. I do believe I was smiling."
+ quix_murder_outcome.2014.opening_2:0 "Although I tried to move silently, [target.getname] must have heard me approach, and turned around at the last moment. Farewell, I said, as I shoved [target.GetHerHim] backwards into the rushing river!"
  quix_murder_outcome.2014.owner_is_known_1:0 "\n\nUnfortunately, I was far too bold, and there was an unseen witness to my crime!"
- quix_murder_outcome.2014.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
+ quix_murder_outcome.2014.owner_is_known_2:0 "\n\nAlthough it seems [target.GetSheHe] briefly made it to a rock, where [target.GetSheHe] were able to scream to a passer by that I was the one who pushed [target.GetHerHim]!"
  quix_murder_outcome.2014.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
  quix_murder_outcome.2014.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
  quix_murder_outcome.2014.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
 
-#	2015 Broad Daylight (market_murder)
  quix_murder_outcome.2015.t:0 "Broad Daylight"
- quix_murder_outcome.2014.opening_1:0 "[target.getname] was apprehended by our men in the marketplace, taken around a corner, and swiftly dispatched!"
- quix_murder_outcome.2014.opening_2:0 "It seems a struggle broke out between our men and [target.getname], and they slew them there in the street, shocking the crowd."
- quix_murder_outcome.2014.owner_is_known_1:0 "\n\nThe hue and cry went up quickly, and one of our men was captured. It seems that he has divulged my name!"
- quix_murder_outcome.2014.owner_is_known_2:0 "\n\nAlthough it seems they briefly made it to a rock, where they were able to scream to a passer by that I was the one who pushed them!"
- quix_murder_outcome.2014.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
- quix_murder_outcome.2014.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
- quix_murder_outcome.2014.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
+ quix_murder_outcome.2015.opening_1:0 "[target.getname] was apprehended by our men in the marketplace, taken around a corner, and swiftly dispatched!"
+ quix_murder_outcome.2015.opening_2:0 "It seems a struggle broke out between our men and [target.getname], and they slew [target.GetHerHim] there in the street, shocking the crowd."
+ quix_murder_outcome.2015.owner_is_known_1:0 "\n\nThe hue and cry went up quickly, and one of our men was captured. It seems that he has divulged my name!"
+ quix_murder_outcome.2015.owner_is_known_2:0 "\n\nAlthough it seems [target.GetSheHe] briefly made it to a rock, where [target.GetSheHe] were able to scream to a passer by that I was the one who pushed [target.GetHerHim]!"
+ quix_murder_outcome.2015.no_awareness_1:0 "\n\nI continued along my walk, and had the most pleasant afternoon."
+ quix_murder_outcome.2015.no_awareness_2:0 "\n\nIt seems that the consensus is [target.GetName] must have slipped and fell!"
+ quix_murder_outcome.2015.a.discovered:0 "That was not me, it was an imposter. I've been framed!"
 
-#	2016 Captive Kill (captive_kill)
  quix_murder_outcome.2016.t:0 "Captive Kill"
  quix_murder_outcome.2016.opening_1:0 "[target.getname] stands before me! Captured by our men, given a confusing statement listing several authorities, [target.getname] went along without a fight. The headsmen is in the dungeon, sharpening his axe as we speak! [Target.Getname] is as good as dead!"
- quix_murder_outcome.2016.opening_2:0 "The plan to capture [Target.GetName] failed, as they refused to go with our men. Making the best of a bad situation, our agents struck [Target.Getname] down where they stood!"
+ quix_murder_outcome.2016.opening_2:0 "The plan to capture [Target.GetName] failed, as [target.GetSheHe] refused to go with our men. Making the best of a bad situation, our agents struck [Target.Getname] down where [target.GetSheHe] stood!"
  quix_murder_outcome.2016.owner_is_known_1:0 "\n\nUnfortunately, one of the men involved has been paid off, and divulged my invovlement!"
  quix_murder_outcome.2016.owner_is_known_2:0 "\n\nAlthough most of the men escaped, one was captured, and has given me up!"
  quix_murder_outcome.2016.no_awareness_1:0 "\n\nNobody seems to have been able to trace this to me."
  quix_murder_outcome.2016.no_awareness_2:0 "\n\nAnd now, I can take leisure and enjoy a world without [target.getname]!"
- quix_murder_outcome.2016.a.discovered:0 "I never meant to hurt [Target.GetName], I just wanted to scare them a little, and things got out of hand!"
+ quix_murder_outcome.2016.a.discovered:0 "I never meant to hurt [Target.GetName], I just wanted to scare [target.GetHerHim] a little, and things got out of hand!"
 
-#	2017 Poisoned Dart (poison_dart)
  quix_murder_outcome.2017.t:0 "The Exotic Weapon"
- quix_murder_outcome.2017.opening_1:0 "[target.getname] turned blue when hit with the dart, and died gasping for air. Our assassin was perched outside their window, waiting for the moment they got close enough to the window."
+ quix_murder_outcome.2017.opening_1:0 "[target.getname] turned blue when hit with the dart, and died gasping for air. Our assassin was perched outside [target.GetHerHis] window for hours, waiting for the moment to strike."
  quix_murder_outcome.2017.opening_2:0 "The strange weapon seems to have done the trick, killing [Target.GetName] with only a small bit of poison upon a small pin, shot by an unseen assassin."
  quix_murder_outcome.2017.owner_is_known_1:0 "\n\nUnfortunately, our assassin turned out to be less effective than the weapon, and was quickly captured while fleeing afterward!"
  quix_murder_outcome.2017.owner_is_known_2:0 "\n\nAnd although our assassin initially evaded capture, the presence of matching darts was enough to incriminate him...and he incriminated then me!"
@@ -357,41 +261,33 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.2017.no_awareness_2:0 "\n\nIt looks like the dart went unnoticed by those attending to [Target.Getname] and the cause of death is unknown!"
  quix_murder_outcome.2017.a.discovered:0 "Well, this is awkward..."
 
-#	2018 Do It Yourself (diy_murder)
  quix_murder_outcome.2018.t:0 "Do It Yourself"
- quix_murder_outcome.2018.opening_1:0 "Around sundown, I put on my most inconspicuous clothing, my dagger hidden within, and I snuck from the window of my lodgings and proceeded to the quarters of [target.getname]. I found them relaxing by the fire, slipped my hand over [target.GetHerHis] mouth, and said quietly in [target.GetHerHis] ear, "Goodbye, [Target.GetName]" just so they would know it was me. A moment later, [target.GetHerHis] lifeblood was spilling out upon [target.GetHerHis] lap!"
- quix_murder_outcome.2018.opening_2:0 "Around sundown, I put on my most inconspicuous clothing, my dagger hidden within, and I snuck from the window of my lodgings and proceeded to the quarters of [target.getname]. They were asleep in their bed, but as I crept upon them, they awoke. They asked who I was. I didn't answer, but stepped forward to reveal my face in the moonlight, before stabbing my dagger upwards through the jaw, silencing the scream before it could form."
+ quix_murder_outcome.2018.opening_1:0 "Around sundown, I put on my most inconspicuous clothing, my dagger hidden within, and I snuck from the window of my lodgings and proceeded to the quarters of [target.getname]. I found [target.GetHerHim] relaxing by the fire, slipped my hand over [target.GetHerHis] mouth, and said quietly in [target.GetHerHis] ear, \"Goodbye, [Target.GetName]\" just so [target.GetSheHe] would know it was me. A moment later, [target.GetHerHis] lifeblood was spilling out upon [target.GetHerHis] lap!"
+ quix_murder_outcome.2018.opening_2:0 "Around sundown, I put on my most inconspicuous clothing, my dagger hidden within, and I snuck from the window of my lodgings and proceeded to the quarters of [target.getname]. [target.GetSheHe] were asleep in [target.GetHerHis] bed, but as I crept upon [target.GetHerHim], [target.GetSheHe] awoke. [target.GetSheHeCap] asked who I was. I didn't answer, but stepped forward to reveal my face in the moonlight, before stabbing my dagger upwards through the jaw, silencing the scream before it could form."
  quix_murder_outcome.2018.owner_is_known_1:0 "\n\nI took a moment to wash up and compose myself before leaving, but in a cursed lapse of memory, I left my dagger! It has my personal seal upon it, surely they will know it was me! "
  quix_murder_outcome.2018.owner_is_known_2:0 "\n\nThe whole thing went off with a hitch... that is, until a passer by spotted me coming from the window! Worse, they recognized me immediately and put up the cry! I just barely escaped with my life."
- quix_murder_outcome.2018.no_awareness_1:0 "\n\nI took my time going through [Target.GetName]'s personal affects, and even helped myself to a little of their food. When I was done, I simply strolled out, completely unseen. I do believe I make an excellent assassin..."
+ quix_murder_outcome.2018.no_awareness_1:0 "\n\nI took my time going through [Target.GetFirstNameandPosessive] personal affects, and even helped myself to a little of [target.GetHerHis] food. When I was done, I simply strolled out, completely unseen. I do believe I make an excellent assassin..."
  quix_murder_outcome.2018.no_awareness_2:0 "\n\nJust as quickly as I had struck, I now vanished, again out the window. The hardest part was hiding my glee as I passed some guards!"
  quix_murder_outcome.2018.a.discovered:0 "Plenty of people look like me! That could have been anyone!"
 
-#	2019 The Prize Fighter (hired_brawler)
  quix_murder_outcome.2019.t:0 "The Prize Fighter"
- quix_murder_outcome.2019.opening_1:0 "[target.getname] is dead! Strangled by the massive hands of our pit fighter when they went out for a leisurely stroll, the deed has been done!"
- quix_murder_outcome.2019.opening_2:0 "[Target.GetName] tried feebly to fight back, but they were no match for our hired pit fighter! Oh how I wish I could have seen the contest. They say that [Target.GetName] was beaten so badly, if not for a birth mark, they'd have been uncrecognizable!"
+ quix_murder_outcome.2019.opening_1:0 "[target.getname] is dead! Strangled by the massive hands of our pit fighter when [target.GetSheHe] went out for a leisurely stroll, the deed has been done!"
+ quix_murder_outcome.2019.opening_2:0 "[Target.GetName] tried feebly to fight back, but [target.GetSheHe] was no match for our hired pit fighter! Oh how I wish I could have seen the contest. They say that [Target.GetName] was beaten so badly, if not for a birth mark, [target.GetSheHe] would have been uncrecognizable!"
  quix_murder_outcome.2019.owner_is_known_1:0 "\n\nHowever, it would seem the figher lacked discretion with the killing, as there were witnesses! He was apprehended shortly thereafter."
  quix_murder_outcome.2019.owner_is_known_2:0 "\n\nThe pit fighter fled on foot after comitting the crime, but was chased down, and is captured! He has been put to death, and our invovlement is known."
  quix_murder_outcome.2019.no_awareness_1:0 "\n\n[Target.GetName] was alone, and no witnesses seem to have spotted our man. The whole business done without any problems."
- quix_murder_outcome.2019.no_awareness_2:0 "\n\nAnd it seems that when [Target.GetName]'s guards tried to confront him, our fighter beat them down, as well! He successfully walked away, nursing his knuckles."
+ quix_murder_outcome.2019.no_awareness_2:0 "\n\nAnd it seems that when [Target.GetName]'s guards tried to confront him, our fighter beat [target.GetHerHim] down, as well! He successfully walked away, nursing his knuckles."
  quix_murder_outcome.2019.a.discovered:0 "He implicated me? I've never met him, it must be the result of having his head bashed in for years."
 
-#	2020 A Shadowy (assassins_guild)
  quix_murder_outcome.2019.t:0 "A Shadowy Organization"
  quix_murder_outcome.2019.opening_1:0 "[target.GetName] is dead! Aparently felled by an an assassin's blade while in the privy. Such an undignified way to go."
- quix_murder_outcome.2019.opening_2:0 "[target.GetTitledFirstNamePossessive]'s throat was slit in the night! Finally, we are rid of them. The unknown organization completed the task just as we had agreed..."
+ quix_murder_outcome.2019.opening_2:0 "[target.GetTitledFirstNamePossessive]'s throat was slit in the night! Finally, we are rid of [target.GetHerHim]. The unknown organization completed the task just as we had agreed..."
  quix_murder_outcome.2019.owner_is_known_1:0 "\n\nBut the assassin was not nearly as stealthy as we could have hoped, as they were immediately taken into custody, and they have given my name!"
  quix_murder_outcome.2019.owner_is_known_2:0 "\n\nBut there was treachery afoot! It seems the assassin left a copy of the contract behind, incriminating you. It would appear the whole thing was a set up by a third party!"
  quix_murder_outcome.2019.no_awareness_1:0 "\n\nIt seems the assassin made it in and out without anyone even spotting them!"
  quix_murder_outcome.2019.no_awareness_2:0 "\n\nThe assassin was like a ghost, completely undetected. No one has the slightest clue of my involvement."
  quix_murder_outcome.2019.a.discovered:0 "This is clearly the work of some evil mastermind, not me!"
 
- #######################
- # 4000 Failure Outcomes
- #######################
-
- # 4001 A Toasty Inn Failure
  quix_murder_outcome.4001.t:0 "A Toasty Inn..."
  quix_murder_outcome.4001.failure_declaration_1:0 "[target.GetTitledFirstName] yet lives!"
  quix_murder_outcome.4001.failure_declaration_2:0 "Our plot to end [target.GetTitledFirstName]'s life has failed!"
@@ -403,11 +299,10 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4001.a:0 "[target.GetFirstNameNoTooltip] should count [target.GetHerHis] blessings!"
  quix_murder_outcome.4001.b:0 "I guess no plan is truly foolproof..."
 
- # 4002 Arrow to the Balcony Failure
  quix_murder_outcome.4002.t:0 "An Arrow to the Balcony."
  quix_murder_outcome.4002.failure_declaration_1:0 "The arrow did not strike home! [Target.GetName] is still alive."
- #quix_murder_outcome.4002.failure_declaration_2:0 "Our plot to end [target.GetTitledFirstName]'s life has failed!"
- #quix_murder_outcome.4002.failure_declaration_3:0 "The plan to take [Target.GetTitledFirstName]'s life with an arrow has failed, alas."
+ quix_murder_outcome.4002.failure_declaration_2:0 "Our plot to end [target.GetTitledFirstName]'s life has failed!"
+ quix_murder_outcome.4002.failure_declaration_3:0 "The plan to take [Target.GetTitledFirstName]'s life with an arrow has failed, alas."
  quix_murder_outcome.4002.desc:0 "\n\nJust as the assassin loosed his arrow, a pigeon passed between them, and recieved the arrow intended for [target.GetTitledFirstName]!"
  quix_murder_outcome.4002.exposed_scheme:0 "This drew [Target.GetName]'s attention, and the assassin was spotted and captured!"
  quix_murder_outcome.4002.not_exposed_scheme:0 "Fortunately for me, the bowman was quick on his feet, and was able to flee before being apprehended, so our part in this is safe."
@@ -415,19 +310,17 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4002.a:0 "I'm getting sick of [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4002.b:0 "The archer should have shot again..."
 
- # 4003 Dead Drunk Failure
  quix_murder_outcome.4003.t:0 "Dead Drunk"
  quix_murder_outcome.4003.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
  quix_murder_outcome.4003.failure_declaration_2:0 "I thought wine would be a sure bait for [target.GetTitledFirstName], but alas, the plan has failed."
- quix_murder_outcome.4003.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk [target.GetHerHis] last glass. They live, at least for now, until [target.GetHerHis] habits put [target.GetHerHim] in the grave!"
- quix_murder_outcome.4003.desc:0 "\n\n[target.GetName] was so familiar with the smell of that particular wine that the poison was immediately detected. Unfortunately, it seems it was the lust for their cups that saved them."
+ quix_murder_outcome.4003.failure_declaration_3:0 "[target.GetTitledFirstName] has not drunk [target.GetHerHis] last glass. [target.GetSheHeCap] live, at least for now, until [target.GetHerHis] habits put [target.GetHerHim] in the grave!"
+ quix_murder_outcome.4003.desc:0 "\n\n[target.GetName] was so familiar with the smell of that particular wine that the poison was immediately detected. Unfortunately, it seems it was the lust for [target.GetHerHis] cups that saved [target.GetHerHim]."
  quix_murder_outcome.4003.exposed_scheme:0 "What's worse, is it would seem, in a momentary lapse, I signed my name to the letter! What a stupid mistake!"
  quix_murder_outcome.4003.not_exposed_scheme:0 "Fortuanately, there's no way to know that I sent it. We'll just pretend it never happened!"
  quix_murder_outcome.4003.a.discovered:0 "It's not poison...try it!"
  quix_murder_outcome.4003.a:0 "Well at least it gave me an occasion to drink it..."
  quix_murder_outcome.4003.b:0 "Next time will be more...enterprising."
 
- # 4004 Night Terror
  quix_murder_outcome.4004.t:0 "Night Terror"
  quix_murder_outcome.4004.failure_declaration_1:0 "It would appear that the attempt to take [Target.GetTitledFirstName] on an evening walk has failed!"
  quix_murder_outcome.4004.failure_declaration_2:0 "Our assassin was unable to end [Target.GetTitledFirstNamePoessessive] life!."
@@ -439,10 +332,9 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4004.a:0 "I'm growing tired of this game."
  quix_murder_outcome.4004.b:0 "You won't be so lucky next time..."
 
- # 4005 Stone Cold Failure
  quix_murder_outcome.4005.t:0 "Stone Cold"
- quix_murder_outcome.4005.failure_declaration_1:0 "Our plot to squash [target.GetTitledFirstName] under a rock, like the insect they are, has failed."
- quix_murder_outcome.4005.failure_declaration_2:0 "What a terrible start to the day. I've recieved word that [target.GetTitledFirstName] was #EMP not# crushed to death under a rock!"
+ quix_murder_outcome.4005.failure_declaration_1:0 "Our plot to squash [target.GetTitledFirstName] under a rock, like the insect [target.GetSheHe] is, has failed."
+ quix_murder_outcome.4005.failure_declaration_2:0 "What a terrible start to the day. I've recieved word that [target.GetTitledFirstName] was NOT crushed to death under a rock!"
  quix_murder_outcome.4005.failure_declaration_3:0 "The giant stone failed to crush [Target.GetTitledFirstName]!"
  quix_murder_outcome.4005.desc:0 "\n\n It seems the would-be assassin so struggled to free the stone from the parapit that, by the time it was loosed, [target.GetName] twenty feet away, staring in wonderment with some guards as the stone came crashing down upon [target.GetHerHis] empty bench."
  quix_murder_outcome.4005.exposed_scheme:0 "Our agent was captured immediately, and has given my name!"
@@ -451,19 +343,17 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4005.a:0 "Good, being crushed to death isn't painful enough for [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4005.b:0 "Next time, it will be something simpler."
 
- # 4006 Dereliction of Duty failure
- quix_murder_outcome.4006.t:0 "Dereliction of Duty."
+ quix_murder_outcome.4006.t:0 "Dereliction of Duty"
  quix_murder_outcome.4006.failure_declaration_1:0 "Alas, Our scheme to end the life of [Target.GetName] has failed."
  quix_murder_outcome.4006.failure_declaration_2:0 "Cursed luck! [target.GetTitledFirstName] has not been slain as was planned."
  quix_murder_outcome.4006.failure_declaration_3:0 "Failure!"
  quix_murder_outcome.4006.desc:0 "\n\nThe servant had no intention of letting our assassin in. It was an ambush! The guards were there waiting."
  quix_murder_outcome.4006.exposed_scheme:0 "The whole scheme was a trap! Now [Target.GetTitledFirstName] knows of the plan!"
- quix_murder_outcome.4006.not_exposed_scheme:0 "Somehow, though, our assassin managed to escape against all odds. The men trying to apprehend him were weighed down by arms and armor, and the assassin was able to lose them on a foot chase and evade capture throughout the night!"
+ quix_murder_outcome.4006.not_exposed_scheme:0 "\n\nSomehow, though, our assassin managed to escape against all odds. The men trying to apprehend him were weighed down by arms and armor, and the assassin was able to lose them on a foot chase and evade capture throughout the night!"
  quix_murder_outcome.4006.a.discovered:0 "Entrapment!"
- quix_murder_outcome.4006.a:0 "[target.GetFirstNameNoTooltip] may be smarter than they look!"
+ quix_murder_outcome.4006.a:0 "[target.GetFirstNameNoTooltip] may be smarter than [target.GetSheHe] looks!"
  quix_murder_outcome.4006.b:0 "A setback, indeed."
 
- # 4007 A Daring Raid Failure
  quix_murder_outcome.4007.t:0 "A Daring Raid."
  quix_murder_outcome.4007.failure_declaration_1:0 "I knew the risks. The raid to kill [target.GetTitledFirstName] has failed."
  quix_murder_outcome.4007.failure_declaration_2:0 "The raid on [target.GetTitledFirstName] ended in failure!"
@@ -475,19 +365,17 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4007.a:0 "It's only a matter of time, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4007.b:0 "I grow tired of this."
 
-# 4008 Night Rider Failure
  quix_murder_outcome.4008.t:0 "Night Rider"
  quix_murder_outcome.4008.failure_declaration_1:0 "[target.GetTitledFirstName] was not slain by our horseman!"
  quix_murder_outcome.4008.failure_declaration_2:0 "The attempt to ambush [target.GetTitledFirstName] has failed!"
- quix_murder_outcome.4008.failure_declaration_3:0 "Curses! [target.GetTitledFirstName] yet lives. Our horseman failed to slay them!"
+ quix_murder_outcome.4008.failure_declaration_3:0 "Curses! [target.GetTitledFirstName] yet lives. Our horseman failed to slay [target.GetHerHim]!"
  quix_murder_outcome.4008.desc:0 "\n\n[target.GetName] was traveling in the company of an esteemed bowman, who felled our rider before he could reach [target.GetTitledFirstName]!"
  quix_murder_outcome.4008.exposed_scheme:0 "The horseman was taken alive, and gave my name while being interrogated!"
  quix_murder_outcome.4008.not_exposed_scheme:0 "The only silver lining is that the man was struck dead, unable to give away my part in the scheme."
- quix_murder_outcome.4008.a.discovered:0 "Good! Let [target.GetTitledFirstName] know that I will see them dead!"
+ quix_murder_outcome.4008.a.discovered:0 "Good! Let [target.GetTitledFirstName] know that I will see [target.GetHerHim] dead!"
  quix_murder_outcome.4008.a:0 "You will pay someday, [target.GetFirstNameNoTooltip]!"
  quix_murder_outcome.4008.b:0 "It's a shame about the horse though."
 
-# 4009 The Bold Bloodletter (imposter_healer)
  quix_murder_outcome.4009.t:0 "The Bold Bloodletter"
  quix_murder_outcome.4009.failure_declaration_1:0 "[target.GetTitledFirstName] remains alive. For now, anyway."
  quix_murder_outcome.4009.failure_declaration_2:0 "Alas, [target.GetTitledFirstName] has not bled to death. What a shame."
@@ -499,19 +387,17 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4009.a:0 "I was so very much looking forwad to bleeding [target.GetFirstNameNoTooltip] dry!"
  quix_murder_outcome.4009.b:0 "Just a bit of bad luck."
 
-#	4010 Masqued Murderers (maked_men)
  quix_murder_outcome.4010.t:0 "Masqued Murderers"
  quix_murder_outcome.4010.failure_declaration_1:0 "[target.GetTitledFirstName], to my extreme displeasure, still lives."
  quix_murder_outcome.4010.failure_declaration_2:0 "The plan to kill [target.GetTitledFirstName] at the masquerade was an utter failure."
  quix_murder_outcome.4010.failure_declaration_3:0 "Terrible luck! [target.GetTitledFirstName] was not killed by our agents!"
  quix_murder_outcome.4010.desc:0 "\n\nA problem arose which, in hindsight, should have been forseeable. Our men were not able to actually find [target.GetTitledFirstName] amongst all the masked attendees!"
- quix_murder_outcome.4010.exposed_scheme:0 "After hours of trying to figure it out, they target they picked turned out to be the wrong one! [target.GetTitledFirstName] wasn't even in attendence! Our men were quickly apprehended as well, who have talked!"
+ quix_murder_outcome.4010.exposed_scheme:0 "After hours of trying to figure it out, the target they picked turned out to be the wrong one! [target.GetTitledFirstName] wasn't even in attendence! Our men were quickly apprehended as well, who have talked!"
  quix_murder_outcome.4010.not_exposed_scheme:0 "Nothing came of it, other than a pleasant evening for our incompetent assassins!"
  quix_murder_outcome.4010.a.discovered:0 "Merely a case of mistaken identity!"
  quix_murder_outcome.4010.a:0 "It sounds like a good time was had by all, unfortunately!"
  quix_murder_outcome.4010.b:0 "We shall bide our time a little longer."
 
-#	4011 The Foreign Warrior (foreign_warrior)
  quix_murder_outcome.4011.t:0 "The Foreign Warrior"
  quix_murder_outcome.4011.failure_declaration_1:0 "The hired assassin failed to kill [target.GetTitledFirstName]!"
  quix_murder_outcome.4011.failure_declaration_2:0 "The plot to assassinate [target.GetTitledFirstName] has failed! The foreign assassin was not as effective as we had hoped."
@@ -523,23 +409,21 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4011.a:0 "I grow weary of this!"
  quix_murder_outcome.4011.b:0 "Perhaps if I send TWO assassins next time..."
 
-#	4012 Cry Havoc (dog_attack)
  quix_murder_outcome.4012.t:0 "Cry Havoc!"
  quix_murder_outcome.4012.failure_declaration_1:0 "Our plan to have [target.GetTitledFirstName] mauled to death by war dogs has, regretfully, not come to fruition."
  quix_murder_outcome.4012.failure_declaration_2:0 "It brought me such joy to imagine [target.GetTitledFirstName] being killed by dogs, but alas, the plan has failed."
  quix_murder_outcome.4012.failure_declaration_3:0 "Perhaps sending dogs to kill [target.GetTitledFirstName] was not the best idea."
- quix_murder_outcome.4012.desc:0 "\n\n[target.GetName] happened to have some dried meat stashed away, and tossed it to the dogs when they came. Not only did the brutes eat it, but they befriended [target.GetHerHis] and turned on their handler! It would seem he was a cruel master, and they did not take well to the starvation!"
- quix_murder_outcome.4012.exposed_scheme:0 "The man was taken captive after being mauled. He gave my name when they threatened to set the dogs on him a second time!"
+ quix_murder_outcome.4012.desc:0 "\n\n[target.GetName] happened to have some dried meat stashed away, and tossed it to the dogs when [target.GetSheHe] came running up. Not only did the brutes eat it, but they befriended [target.GetHerHim] and turned on their handler! It would seem he was a cruel master, and the dogs did not take well to the starvation!"
+ quix_murder_outcome.4012.exposed_scheme:0 "The man was taken captive after being mauled terribly. He gave my name when they threatened to set the dogs on him a second time!"
  quix_murder_outcome.4012.not_exposed_scheme:0 "In the only mercy of this day, the man was killed by his own dogs before he could implicate me!"
  quix_murder_outcome.4012.a.discovered:0 "Bad Dog!"
  quix_murder_outcome.4012.a:0 "[target.GetFirstNameNoTooltip], you have escaped what you truly deserve!"
  quix_murder_outcome.4012.b:0 "I won't let this ruin my day."
 
-#	4013 A pool of blood (bath_house)
  quix_murder_outcome.4013.t:0 "A Pool of Blood"
  quix_murder_outcome.4013.failure_declaration_1:0 "[target.GetTitledFirstName] has, unfortunately, not yet departed the world."
  quix_murder_outcome.4013.failure_declaration_2:0 "How I had hoped to go to sleep this evening in a world without [target.GetName], but alas, it is not so."
- quix_murder_outcome.4013.failure_declaration_3:0 "[target.GetTitledFirstName] is one slippery toad! I thought I had them in my grasp, but they still live."
+ quix_murder_outcome.4013.failure_declaration_3:0 "[target.GetTitledFirstName] is one slippery toad! I thought I had [target.GetHerHim] in my grasp, but [target.GetSheHe] still lives."
  quix_murder_outcome.4013.desc:0 "\n\nOur assassins came with daggers in their towels, but alas, [Target.GetTitledFirstName] had one hidden as well! [Target.GettitledFirstName] lept into the bathing pool and held the attackers at bay whilst completely nude, until [target.GetHerHis] cries for help were answered!"
  quix_murder_outcome.4013.exposed_scheme:0 "The assassins had to escape in the buff! Their identites were clear to all, and they are known to be your men!"
  quix_murder_outcome.4013.not_exposed_scheme:0 "Your men ran from the bathing house covering their faces with their towels, so their identities, and thus your invovlement, is unknown."
@@ -547,19 +431,17 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4013.a:0 "At least the men are sufficiently humiliated."
  quix_murder_outcome.4013.b:0 "A wash."
 
-#	4014 A Chance Encounter... (pushed_off_ledge)
  quix_murder_outcome.4014.t:0 "A Chance Encounter"
  quix_murder_outcome.4014.failure_declaration_1:0 "[target.GetTitledFirstName] did not drown in that river, despite my best efforts!"
  quix_murder_outcome.4014.failure_declaration_2:0 "Things didn't go quite to plan, and [target.GetTitledFirstName] was not swept out  to sea by the rushing river!"
  quix_murder_outcome.4014.failure_declaration_3:0 "I was certain that [target.GetTitledFirstName] could not survive the plunge into the river, but I was wrong!"
- quix_murder_outcome.4014.desc:0 "\n\nI snuck up behind them and gave them a hearty shove, and sure enough, they went tumbling down the bluff to the river..."
- quix_murder_outcome.4014.exposed_scheme:0 "but I lost my footing and fell in after them! We were swept along the river together, until we found a fisherman lowering his nets from a bridge! We grasped onto the nets and were pulled ashore, both gasping for air. I set off as soon as I could stand, but [Target.GetTitledFirstName] knows I tried to kill them!"
- quix_murder_outcome.4014.not_exposed_scheme:0 "but they landed in a shallow patch above some rocks, with only minor injuries from the fall. They began calling for help, so I fled before anyone could see me. I perhaps it was, at the very least, satisfying to ruin [Target.GetTitledFirstName]'s day, but I had hoped for so much more!"
+ quix_murder_outcome.4014.desc:0 "\n\nI snuck up behind [target.GetHerHim] and gave [target.GetHerHim] a hearty shove, and sure enough, [target.GetSheHe] went tumbling down the bluff to the river..."
+ quix_murder_outcome.4014.exposed_scheme:0 "but I lost my footing and fell in after [target.GetHerHim]! We were swept along the river together, until we found a fisherman lowering his nets from a bridge! We grasped onto the nets and were pulled ashore, both gasping for air. I set off as soon as I could stand, but [Target.GetTitledFirstName] knows I tried to kill [target.GetHerHim]!"
+ quix_murder_outcome.4014.not_exposed_scheme:0 "but [target.GetSheHe] landed in a shallow patch above some rocks, with only minor injuries from the fall. [target.GetSheHeCap] began calling for help, so I fled before anyone could see me. I perhaps it was, at the very least, satisfying to ruin [Target.GetTitledFirstName]'s day, but I had hoped for so much more!"
  quix_murder_outcome.4014.a.discovered:0 "I lost my footing and slipped!"
  quix_murder_outcome.4014.a:0 "Curse you, [target.GetFirstNameNoTooltip]!"
- quix_murder_outcome.4014.b:0 "I should have just held them under and been done with it."
+ quix_murder_outcome.4014.b:0 "I should have just held [target.GetHerHim] under and been done with it."
 
-#	4015 Broad Daylight (market_murder)
  quix_murder_outcome.4015.t:0 "Broad Daylight"
  quix_murder_outcome.4015.failure_declaration_1:0 "Our men have failed to kill [target.GetTitledFirstName]."
  quix_murder_outcome.4015.failure_declaration_2:0 "The plot to assassinate [target.GetTitledFirstName] at the market has failed!."
@@ -571,11 +453,10 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4015.a:0 "Unfortunate, indeed."
  quix_murder_outcome.4015.b:0 "Do not be discouraged."
 
-#	4016 Captive Kill (captive_kill)
  quix_murder_outcome.4016.t:0 "Captive Kill."
  quix_murder_outcome.4016.failure_declaration_1:0 "The plot to capture and kill [target.GetTitledFirstName] has not come to fruition."
  quix_murder_outcome.4016.failure_declaration_2:0 "Defeat! [target.GetTitledFirstName] still lives, still retains [target.GetHerHis] independence..."
- quix_murder_outcome.4016.failure_declaration_3:0 "[target.GetTitledFirstName] has not been captured, nor have they been killed! How utterly disappointing."
+ quix_murder_outcome.4016.failure_declaration_3:0 "[target.GetTitledFirstName] has not been captured, nor has [target.GetSheHe] been killed! How utterly disappointing."
  quix_murder_outcome.4016.desc:0 "\n\n[target.GetName] nearly went along with our men, after being given a confusing story containing several names of authority. But unfortunately, one of the men named was actually in company with [target.GetTitledFirstName] and exposed the deception!"
  quix_murder_outcome.4016.exposed_scheme:0 "The tables quickly turned, and our men were arrested and forced to talk!"
  quix_murder_outcome.4016.not_exposed_scheme:0 "The only good thing about this is that the men were able to play the situation off as a miscommunication before beating a hasty retreat. Our part in this folly remains, mercifully, unknown."
@@ -583,7 +464,6 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4016.a:0 "How very disappointing."
  quix_murder_outcome.4016.b:0 "I suppose it's back to the drawing board."
 
-#	4017 The Exotic Weapon (poison_dart)
  quix_murder_outcome.4017.t:0 "The Exotic Weapon"
  quix_murder_outcome.4017.failure_declaration_1:0 "[target.GetTitledFirstName] was not dispatched by our assassin!"
  quix_murder_outcome.4017.failure_declaration_2:0 "It seems we should have stuck to something a little more conventional, as [Target.GetTitledFirstName] was not killed!"
@@ -595,7 +475,6 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4017.a:0 "What terrible luck."
  quix_murder_outcome.4017.b:0 "The old fashioned way is popular for a reason..."
 
-#	4018 Do It Yourself (diy_murder)
  quix_murder_outcome.4018.t:0 "Do It Yourself"
  quix_murder_outcome.4018.failure_declaration_1:0 "How could I have been so bold? So foolish? The plot to kill [target.GetTitledFirstName] has failed."
  quix_murder_outcome.4018.failure_declaration_2:0 "Oh cruel fate! I have failed to kill [Target.Gettileedfirstname]"
@@ -607,19 +486,17 @@ Our agents have learned that [target.GetName] has attempted to contact this heal
  quix_murder_outcome.4018.a:0 "The old addage is wrong!"
  quix_murder_outcome.4018.b:0 "Perhaps this is best left to professionals..."
 
-#	4019 The Prize Fighter (hired_brawler)
  quix_murder_outcome.4019.t:0 "The Prize Fighter"
  quix_murder_outcome.4019.failure_declaration_1:0 "[target.GetTitledFirstName] was not killed by our hired brawler!"
  quix_murder_outcome.4019.failure_declaration_2:0 "The man we hired to kill [target.GetTitledFirstName] has not succeeded."
  quix_murder_outcome.4019.failure_declaration_3:0 "[target.GetTitledFirstName] is still alive, thanks to the incompetence of the hired brawler."
- quix_murder_outcome.4019.desc:0 "\n\nUpon locating [target.GetName], the fighter closed in, and asked [target.GetTitledFirstName] to confirm their identity. [target.GetTitledFirstName] seems to have not liked this prospect, and outwitted our fighter by denying their identity, proclaiming the real [target.GetTitledFirstName] to be in their living quarters. It seems our brawler had taken a few too many blows to the head in his career, as he fell for this simple deception!"
+ quix_murder_outcome.4019.desc:0 "\n\nUpon locating [target.GetName], the fighter closed in, and asked [target.GetTitledFirstName] to confirm [target.GetHerHis] identity. [target.GetTitledFirstName] seems to have not liked this prospect, and outwitted our fighter by denying [target.GetHerHis] identity, proclaiming the real [target.GetTitledFirstName] to be in [target.GetHerHis] living quarters. It seems our brawler had taken a few too many blows to the head in his career, as he fell for this simple deception!"
  quix_murder_outcome.4019.exposed_scheme:0 "[target.GetTitledFirstName] immediately went to the guards, and they apprehended the fool, who has given us up! My involvement in the plot is now known to all."
  quix_murder_outcome.4019.not_exposed_scheme:0 "[target.GetTitledFirstName] sent up the hue and cry, and our brawler was forced to hide in an empty grave on the outskirts until nightfall! Fortunately, he was able to evade capture, and has made it back here with his tail between his legs. At least our involvement in this folly is unknown."
  quix_murder_outcome.4019.a.discovered:0 "Why would you believe the words of man who clearly has severe brain damage!?"
  quix_murder_outcome.4019.a:0 "What a pity. But, there are more important things in life."
  quix_murder_outcome.4019.b:0 "It makes no matter, this is just part of the process..."
 
-#	4020 A Shadowy Organization (assassins_guild)
  quix_murder_outcome.4020.t:0 "A Shadowy Organization"
  quix_murder_outcome.4020.failure_declaration_1:0 "[target.GetTitledFirstName] was not killed by our group of assassins!"
  quix_murder_outcome.4020.failure_declaration_2:0 "[target.GetTitledFirstName] was not killed!"
