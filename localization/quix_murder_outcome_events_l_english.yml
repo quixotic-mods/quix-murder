@@ -21,7 +21,7 @@
 
  quix_murder_outcome.1005.t:0 "Stone Cold"
  quix_murder_outcome.1005.d:0 "We have learned [target.GetName] enjoys taking the air in a particular courtyard, beneath the town walls. Our agents have found that one of the massive stones could be loosed from the old wall, sending it crashing upon [target.GetTitledFirstNamePossessive] head."
- quix_murder_outcome.1005.a:0 "Let this rock to roll!"
+ quix_murder_outcome.1005.a:0 "Let this rock roll!"
  quix_murder_outcome.1005.b:0 "This is wrong, [target.GetFirstNameNoTooltip] isn't worth damaging masonry."
 
  quix_murder_outcome.1006.t:0 "Dereliction of Duty"
