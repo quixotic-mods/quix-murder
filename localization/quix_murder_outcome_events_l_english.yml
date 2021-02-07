@@ -46,7 +46,7 @@
  quix_murder_outcome.1010.t:0 "Masqued Murderers"
  quix_murder_outcome.1010.d:0 "Our agents have learned that [target.GetTitledFirstName] will be attending social event where everyone will be wearing masks. It would be easy enough for our men to slip in unnoticed and then blend into the crowd."
  quix_murder_outcome.1010.a:0 "How thoughtful of [target.GetTitledFirstNameNoTooltip] to invite us. May as well send a whole band of men."
- quix_murder_outcome.10.b:0 "Too easy.It sounds like a trap."
+ quix_murder_outcome.1010.b:0 "Too easy.It sounds like a trap."
 
  quix_murder_outcome.1011.t:0 "The Foreign Warrior"
  quix_murder_outcome.1011.d:0 "Our agents have been in contact with a warrior from a distant land. His tools and methods are strange, but he is purpotedly as fierce with his strange curved blade as he is stealthy. Perhaps we could employ them to help [target.GetTitledFirstNamePossessive] along [target.GetHerHis] way..."
@@ -204,10 +204,10 @@
  quix_murder_outcome.2010.opening_3:0 "Our agents caught [target.GetName] away from the crowd in a secluded room - and [target.GetHerHim] died screaming!"
  quix_murder_outcome.2010.owner_is_known_1:0 "\n\nOur men fled, but one, with blood on his hands, was caught! Our involvement is known!"
  quix_murder_outcome.2010.owner_is_known_2:0 "\n\nHowever, a number of fighting men were in the crowd, and a melee broke out when [target.GetName] began screaming! Several of our men were injured and captured, and the scheme is know public knowledge!"
- quix_murder_outcome.2010.no_awareness_1:0 "\n\nOur men fled in the chaos with the masked crowd, and once in the shadows, they dumped their masks and robes, wiped off the blood, and promptly left one by one. None were caught!"
+ quix_murder_outcome.2010.no_awareness_1:0 "\n\nOur men fled in the chaos, and once in the shadows, they dumped their masks and robes, wiped off the blood, and promptly left one by one. None were caught!"
  quix_murder_outcome.2010.no_awareness_2:0 "\n\nThe men then valiantly fought their way from the event, able to overwhelm any who stood against them due to their anonynmity within the crowd. Not a single man was taken."
  quix_murder_outcome.2010.a.discovered:0 "It sounds like it was merely a raucous party, what does that have to do with me?"
- quix_murder_outcome.2010.a:0 "I should have gone along myself."
+ quix_murder_outcome.2010.a:0 "I should have gone along myself. Would've been fun."
  
  quix_murder_outcome.2011.t:0 "The Foreign Warrior"
  quix_murder_outcome.2011.opening_1:0 "[target.GetName] is dead! The stranger turned out to be as effective of a killer as we were informed."
