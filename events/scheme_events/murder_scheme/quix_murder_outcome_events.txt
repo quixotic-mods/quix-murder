@@ -163,12 +163,6 @@ quix_murder_outcome.0103 = {
 	type = character_event
 	hidden = yes
 
-	trigger = {
-		scope:target = {
-			has_trait = drunkard
-		}
-		}
-
 	immediate = {
 		save_scope_value_as = {
 			name = murder_method

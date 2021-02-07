@@ -86,11 +86,11 @@ standard_murder_method_selection = {
 		#100 = murder_outcome.0105 # A riled-up mob
 		#100 = murder_outcome.0106 # Immurement
 		#100 = murder_outcome.0107 # Sink a boat they're on
-		100 = quix_murder_outcome.0101 
-		100 = quix_murder_outcome.0102 
-		100 = quix_murder_outcome.0103 
+		100 = quix_murder_outcome.0101
+		100 = quix_murder_outcome.0102
+		100 = quix_murder_outcome.0103
 		100 = quix_murder_outcome.0104
-		100 = quix_murder_outcome.0105
+		#100 = quix_murder_outcome.0105
 		100 = quix_murder_outcome.0106
 		100 = quix_murder_outcome.0107
 		100 = quix_murder_outcome.0108
@@ -100,7 +100,7 @@ standard_murder_method_selection = {
 		100 = quix_murder_outcome.0112
 		100 = quix_murder_outcome.0113
 		100 = quix_murder_outcome.0114
-		100 = quix_murder_outcome.0115
+		#100 = quix_murder_outcome.0115
 		100 = quix_murder_outcome.0116
 		100 = quix_murder_outcome.0117
 		100 = quix_murder_outcome.0118
@@ -119,14 +119,14 @@ murder_setup = {
 		#murder_outcome.1005 #A riled-up mob
 		#murder_outcome.1006 #Immurement
 		#murder_outcome.1007 #Sink a boat they're on
-		quix_murder_outcome.1001
-		quix_murder_outcome.1002
-		quix_murder_outcome.1003 
-		quix_murder_outcome.1004 
-		quix_murder_outcome.1005 
-		quix_murder_outcome.1006 
-		quix_murder_outcome.1007 
-		quix_murder_outcome.1008 
+		#quix_murder_outcome.1001
+		#quix_murder_outcome.1002
+		quix_murder_outcome.1003
+		quix_murder_outcome.1004
+		quix_murder_outcome.1005
+		quix_murder_outcome.1006
+		#quix_murder_outcome.1007
+		quix_murder_outcome.1008
 		quix_murder_outcome.1009
 		quix_murder_outcome.1010
 		quix_murder_outcome.1011
