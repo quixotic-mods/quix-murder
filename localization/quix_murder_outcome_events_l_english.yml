@@ -11,7 +11,7 @@
 
  quix_murder_outcome.1003.t:0 "Dead Drunk."
  quix_murder_outcome.1003.d:0 "Tonight, while admiring a particularly fine bottle of wine, a thought occurred to me. Everyone knows that [target.GetName] is fond of a good bottle of wine. This particular vintage would make a fine present, and it could be recorked after the addition of some poision. Sent with a note of anonymous admiration...it just might work."
- quix_murder_outcome.1003.a:0 "Well, in that case, we shall drink this tonight and refill with swill. No sense in wasting the good stuff."
+ quix_murder_outcome.1003.a:0 "A thoughtful gift indeed!"
  quix_murder_outcome.1003.b:0 "On second thought, I'll save it for a special occasion."
 
  quix_murder_outcome.1004.t:0 "Night Terror"
@@ -43,6 +43,7 @@
  quix_murder_outcome.1009.d:0 "Lately, a healer has caused quite a stir with his supposed knowledge of physic. He claims that, by bleeding his patients, he can cure them of all ills. Our agents have learned that [target.GetTitledFirstName] has attempted to contact this healer, and have intercepted this  communication. We could send an imposter and [target.GetTitledFirstName] would gladly open [target.GetHerHis] veins for us."
  quix_murder_outcome.1009.a:0 "[target.GetTitledFirstNameNoTooltip] will make this too easy. Almost."
  quix_murder_outcome.1009.b:0 "No, the risk we accidentally cure [target.GetTitledFirstNamePossessive] ailment is too great."
+
  quix_murder_outcome.1010.t:0 "Masqued Murderers"
  quix_murder_outcome.1010.d:0 "Our agents have learned that [target.GetTitledFirstName] will be attending a social event where everyone will be wearing masks. It would be easy enough for our men to slip in unnoticed and then blend into the crowd."
  quix_murder_outcome.1010.a:0 "How thoughtful to invite us. We will send a whole band."

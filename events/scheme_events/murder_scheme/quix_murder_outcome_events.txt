@@ -314,7 +314,7 @@ quix_murder_outcome.0113 = {
 }
 
 # 114 A Chance Encounter... 
-quix_murder_outcome.0113 = {
+quix_murder_outcome.0114 = {
 	type = character_event
 	hidden = yes
 
@@ -328,7 +328,7 @@ quix_murder_outcome.0113 = {
 }
 
 # 115 Broad Daylight (an attack in a public market)
-quix_murder_outcome.0113 = {
+quix_murder_outcome.0115 = {
 	type = character_event
 	hidden = yes
 
