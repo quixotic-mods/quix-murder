@@ -4,4 +4,4 @@ tags={
 }
 name="Quixotic Murder"
 supported_version="1.2.2"
-remote_file_id="2388343836"
+remote_file_id="2388366705"
