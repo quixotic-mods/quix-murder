@@ -37,7 +37,7 @@ Additions:
 ## Changelog
 
 ### 1.2.2.002
-Added Russian and German community language support
+* Added Russian and German community language support
 
 ### 1.2.2.001 
 Initial Release

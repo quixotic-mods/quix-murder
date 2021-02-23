@@ -1,7 +1,7 @@
 ##################################
 # Quixotic Murder
 # quix_murder_outcome_events.txt
-# Version:1.2.2.001
+# Version:1.2.2.002a
 # by El Ingenioso Hidalgo Don Quixote de la Mancha
 # https://DonQuixote.Games/
 ##################################
@@ -415,6 +415,20 @@ quix_murder_outcome.0120 = {
 # CHILD AND INFANT MURDERS
 # 0201-0299
 #############################
+# 201 Swimming Lessons
+quix_murder_outcome.0201 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:tossed_in_lake
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
 
 ################################
 # IMPRISONMENT MURDERS
@@ -1229,6 +1243,69 @@ quix_murder_outcome.1020 = {
 #####################################
 # CHILD MURDER SETUP 1200 - 1299
 #####################################
+# 1201 Swimming Lessons 
+quix_murder_outcome.1201 = {
+	title = quix_murder_outcome.1201.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:acting_agent
+				}
+				desc = quix_murder_outcome.1201.desc
+			}
+			desc = quix_murder_outcome.1201.no_acting_agent
+		}
+	}
+	theme = murder_scheme
+	left_portrait = scope:target
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:murder_method = flag:tossed_in_lake
+	}
+
+	immediate = {
+		quix_murder_outcome_roll_setup_effect = yes
+		scope:scheme = {
+			if = {
+				limit = {
+					any_scheme_agent = {
+						scope:scheme = {
+							NOT = {is_scheme_agent_exposed = prev }
+						}
+					}
+				}
+				random_scheme_agent = {
+					save_scope_as = acting_agent
+				}
+			}
+			else = {
+				random_dummy_gender_effect = yes
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1201.a
+		custom_tooltip = murder_child_really_tooltip
+		quix_murder_outcome_roll_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1201.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
 
 
 #####################################
@@ -2544,6 +2621,59 @@ quix_murder_outcome.2020 = {
 			text = quix_murder_outcome.2020.a
 		}
 		successful_murder_outcome_event_option_effect = yes
+	}
+}
+
+# 2200 Child Murder Success
+# Swimming Lessons
+quix_murder_outcome.2201 = {
+	type = character_event
+	title = quix_murder_outcome.2201.t
+	desc = {
+		desc = quix_murder_outcome.2201.opening
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.2201.scheme_owner_known
+			}
+			desc = quix_murder_outcome.2201.scheme_unknown
+		}
+	}
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = pain
+	}
+
+
+	trigger = {
+		scope:murder_method = flag:lured_into_forest
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2201.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2201.a
+		}
+		successful_quix_murder_outcome_event_option_effect = yes
+		stress_impact = {
+			base = medium_stress_gain
+			compassionate = major_stress_impact_gain
+		}
 	}
 }
 
@@ -4568,3 +4698,5 @@ quix_murder_outcome.4020 = {
 		}
 	}
 }
+
+# 4200 Child Murder Failures
