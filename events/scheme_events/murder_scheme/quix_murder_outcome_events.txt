@@ -2677,7 +2677,6 @@ quix_murder_outcome.2201 = {
 	}
 }
 
-
 ###############################
 # FAILURE OUTCOMES 4000 - 4999
 ###############################
@@ -4700,3 +4699,95 @@ quix_murder_outcome.4020 = {
 }
 
 # 4200 Child Murder Failures
+
+quix_murder_outcome.4201 = {
+	type = character_event
+	title = quix_murder_outcome.4201.t
+	desc = {
+		random_valid = {
+			desc = quix_murder_outcome.4001.failure_declaration_1
+			desc = quix_murder_outcome.4001.failure_declaration_2
+			desc = quix_murder_outcome.4001.failure_declaration_3
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.4201.scheme_owner_known
+			}
+			desc = quix_murder_outcome.4201.scheme_unknown
+		}
+	}
+	
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:lured_into_forest
+	}
+
+	immediate = {
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4201.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4201.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4001.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = quix_murder_outcome.9999
+		}
+	}
+}
