@@ -2649,7 +2649,7 @@ quix_murder_outcome.2201 = {
 
 
 	trigger = {
-		scope:murder_method = flag:lured_into_forest
+		scope:murder_method = flag:tossed_in_lake
 	}
 
 	immediate = {
@@ -4727,7 +4727,7 @@ quix_murder_outcome.4201 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:lured_into_forest
+		scope:murder_method = flag:tossed_in_lake
 	}
 
 	immediate = {
