@@ -539,3 +539,6 @@
  quix_murder_outcome.4020.a.discovered:0 "Can't you see this whole thing is manufacturered? The intrigues of some unknown webweaver."
  quix_murder_outcome.4020.a:0 "I've been had!"
  quix_murder_outcome.4020.b:0 "It may have been a hoax...but what an intriguing business model..."
+
+ quix_murder_outcome.5001.generic:0 "Assassin! A brief moment of terror is the last thing you know, the fleeting realization that the end is here. Your enemies have won, and your time upon the earth as been brought to a sudden and violent end."
+ quix_murder_outcome.5002.generic:0 "A trusted man just came in to tell me that an attempt on my life has been foiled! Those bastards will have to try harder than that to get me!"
