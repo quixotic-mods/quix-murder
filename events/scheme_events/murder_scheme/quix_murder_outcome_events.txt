@@ -4699,7 +4699,6 @@ quix_murder_outcome.4020 = {
 }
 
 # 4200 Child Murder Failures
-
 quix_murder_outcome.4201 = {
 	type = character_event
 	title = quix_murder_outcome.4201.t
