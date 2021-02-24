@@ -1269,7 +1269,7 @@ quix_murder_outcome.1201 = {
 	}
 
 	immediate = {
-		quix_murder_outcome_roll_setup_effect = yes
+		murder_outcome_roll_setup_effect = yes
 		scope:scheme = {
 			if = {
 				limit = {
