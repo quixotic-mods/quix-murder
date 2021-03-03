@@ -326,6 +326,13 @@
  quix_murder_outcome.2020.a.discovered:0 "This is clearly the work of some evil mastermind, not me!"
   quix_murder_outcome.2020.a:0 "Can we keep them on retainer?"
 
+ murder_outcome.2201.t:0 "Swimming Lessons Failed"
+ murder_outcome.2201.opening:0 "[target.GetTitledFirstName] has drowned!\n\n[target.GetHerHis|U] last moments spent struggling in the water, before body sunk to the bottom, and wasn't found until the nex day."
+ murder_outcome.2201.scheme_owner_known:0 "\n\nHowever, it would seem there was a witness who saw the whole thing! Our agent was apprehended and our involvement in this dark deed is known to all."
+ murder_outcome.2201.scheme_unknown:0 "\n\nBy all appearances, just a terrible accident. No one seems to suspect I had anything to do with it, at the very least."
+ murder_outcome.2201.a.discovered:0 "This is preciesly why swimming lessons were so important!"
+ murder_outcome.2201.a:0 "One less nuisance."
+
  quix_murder_outcome.4001.t:0 "A Toasty Inn..."
  quix_murder_outcome.4001.failure_declaration_1:0 "[target.GetTitledFirstName] yet lives!"
  quix_murder_outcome.4001.failure_declaration_2:0 "Our plot to end [target.GetTitledFirstName]'s life has failed!"
@@ -546,5 +553,16 @@
  quix_murder_outcome.4020.a:0 "I've been had!"
  quix_murder_outcome.4020.b:0 "It may have been a hoax...but what an intriguing business model..."
 
- quix_murder_outcome.5001.generic:0 "Assassin! A brief moment of terror is the last thing you know, the fleeting realization that the end is here. Your enemies have won, and your time upon the earth as been brought to a sudden and violent end."
+ quix_murder_outcome.4201.t:0 "Swimming Lessons"
+ quix_murder_outcome.4201.failure_declaration_1:0 "Little [target.GetTitledFirstName] has lived! It would appear the tot can swim like a fish!"
+ quix_murder_outcome.4201.failure_declaration_2:0 "Drat! The wretched child [target.GetTitledFirstName] has survived our plot! Our agent thought the plan worked, until a few minutes later the child emerged from other side of the lake!"
+ quix_murder_outcome.4201.failure_declaration_3:0 "[target.GetTitledFirstName] was drowned, but unfortunately, not drowned enough! The plot failed after a passer by rescued the child and somehow resuscitated the lifeless body!"
+ quix_murder_outcome.4201.agent.scheme_owner_known:0 "[acting_agent.GetFirstNameNoTooltip] was overwhelmed with guilt, however, and has told of my plot!"
+ quix_murder_outcome.4201.noagent.scheme_owner_known:0 "My agent was overwhelmed with guilt, however, and has told of my plot!"
+ quix_murder_outcome.4201.agent.scheme_unknown:0 "[acting_agent.GetFirstNameNoTooltip] likely isn't going to be giving any more swimming lessons, however. Fortunately, nobody has realize this was a plot."
+ quix_murder_outcome.4201.noagent.scheme_unknown:0 "The only good news, however, is that the failed plot remains a secret."
+ quix_murder_outcome.4201.a.discovered:0 "I was only trying to protect the child from the perils of water!"
+ quix_murder_outcome.4201.a:0 "You have to hold him under!"
+
+ quix_murder_outcome.5001.generic:0 "Assassin! A brief moment of terror is the last thing you know, the fleeting realization that the end is here. Your enemies have won, and your time upon the earth has been brought to a sudden and violent end. With your last thought, your mind turns to the great unknown before you."
  quix_murder_outcome.5002.generic:0 "A trusted man just came in to tell me that an attempt on my life has been foiled! Those bastards will have to try harder than that to get me!"
