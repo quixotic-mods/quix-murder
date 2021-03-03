@@ -4783,7 +4783,7 @@ quix_murder_outcome.4201 = {
 
 	after = {
 		hidden_effect = {
-			trigger_event = quix_murder_outcome.9999
+			trigger_event = murder_outcome.9999
 		}
 	}
 }

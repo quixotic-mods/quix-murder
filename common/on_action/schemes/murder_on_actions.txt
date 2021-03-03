@@ -36,9 +36,10 @@ child_murder_method_selection = {
 		}
 	}
 	random_events = {
-		100 = murder_outcome.0201 # Leave a child in the forest
-		100 = murder_outcome.0204 # Poisoned candy
-		100 = murder_outcome.0205 # Child pushed to death
+		#100 = murder_outcome.0201 # Leave a child in the forest
+		#100 = murder_outcome.0204 # Poisoned candy
+		#100 = murder_outcome.0205 # Child pushed to death
+		100 = quix_murder_outcome.0201 #Swimming Lessons
 	}
 }
 
@@ -147,6 +148,7 @@ murder_setup = {
 		murder_outcome.1301 #Beaten to death in a cell
 		murder_outcome.1302 #Unwelcome guest during House Arrest
 		murder_outcome.1401 #Strangling Incapable
+		quix_murder_outcome.1201 #Swimming Lessons
 
 	}
 }
@@ -250,6 +252,7 @@ murder_succeeded = {
 		murder_outcome.2301 #Beat to death in prison
 		murder_outcome.2302 #Unwelcome guest during House Arrest
 		murder_outcome.2401 #Strangling incapable
+		quix_murder_outcome.2201 #swimming lessons
 	}
 	effect = {
 
@@ -337,6 +340,7 @@ murder_failed = {
 		murder_outcome.4301 #Beat to death in prison
 		murder_outcome.4302 #Unwelcome guest during House Arrest
 		murder_outcome.4401 #Strangling incapable
+		quix_murder_outcome.4201 #swimming lessons
 	}
 }
 
