@@ -90,7 +90,7 @@
  quix_murder_outcome.1018.b:0 "On second thought, the weather just isn't right for this. Back to the infernal drawing board."
 
  quix_murder_outcome.1019.t:0 "The Prize Fighter"
- quix_murder_outcome.1019.d:0 "A foreign peasant, famous in his land as a pit fighter, has arrived in my realm seeking employ. His tognue was cut out long ago, and even then, he can't speak the language to begin with. He is built like a bear, and may just be the perfect one to deal with [target.GetTitledFirstName]."
+ quix_murder_outcome.1019.d:0 "A foreign peasant, famous in his land as a pit fighter, has arrived in my realm seeking employ. His tongue was cut out long ago, and even then, he can't speak the language to begin with. He is built like a bear, and may just be the perfect one to deal with [target.GetTitledFirstName]."
  quix_murder_outcome.1019.a:0 "He sounds lovely!"
  quix_murder_outcome.1019.b:0 "This is not the calibur of professional I have come to expect."
 
