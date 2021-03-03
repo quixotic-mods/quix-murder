@@ -78,7 +78,7 @@ namespace = quix_murder_outcome
 #	1019 Tortured by assassin Setup
 #	1020 Poisoned While Sleeping Setup
 # 1200 - 1299 CHILD MURDER SETUP
-#	1201 Tossed In The Sea Setup
+#	1201 Swimming Lessons
 #   1202 Trojan Rocking Horse Setup
 # 2000 - 2999 SUCCESSFUL OUTCOME
 #  Regular
@@ -102,6 +102,7 @@ namespace = quix_murder_outcome
 #	2018 Kidnapped and killed in the woods Success
 #	2019 Tortured by assassin Success
 #	2020 Poisoned While Sleeping Success
+#   2201 Swimming Lessons
 # 4000 - 4999 FAILURE OUTCOMES 
 #  Regular
 #	4001 A Toasty Inn Failure
@@ -2685,11 +2686,9 @@ quix_murder_outcome.2201 = {
 quix_murder_outcome.4001 = {
 	type = character_event
 	title = quix_murder_outcome.4001.t
-		### START DESC
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4001.failure_declaration_1
 				desc = quix_murder_outcome.4001.failure_declaration_2
@@ -2708,7 +2707,7 @@ quix_murder_outcome.4001 = {
 				desc = quix_murder_outcome.4001.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -2786,7 +2785,7 @@ quix_murder_outcome.4001 = {
 quix_murder_outcome.4002 = {
 	type = character_event
 	title = quix_murder_outcome.4002.t
-		### START DESC
+
 		desc = {
 			random_valid = {
 				desc = quix_murder_outcome.4002.failure_declaration_1
@@ -2806,7 +2805,7 @@ quix_murder_outcome.4002 = {
 				desc = quix_murder_outcome.4002.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -2884,11 +2883,10 @@ quix_murder_outcome.4002 = {
 quix_murder_outcome.4003 = {
 	type = character_event
 	title = quix_murder_outcome.4003.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4003.failure_declaration_1
 				desc = quix_murder_outcome.4003.failure_declaration_2
@@ -2907,7 +2905,7 @@ quix_murder_outcome.4003 = {
 				desc = quix_murder_outcome.4003.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -2985,11 +2983,10 @@ quix_murder_outcome.4003 = {
 quix_murder_outcome.4004 = {
 	type = character_event
 	title = quix_murder_outcome.4004.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4004.failure_declaration_1
 				desc = quix_murder_outcome.4004.failure_declaration_2
@@ -3008,7 +3005,7 @@ quix_murder_outcome.4004 = {
 				desc = quix_murder_outcome.4004.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3086,11 +3083,10 @@ quix_murder_outcome.4004 = {
 quix_murder_outcome.4005 = {
 	type = character_event
 	title = quix_murder_outcome.4005.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4005.failure_declaration_1
 				desc = quix_murder_outcome.4005.failure_declaration_2
@@ -3109,7 +3105,7 @@ quix_murder_outcome.4005 = {
 				desc = quix_murder_outcome.4005.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3187,11 +3183,10 @@ quix_murder_outcome.4005 = {
 quix_murder_outcome.4006 = {
 	type = character_event
 	title = quix_murder_outcome.4006.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4006.failure_declaration_1
 				desc = quix_murder_outcome.4006.failure_declaration_2
@@ -3210,7 +3205,7 @@ quix_murder_outcome.4006 = {
 				desc = quix_murder_outcome.4006.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3288,11 +3283,10 @@ quix_murder_outcome.4006 = {
 quix_murder_outcome.4007 = {
 	type = character_event
 	title = quix_murder_outcome.4007.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4007.failure_declaration_1
 				desc = quix_murder_outcome.4007.failure_declaration_2
@@ -3311,7 +3305,7 @@ quix_murder_outcome.4007 = {
 				desc = quix_murder_outcome.4007.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3389,11 +3383,10 @@ quix_murder_outcome.4007 = {
 quix_murder_outcome.4008 = {
 	type = character_event
 	title = quix_murder_outcome.4008.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4008.failure_declaration_1
 				desc = quix_murder_outcome.4008.failure_declaration_2
@@ -3412,7 +3405,7 @@ quix_murder_outcome.4008 = {
 				desc = quix_murder_outcome.4008.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3490,11 +3483,10 @@ quix_murder_outcome.4008 = {
 quix_murder_outcome.4009 = {
 	type = character_event
 	title = quix_murder_outcome.4009.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4009.failure_declaration_1
 				desc = quix_murder_outcome.4009.failure_declaration_2
@@ -3513,7 +3505,7 @@ quix_murder_outcome.4009 = {
 				desc = quix_murder_outcome.4009.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3591,11 +3583,10 @@ quix_murder_outcome.4009 = {
 quix_murder_outcome.4010 = {
 	type = character_event
 	title = quix_murder_outcome.4010.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4010.failure_declaration_1
 				desc = quix_murder_outcome.4010.failure_declaration_2
@@ -3614,7 +3605,7 @@ quix_murder_outcome.4010 = {
 				desc = quix_murder_outcome.4010.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3692,11 +3683,10 @@ quix_murder_outcome.4010 = {
 quix_murder_outcome.4011 = {
 	type = character_event
 	title = quix_murder_outcome.4011.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4011.failure_declaration_1
 				desc = quix_murder_outcome.4011.failure_declaration_2
@@ -3715,7 +3705,7 @@ quix_murder_outcome.4011 = {
 				desc = quix_murder_outcome.4011.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3793,11 +3783,10 @@ quix_murder_outcome.4011 = {
 quix_murder_outcome.4012 = {
 	type = character_event
 	title = quix_murder_outcome.4012.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4012.failure_declaration_1
 				desc = quix_murder_outcome.4012.failure_declaration_2
@@ -3816,7 +3805,7 @@ quix_murder_outcome.4012 = {
 				desc = quix_murder_outcome.4012.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3894,11 +3883,10 @@ quix_murder_outcome.4012 = {
 quix_murder_outcome.4013 = {
 	type = character_event
 	title = quix_murder_outcome.4013.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4013.failure_declaration_1
 				desc = quix_murder_outcome.4013.failure_declaration_2
@@ -3917,7 +3905,7 @@ quix_murder_outcome.4013 = {
 				desc = quix_murder_outcome.4013.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -3995,11 +3983,10 @@ quix_murder_outcome.4013 = {
 quix_murder_outcome.4014 = {
 	type = character_event
 	title = quix_murder_outcome.4014.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4014.failure_declaration_1
 				desc = quix_murder_outcome.4014.failure_declaration_2
@@ -4018,7 +4005,7 @@ quix_murder_outcome.4014 = {
 				desc = quix_murder_outcome.4014.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -4096,11 +4083,10 @@ quix_murder_outcome.4014 = {
 quix_murder_outcome.4015 = {
 	type = character_event
 	title = quix_murder_outcome.4015.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4015.failure_declaration_1
 				desc = quix_murder_outcome.4015.failure_declaration_2
@@ -4119,7 +4105,7 @@ quix_murder_outcome.4015 = {
 				desc = quix_murder_outcome.4015.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -4197,11 +4183,10 @@ quix_murder_outcome.4015 = {
 quix_murder_outcome.4016 = {
 	type = character_event
 	title = quix_murder_outcome.4016.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4016.failure_declaration_1
 				desc = quix_murder_outcome.4016.failure_declaration_2
@@ -4220,7 +4205,7 @@ quix_murder_outcome.4016 = {
 				desc = quix_murder_outcome.4016.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -4298,11 +4283,10 @@ quix_murder_outcome.4016 = {
 quix_murder_outcome.4017 = {
 	type = character_event
 	title = quix_murder_outcome.4017.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4017.failure_declaration_1
 				desc = quix_murder_outcome.4017.failure_declaration_2
@@ -4321,7 +4305,7 @@ quix_murder_outcome.4017 = {
 				desc = quix_murder_outcome.4017.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -4399,11 +4383,10 @@ quix_murder_outcome.4017 = {
 quix_murder_outcome.4018 = {
 	type = character_event
 	title = quix_murder_outcome.4018.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4018.failure_declaration_1
 				desc = quix_murder_outcome.4018.failure_declaration_2
@@ -4422,7 +4405,7 @@ quix_murder_outcome.4018 = {
 				desc = quix_murder_outcome.4018.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -4500,11 +4483,10 @@ quix_murder_outcome.4018 = {
 quix_murder_outcome.4019 = { 
 	type = character_event
 	title = quix_murder_outcome.4019.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4019.failure_declaration_1
 				desc = quix_murder_outcome.4019.failure_declaration_2
@@ -4523,7 +4505,7 @@ quix_murder_outcome.4019 = {
 				desc = quix_murder_outcome.4019.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -4601,11 +4583,10 @@ quix_murder_outcome.4019 = {
 quix_murder_outcome.4020 = {
 	type = character_event
 	title = quix_murder_outcome.4020.t
-		### START DESC
+
 		desc = {
 		
-			# Start off with declaration of failure
-			# Include Target's name!
+
 			random_valid = {
 				desc = quix_murder_outcome.4020.failure_declaration_1
 				desc = quix_murder_outcome.4020.failure_declaration_2
@@ -4624,7 +4605,7 @@ quix_murder_outcome.4020 = {
 				desc = quix_murder_outcome.4020.not_exposed_scheme
 			}
 		}
-	### END DESC
+
 	theme = murder_scheme
 	left_portrait = {
 		character = scope:target
@@ -4703,11 +4684,6 @@ quix_murder_outcome.4201 = {
 	type = character_event
 	title = quix_murder_outcome.4201.t
 	desc = {
-		random_valid = {
-			desc = quix_murder_outcome.4001.failure_declaration_1
-			desc = quix_murder_outcome.4001.failure_declaration_2
-			desc = quix_murder_outcome.4001.failure_declaration_3
-		}
 		first_valid = {
 			triggered_desc = {
 				trigger = {
