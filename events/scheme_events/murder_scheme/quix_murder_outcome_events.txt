@@ -4684,14 +4684,35 @@ quix_murder_outcome.4201 = {
 	type = character_event
 	title = quix_murder_outcome.4201.t
 	desc = {
+		random_valid = {
+			desc = quix_murder_outcome.4201.failure_declaration_1
+			desc = quix_murder_outcome.4201.failure_declaration_2
+			desc = quix_murder_outcome.4201.failure_declaration_3
+		}
+
+		}
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					exists = scope:scheme_discovered
 				}
-				desc = quix_murder_outcome.4201.scheme_owner_known
+				first_valid = {
+					triggered_desc = {
+						trigger = {
+							exists = scope:acting_agent
+						}
+						desc = quix_murder_outcome.4201.agent.scheme_owner_known
+					}
+				desc = quix_murder_outcome.4201.noagent.scheme_owner_known
 			}
-			desc = quix_murder_outcome.4201.scheme_unknown
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:acting_agent
+					}
+					desc = quix_murder_outcome.4201.agent.scheme_unknown
+				}
+			desc = quix_murder_outcome.4201.noagent.scheme_unknown
 		}
 	}
 	
@@ -4736,7 +4757,7 @@ quix_murder_outcome.4201 = {
 	}
 
 	option = {
-		name = quix_murder_outcome.4001.b
+		name = quix_murder_outcome.4201.b
 		trigger = {
 			NOT = { exists = scope:scheme_discovered }
 		}
