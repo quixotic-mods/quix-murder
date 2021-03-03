@@ -107,6 +107,7 @@ standard_murder_method_selection = {
 		100 = quix_murder_outcome.0118
 		100 = quix_murder_outcome.0119
 		100 = quix_murder_outcome.0120
+		100 = quix_murder_outcome.0201
 	}
 }
 
