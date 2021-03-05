@@ -10,6 +10,7 @@ murder_method_selection = {
 	first_valid_on_action = {
 		infant_murder_method_selection
 		child_murder_method_selection
+		teen_murder_method_selection
 		incapable_murder_method_selection
 		dungeon_murder_method_selection
 		house_arrest_murder_method_selection
