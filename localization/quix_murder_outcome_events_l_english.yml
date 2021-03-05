@@ -105,6 +105,12 @@
  quix_murder_outcome.1201.a:0 "Swimming is such a...rare skill."
  quix_murder_outcome.1201.b:0 "This is too much!"
 
+ quix_murder_outcome.1202.t:0 "Trojan Horse"
+ quix_murder_outcome.1202.desc:0 "[acting_agent.GetTitledFirstName] thinks [acting_agent.GetSheHe] has a plan to deal with [target.GetTitledFirstName]. We have learned the child is very fond of horses, and are planning to anonymously present [target.GetHerHim] with a artisan-made wooden horse.\n\nInside it, we have built a clever mechanism that will, in a day or two, spring open when the child is playing with it, allowing a box of deadly spiders to open inside. With any luck, a few of these will bite [target.GetTitledFirstName] sending [target.GetHerHim] upon [target.GetHerHis] little way!"
+ quix_murder_outcome.1202.no_acting_agent:0 "Our agents think they have a plan to deal with [target.GetTitledFirstName]. We have learned the child is very fond of horses, and are planning to anonymously present [target.GetHerHim] with a artisan-made wooden horse.\n\nInside it, we have built a clever mechanism that will, in a day or two, spring open when the child is playing with it, allowing a box of deadly spiders to open inside. With any luck, a few of these will bite [target.GetTitledFirstName] sending [target.GetHerHim] upon [target.GetHerHis] little way!"
+ quix_murder_outcome.1202.a:0 "If it's good enough for Odysseus it's good enough for me."
+ quix_murder_outcome.1202.b:0 "No...not like this."
+
  quix_murder_outcome.2001.t:0 "A Toasty Inn..."
  quix_murder_outcome.2001.opening_1:0 "[target.GetName] died in a towering inferno."
  quix_murder_outcome.2001.opening_2:0 "Although not everything went to plan, the Arsonist was able to make due by barricading a few patrons inside with [target.GetName] . Wrong place, wrong time!"
@@ -332,6 +338,13 @@
  quix_murder_outcome.2201.scheme_unknown:0 "\n\nBy all appearances, just a terrible accident. No one seems to suspect I had anything to do with it, at the very least."
  quix_murder_outcome.2201.a.discovered:0 "This is preciesly why swimming lessons were so important!"
  quix_murder_outcome.2201.a:0 "One less nuisance."
+
+ quix_murder_outcome.2202.t:0 "Equo Ne Credite!"
+ quix_murder_outcome.2202.opening:0 "[target.GetTitledFirstName] is dead!\n\nOur tiny arachnid-greeks sprung forth from their hiding place and their venom stopped [target.GetHerHis] tiny heart."
+ quix_murder_outcome.2202.scheme_owner_known:0 "\n\nUnfortunately, the plan was not as foolproof as we thought, the discovery of the hidden compartment resulted in the identification and capture of our agents who had been spotted delivering it! Now, it is known that we had a place in this deed."
+ quix_murder_outcome.2202.scheme_unknown:0 "\n\nNobody seems to have figured out the sinister nature of the child's death."
+ quix_murder_outcome.2202.a.discovered:0 "Come now, even I can't control spiders!"
+ quix_murder_outcome.2202.a:0 "It never gets old."
 
  quix_murder_outcome.4001.t:0 "A Toasty Inn..."
  quix_murder_outcome.4001.failure_declaration_1:0 "[target.GetTitledFirstName] yet lives!"
@@ -563,6 +576,17 @@
  quix_murder_outcome.4201.noagent.scheme_unknown:0 "The only good news, however, is that the failed plot remains a secret."
  quix_murder_outcome.4201.a.discovered:0 "I was only trying to protect the child from the perils of water!"
  quix_murder_outcome.4201.a:0 "You have to hold him under!"
+
+ quix_murder_outcome.4202.t:0 "Trojan Horse"
+ quix_murder_outcome.4201.failure_declaration_1:0 "Our plot to kill [target.GetTitledFirstName] has failed! The child did not think very highly of our gift, and had it taken away!"
+ quix_murder_outcome.4201.failure_declaration_2:0 "It would appear our horse filled with spiders failed to kill young [target.GetTitledFirstName]. Whether the mechanism failed, or the spiders could not be roused to their duty, it will never be known."
+ quix_murder_outcome.4201.failure_declaration_3:0 "We have not yet rid ourselves of [target.GetTitledFirstName], as it would appear the spiders killed a cleaning maid instead!"
+ quix_murder_outcome.4201.agent.scheme_owner_known:0 "[acting_agent.GetFirstNameNoTooltip] was overwhelmed with guilt, however, and has told of my plot!"
+ quix_murder_outcome.4201.noagent.scheme_owner_known:0 "My agent was overwhelmed with guilt, however, and has told of my plot!"
+ quix_murder_outcome.4201.agent.scheme_unknown:0 "Fortunately, nobody has realizes this was a plot, least of not one by us!"
+ quix_murder_outcome.4201.noagent.scheme_unknown:0 "Fortunately, this folly has not resulted in our involvement being known to anyone. That could have been embarassing."
+ quix_murder_outcome.4201.a.discovered:0 "It's all lies! I'd never approve such a foolish plan."
+ quix_murder_outcome.4201.a:0 "I love spiders! Just keep them away from me."
 
  quix_murder_outcome.5001.generic:0 "Assassin! A brief moment of terror is the last thing you know, the fleeting realization that the end is here. Your enemies have won, and your time upon the earth has been brought to a sudden and violent end. With your last thought, your mind turns to the great unknown before you."
  quix_murder_outcome.5002.generic:0 "A trusted man just came in to tell me that an attempt on my life has been foiled! Those bastards will have to try harder than that to get me!"
