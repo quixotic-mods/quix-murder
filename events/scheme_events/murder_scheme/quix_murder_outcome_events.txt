@@ -2744,7 +2744,7 @@ quix_murder_outcome.2201 = {
 			}
 			text = quix_murder_outcome.2201.a
 		}
-		successful_quix_murder_outcome_event_option_effect = yes
+		successful_murder_outcome_event_option_effect = yes
 		stress_impact = {
 			base = medium_stress_gain
 			compassionate = major_stress_impact_gain
@@ -2774,7 +2774,6 @@ quix_murder_outcome.2202 = {
 		animation = pain
 	}
 
-
 	trigger = {
 		scope:murder_method = flag:spider_gift
 	}
@@ -2796,14 +2795,13 @@ quix_murder_outcome.2202 = {
 			}
 			text = quix_murder_outcome.2202.a
 		}
-		successful_quix_murder_outcome_event_option_effect = yes
+		successful_murder_outcome_event_option_effect = yes
 		stress_impact = {
 			base = medium_stress_gain
 			compassionate = major_stress_impact_gain
 		}
 	}
 }
-
 
 ###############################
 # FAILURE OUTCOMES 4000 - 4999

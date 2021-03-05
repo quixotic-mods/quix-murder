@@ -55,7 +55,7 @@ teen_murder_method_selection = {
 		#100 = murder_outcome.0201 # Leave a child in the forest
 		#100 = murder_outcome.0204 # Poisoned candy
 		#100 = murder_outcome.0205 # Child pushed to death
-		#100 = quix_murder_outcome.0201 #Swimming Lessons
+		100 = quix_murder_outcome.0201 #Swimming Lessons
 	}
 }
 
@@ -113,7 +113,7 @@ standard_murder_method_selection = {
 		100 = quix_murder_outcome.0108 # The Bold Bloodletter
 		100 = quix_murder_outcome.0109 # Masqued Murderers
 		100 = quix_murder_outcome.0110 # idk
-		100 = quix_murder_outcome.0111#
+		100 = quix_murder_outcome.0111
 		100 = quix_murder_outcome.0112
 		100 = quix_murder_outcome.0113
 		100 = quix_murder_outcome.0114
