@@ -32,6 +32,21 @@ infant_murder_method_selection = {
 child_murder_method_selection = {
 	trigger = {
 		scope:scheme.scheme_target = {
+			age < 12
+		}
+	}
+	random_events = {
+		#100 = murder_outcome.0201 # Leave a child in the forest
+		#100 = murder_outcome.0204 # Poisoned candy
+		#100 = murder_outcome.0205 # Child pushed to death
+		#100 = quix_murder_outcome.0201 #Swimming Lessons
+		100 = quix_murder_outcome.0202 #Trojan Horse
+	}
+}
+
+teen_murder_method_selection = {
+	trigger = {
+		scope:scheme.scheme_target = {
 			is_adult = no
 		}
 	}
@@ -39,7 +54,7 @@ child_murder_method_selection = {
 		#100 = murder_outcome.0201 # Leave a child in the forest
 		#100 = murder_outcome.0204 # Poisoned candy
 		#100 = murder_outcome.0205 # Child pushed to death
-		100 = quix_murder_outcome.0201 #Swimming Lessons
+		#100 = quix_murder_outcome.0201 #Swimming Lessons
 	}
 }
 
@@ -87,17 +102,17 @@ standard_murder_method_selection = {
 		100 = murder_outcome.0105 # A riled-up mob
 		100 = murder_outcome.0106 # Immurement
 		100 = murder_outcome.0107 # Sink a boat they're on
-		100 = quix_murder_outcome.0101
-		100 = quix_murder_outcome.0102
-		100 = quix_murder_outcome.0103
-		100 = quix_murder_outcome.0104
-		100 = quix_murder_outcome.0105
-		100 = quix_murder_outcome.0106
-		100 = quix_murder_outcome.0107
-		100 = quix_murder_outcome.0108
-		100 = quix_murder_outcome.0109
-		100 = quix_murder_outcome.0110
-		100 = quix_murder_outcome.0111
+		100 = quix_murder_outcome.0101 # A Toasty Inn
+		100 = quix_murder_outcome.0102 # Arrow to the Balcony
+		100 = quix_murder_outcome.0103 # Dead Drunk
+		100 = quix_murder_outcome.0104 # Night Terror
+		100 = quix_murder_outcome.0105 # Stone Cold
+		100 = quix_murder_outcome.0106 # Dereliction of Duty
+		100 = quix_murder_outcome.0107 # Night Rider
+		100 = quix_murder_outcome.0108 # The Bold Bloodletter
+		100 = quix_murder_outcome.0109 # Masqued Murderers
+		100 = quix_murder_outcome.0110 # idk
+		100 = quix_murder_outcome.0111#
 		100 = quix_murder_outcome.0112
 		100 = quix_murder_outcome.0113
 		100 = quix_murder_outcome.0114
@@ -105,9 +120,10 @@ standard_murder_method_selection = {
 		100 = quix_murder_outcome.0116
 		100 = quix_murder_outcome.0117
 		100 = quix_murder_outcome.0118
-		100 = quix_murder_outcome.0119
-		100 = quix_murder_outcome.0120
-		100 = quix_murder_outcome.0201
+		100 = quix_murder_outcome.0119 # The Prize Fighter
+		100 = quix_murder_outcome.0120 # A shadowy organization
+		100 = quix_murder_outcome.0201 #swimming lessons
+		100 = quix_murder_outcome.0202 #Trojan Horse
 	}
 }
 
@@ -150,6 +166,7 @@ murder_setup = {
 		murder_outcome.1302 #Unwelcome guest during House Arrest
 		murder_outcome.1401 #Strangling Incapable
 		quix_murder_outcome.1201 #Swimming Lessons
+		quix_murder_outcome.1202 #Trojan Horse
 
 	}
 }
@@ -254,6 +271,7 @@ murder_succeeded = {
 		murder_outcome.2302 #Unwelcome guest during House Arrest
 		murder_outcome.2401 #Strangling incapable
 		quix_murder_outcome.2201 #swimming lessons
+		quix_murder_outcome.2202 #Trojan Horse
 	}
 	effect = {
 
@@ -342,6 +360,7 @@ murder_failed = {
 		murder_outcome.4302 #Unwelcome guest during House Arrest
 		murder_outcome.4401 #Strangling incapable
 		quix_murder_outcome.4201 #swimming lessons
+		quix_murder_outcome.4202 #Trojan Horse
 	}
 }
 
