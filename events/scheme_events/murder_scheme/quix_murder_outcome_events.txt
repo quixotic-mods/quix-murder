@@ -1293,7 +1293,7 @@ quix_murder_outcome.1201 = {
 	option = {
 		name = quix_murder_outcome.1201.a
 		custom_tooltip = murder_child_really_tooltip
-		quix_murder_outcome_roll_effect = yes
+		murder_outcome_roll_effect = yes
 	}
 
 	option = {
@@ -2626,7 +2626,7 @@ quix_murder_outcome.2020 = {
 }
 
 # 2200 Child Murder Success
-# Swimming Lessons
+# 2201 Swimming Lessons
 quix_murder_outcome.2201 = {
 	type = character_event
 	title = quix_murder_outcome.2201.t

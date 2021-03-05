@@ -101,7 +101,7 @@
 
  quix_murder_outcome.1201.t:0 "Swimming Lessons"
  quix_murder_outcome.1201.desc:0 "[acting_agent.GetTitledFirstName] has a plan to deal with little [target.GetTitledFirstName]. The child will be staying at a lakefront estate, and [acting_agent.GetTitledFirstName] will show up and give [target.GetTitledFirstName] an impromptu swimming lesson.\n\nAfter all, water is so very dangerous for a young child when left unattended..."
- murder_outcome.1201.no_acting_agent:0 "Our agents have a plan to deal with little [target.GetTitledFirstName]. The child will be staying at a lakefront estate, and one of our people will show up and give [target.GetTitledFirstName] an impromptu swimming lesson.\n\nAfter all, water is so very dangerous for a young child when left unattended..."
+ quix_murder_outcome.1201.no_acting_agent:0 "Our agents have a plan to deal with little [target.GetTitledFirstName]. The child will be staying at a lakefront estate, and one of our people will show up and give [target.GetTitledFirstName] an impromptu swimming lesson.\n\nAfter all, water is so very dangerous for a young child when left unattended..."
  quix_murder_outcome.1201.a:0 "Swimming is such a...rare skill."
  quix_murder_outcome.1201.b:0 "This is too much!"
 
