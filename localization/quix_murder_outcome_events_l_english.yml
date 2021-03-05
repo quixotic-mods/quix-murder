@@ -326,12 +326,12 @@
  quix_murder_outcome.2020.a.discovered:0 "This is clearly the work of some evil mastermind, not me!"
   quix_murder_outcome.2020.a:0 "Can we keep them on retainer?"
 
- murder_outcome.2201.t:0 "Swimming Lessons Failed"
- murder_outcome.2201.opening:0 "[target.GetTitledFirstName] has drowned!\n\n[target.GetHerHis|U] last moments spent struggling in the water, before body sunk to the bottom, and wasn't found until the nex day."
- murder_outcome.2201.scheme_owner_known:0 "\n\nHowever, it would seem there was a witness who saw the whole thing! Our agent was apprehended and our involvement in this dark deed is known to all."
- murder_outcome.2201.scheme_unknown:0 "\n\nBy all appearances, just a terrible accident. No one seems to suspect I had anything to do with it, at the very least."
- murder_outcome.2201.a.discovered:0 "This is preciesly why swimming lessons were so important!"
- murder_outcome.2201.a:0 "One less nuisance."
+ quix_murder_outcome.2201.t:0 "Swimming Lessons Failed"
+ quix_murder_outcome.2201.opening:0 "[target.GetTitledFirstName] has drowned!\n\n[target.GetHerHis|U] last moments spent struggling in the water, before body sunk to the bottom, and wasn't found until the nex day."
+ quix_murder_outcome.2201.scheme_owner_known:0 "\n\nHowever, it would seem there was a witness who saw the whole thing! Our agent was apprehended and our involvement in this dark deed is known to all."
+ quix_murder_outcome.2201.scheme_unknown:0 "\n\nBy all appearances, just a terrible accident. No one seems to suspect I had anything to do with it, at the very least."
+ quix_murder_outcome.2201.a.discovered:0 "This is preciesly why swimming lessons were so important!"
+ quix_murder_outcome.2201.a:0 "One less nuisance."
 
  quix_murder_outcome.4001.t:0 "A Toasty Inn..."
  quix_murder_outcome.4001.failure_declaration_1:0 "[target.GetTitledFirstName] yet lives!"
