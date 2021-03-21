@@ -5040,6 +5040,7 @@ quix_murder_outcome.4201 = {
 		}
 	}
 }
+}
 
 # Trojan Horse
 quix_murder_outcome.4202 = {
@@ -5150,6 +5151,9 @@ quix_murder_outcome.4202 = {
 	}
 }
 
+}
+
+
 # 4230 Infant
 # 4231 Baby With The Bathwater
 quix_murder_outcome.4231 = {
@@ -5196,10 +5200,11 @@ quix_murder_outcome.4231 = {
 
 	trigger = {
 		scope:murder_method = flag:tossed_in_moat
-
+	}
 	immediate = {
 		murder_failure_effect = yes
 	}
+	
 
 	option = {
 		name = {
@@ -5258,3 +5263,4 @@ quix_murder_outcome.4231 = {
 		}
 	}
 }
+} 
