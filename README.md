@@ -1,12 +1,12 @@
 # Quixotic Murder - Crusader Kings 3 Mod
 **Version: 1.3.1.002**
-*by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*
+*by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://www.patreon.com/donquixote *
 
-**Adds 20 NEW Murder Scheme Outcome Event Chains**
+**Adds 23 NEW Murder Scheme Outcome Event Chains**
 
 Tired of killing people the same few ways for HUNDREDS OF YEARS!?
 
-This mod is intended to greatly enhance the variety of murder schemes in the game. In vanilla, there are only 7 standard murder scheme outcomes. This mod nearly triples that, adding 20 new events in addition to the vanilla events. It was designed with an attempt to keep the tone and writing style close to vanilla, while not affecting game balance at all. It is intended for roleplay, flavor, and immersion. I hope you enjoy it!
+This mod is intended to greatly enhance the variety of murder schemes in the game. In vanilla, there are only 7 standard murder scheme outcomes. This mod nearly triples that, adding 23 new events in addition to the vanilla events. It was designed with an attempt to keep the tone and writing style close to vanilla, while not affecting game balance at all. It is intended for roleplay, flavor, and immersion. I hope you enjoy it!
 
 Your Humble Servant,
 Don Quixote de la Mancha
@@ -14,7 +14,7 @@ Don Quixote de la Mancha
 ## Language Support
 All Quixotic mods are only officially supported in English Only. Any languages provided are community translations and I cannot personally verify the quality, the accuracy, or the content of these translations. Furthmore, as I continue to update and expand these mods, some language files will become outdated and may have missing localizations for newer events.
 
-Community Submitted Languages (Last Complete Version - Some Localization may be missing)
+### Community Submitted Languages (Last Complete Version - Some Localization may be missing)
 Deutsche(1.2.2.002)  - Danke LordKhaox!
 русский(1.2.2.002) - Спасибо Aytendeo!
 简化字(1.2.2.002) - 谢谢你 Juijote!
@@ -33,9 +33,12 @@ If you install the mod manually, be sure to delete any previous versions rather 
 
 ## Mod Content
 Additions:
-* 20 new regular murder scheme outcome event chains - 60 individual events, each with multiple variations - over 500 lines of custom dialog.
+* 23 new regular murder scheme outcome event chains - 66 individual events, each with multiple variations - over 500 lines of custom dialog.
 
 ## Changelog
+
+### 1.3.1.002
+* Added 1 new "teenager" (12+) murder. 
 
 ### 1.3.1.001
 * Updated to Game Version 1.3.1 (Corvus)
