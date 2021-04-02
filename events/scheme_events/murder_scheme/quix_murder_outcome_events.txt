@@ -1,7 +1,7 @@
 ##################################
 # Quixotic Murder
 # quix_murder_outcome_events.txt
-# Version:1.3.001
+# Version:1.3.1.001
 # by El Ingenioso Hidalgo Don Quixote de la Mancha
 # https://DonQuixote.Games/
 ##################################
@@ -422,7 +422,6 @@ quix_murder_outcome.0201 = {
 	}
 }
 
-# 202 Trojan Horse
 quix_murder_outcome.0202 = {
 	type = character_event
 	hidden = yes
@@ -436,23 +435,7 @@ quix_murder_outcome.0202 = {
 	}
 }
 
-# 0230 Infant
-# 231 Baby With The Bathwater
-quix_murder_outcome.0231 = {
-	type = character_event
-	hidden = yes
 
-	immediate = {
-		save_scope_value_as = {
-			name = murder_method
-			value = flag:tossed_in_moat
-		}
-		trigger_event = { on_action = murder_setup }
-	}
-}
-# 232 Exposure
-
-# 0260 Teen
 
 ################################
 # IMPRISONMENT MURDERS
@@ -1330,7 +1313,7 @@ quix_murder_outcome.1201 = {
 		custom_tooltip = do_not_execute_murder_tooltip
 	}
 }
-# 1202 Trojan Horse 
+
 quix_murder_outcome.1202 = {
 	title = quix_murder_outcome.1202.t
 	desc = {
@@ -1384,70 +1367,6 @@ quix_murder_outcome.1202 = {
 
 	option = {
 		name = quix_murder_outcome.1202.b
-		ai_chance = {
-			base = 0
-		}
-		scope:scheme = {
-			add_scheme_progress = decline_execution_setback
-		}
-		custom_tooltip = do_not_execute_murder_tooltip
-	}
-}
-# 1230 Infant
-# 1231 Baby with the Bathwater
-quix_murder_outcome.1231 = {
-	title = quix_murder_outcome.1231.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					exists = scope:acting_agent
-				}
-				desc = quix_murder_outcome.1231.desc
-			}
-			desc = quix_murder_outcome.1231.no_acting_agent
-		}
-	}
-	theme = murder_scheme
-	left_portrait = scope:target
-	widget = {
-		gui = "event_window_widget_scheme"
-		container = "custom_widgets_container"
-	}
-
-	trigger = {
-		scope:murder_method = flag:tossed_in_moat
-	}
-
-	immediate = {
-		murder_outcome_roll_setup_effect = yes
-		scope:scheme = {
-			if = {
-				limit = {
-					any_scheme_agent = {
-						scope:scheme = {
-							NOT = {is_scheme_agent_exposed = prev }
-						}
-					}
-				}
-				random_scheme_agent = {
-					save_scope_as = acting_agent
-				}
-			}
-			else = {
-				random_dummy_gender_effect = yes
-			}
-		}
-	}
-
-	option = {
-		name = quix_murder_outcome.1231.a
-		custom_tooltip = murder_child_really_tooltip
-		murder_outcome_roll_effect = yes
-	}
-
-	option = {
-		name = quix_murder_outcome.1231.b
 		ai_chance = {
 			base = 0
 		}
@@ -2776,6 +2695,7 @@ quix_murder_outcome.2020 = {
 
 # 2200 Child Murder Success
 # 2201 Swimming Lessons
+
 quix_murder_outcome.2201 = {
 	type = character_event
 	title = quix_murder_outcome.2201.t
@@ -2796,7 +2716,6 @@ quix_murder_outcome.2201 = {
 		character = scope:target
 		animation = pain
 	}
-
 
 	trigger = {
 		scope:murder_method = flag:tossed_in_lake
@@ -2827,7 +2746,7 @@ quix_murder_outcome.2201 = {
 	}
 }
 
-# 2202 Trojan Horse
+
 quix_murder_outcome.2202 = {
 	type = character_event
 	title = quix_murder_outcome.2202.t
@@ -2869,58 +2788,6 @@ quix_murder_outcome.2202 = {
 				NOT = { exists = scope:scheme_discovered }
 			}
 			text = quix_murder_outcome.2202.a
-		}
-		successful_murder_outcome_event_option_effect = yes
-		stress_impact = {
-			base = medium_stress_gain
-			compassionate = major_stress_impact_gain
-		}
-	}
-}
-
-# 2230 Infants
-# 2231 Baby with the Bathwater
-quix_murder_outcome.2231 = {
-	type = character_event
-	title = quix_murder_outcome.2231.t
-	desc = {
-		desc = quix_murder_outcome.2231.opening
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					exists = scope:scheme_discovered
-				}
-				desc = quix_murder_outcome.2231.scheme_owner_known
-			}
-			desc = quix_murder_outcome.2231.scheme_unknown
-		}
-	}
-	theme = murder_scheme
-	left_portrait = {
-		character = scope:target
-		animation = pain
-	}
-
-	trigger = {
-		scope:murder_method = flag:tossed_in_moat
-	}
-
-	immediate = {
-		murder_success_effect = yes
-	}
-
-	option = {
-		name = {
-			trigger = {
-				exists = scope:scheme_discovered
-			}
-			text = quix_murder_outcome.2231.a.discovered
-		}
-		name = {
-			trigger = {
-				NOT = { exists = scope:scheme_discovered }
-			}
-			text = quix_murder_outcome.2231.a
 		}
 		successful_murder_outcome_event_option_effect = yes
 		stress_impact = {
@@ -4942,30 +4809,14 @@ quix_murder_outcome.4201 = {
 			desc = quix_murder_outcome.4201.failure_declaration_2
 			desc = quix_murder_outcome.4201.failure_declaration_3
 		}
-
-		}
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					exists = scope:scheme_discovered
 				}
-				first_valid = {
-					triggered_desc = {
-						trigger = {
-							exists = scope:acting_agent
-						}
-						desc = quix_murder_outcome.4201.agent.scheme_owner_known
-					}
-				desc = quix_murder_outcome.4201.noagent.scheme_owner_known
+				desc = quix_murder_outcome.4201.scheme_owner_known
 			}
-			first_valid = {
-				triggered_desc = {
-					trigger = {
-						exists = scope:acting_agent
-					}
-					desc = quix_murder_outcome.4201.agent.scheme_unknown
-				}
-			desc = quix_murder_outcome.4201.noagent.scheme_unknown
+			desc = quix_murder_outcome.4201.scheme_unknown
 		}
 	}
 	
@@ -4988,13 +4839,13 @@ quix_murder_outcome.4201 = {
 			trigger = {
 				exists = scope:scheme_discovered
 			}
-			text = quix_murder_outcome.4201.a.discovered
+			text = murder_outcome.4201.a.discovered
 		}
 		name = {
 			trigger = {
 				NOT = { exists = scope:scheme_discovered }
 			}
-			text = quix_murder_outcome.4201.a
+			text = murder_outcome.4201.a
 		}
 		show_as_tooltip = {
 			scope:scheme = {
@@ -5010,7 +4861,7 @@ quix_murder_outcome.4201 = {
 	}
 
 	option = {
-		name = quix_murder_outcome.4201.b
+		name = murder_outcome.4001.b
 		trigger = {
 			NOT = { exists = scope:scheme_discovered }
 		}
@@ -5040,7 +4891,6 @@ quix_murder_outcome.4201 = {
 		}
 	}
 }
-}
 
 # Trojan Horse
 quix_murder_outcome.4202 = {
@@ -5052,30 +4902,14 @@ quix_murder_outcome.4202 = {
 			desc = quix_murder_outcome.4202.failure_declaration_2
 			desc = quix_murder_outcome.4202.failure_declaration_3
 		}
-
-		}
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					exists = scope:scheme_discovered
 				}
-				first_valid = {
-					triggered_desc = {
-						trigger = {
-							exists = scope:acting_agent
-						}
-						desc = quix_murder_outcome.4202.agent.scheme_owner_known
-					}
-				desc = quix_murder_outcome.4202.noagent.scheme_owner_known
+				desc = quix_murder_outcome.4202.scheme_owner_known
 			}
-			first_valid = {
-				triggered_desc = {
-					trigger = {
-						exists = scope:acting_agent
-					}
-					desc = quix_murder_outcome.4202.agent.scheme_unknown
-				}
-			desc = quix_murder_outcome.4202.noagent.scheme_unknown
+			desc = quix_murder_outcome.4202.scheme_unknown
 		}
 	}
 	
@@ -5098,13 +4932,13 @@ quix_murder_outcome.4202 = {
 			trigger = {
 				exists = scope:scheme_discovered
 			}
-			text = quix_murder_outcome.4202.a.discovered
+			text = murder_outcome.4202.a.discovered
 		}
 		name = {
 			trigger = {
 				NOT = { exists = scope:scheme_discovered }
 			}
-			text = quix_murder_outcome.4202.a
+			text = murder_outcome.4202.a
 		}
 		show_as_tooltip = {
 			scope:scheme = {
@@ -5120,7 +4954,7 @@ quix_murder_outcome.4202 = {
 	}
 
 	option = {
-		name = quix_murder_outcome.4202.b
+		name = murder_outcome.4001.b
 		trigger = {
 			NOT = { exists = scope:scheme_discovered }
 		}
@@ -5150,117 +4984,3 @@ quix_murder_outcome.4202 = {
 		}
 	}
 }
-
-}
-
-
-# 4230 Infant
-# 4231 Baby With The Bathwater
-quix_murder_outcome.4231 = {
-	type = character_event
-	title = quix_murder_outcome.4231.t
-	desc = {
-		random_valid = {
-			desc = quix_murder_outcome.4231.failure_declaration_1
-			desc = quix_murder_outcome.4231.failure_declaration_2
-			desc = quix_murder_outcome.4231.failure_declaration_3
-		}
-
-		}
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					exists = scope:scheme_discovered
-				}
-				first_valid = {
-					triggered_desc = {
-						trigger = {
-							exists = scope:acting_agent
-						}
-						desc = quix_murder_outcome.4231.agent.scheme_owner_known
-					}
-				desc = quix_murder_outcome.4231.noagent.scheme_owner_known
-			}
-			first_valid = {
-				triggered_desc = {
-					trigger = {
-						exists = scope:acting_agent
-					}
-					desc = quix_murder_outcome.4231.agent.scheme_unknown
-				}
-			desc = quix_murder_outcome.4231.noagent.scheme_unknown
-		}
-	}
-	
-	theme = murder_scheme
-	left_portrait = {
-		character = scope:target
-		animation = shock
-	}
-
-	trigger = {
-		scope:murder_method = flag:tossed_in_moat
-	}
-	immediate = {
-		murder_failure_effect = yes
-	}
-	
-
-	option = {
-		name = {
-			trigger = {
-				exists = scope:scheme_discovered
-			}
-			text = quix_murder_outcome.4231.a.discovered
-		}
-		name = {
-			trigger = {
-				NOT = { exists = scope:scheme_discovered }
-			}
-			text = quix_murder_outcome.4231.a
-		}
-		show_as_tooltip = {
-			scope:scheme = {
-				end_scheme = yes
-			}
-			if = {
-				limit = {
-					exists = scope:scheme_discovered
-				}
-				add_dread = minor_dread_gain
-			}
-		}
-	}
-
-	option = {
-		name = quix_murder_outcome.4231.b
-		trigger = {
-			NOT = { exists = scope:scheme_discovered }
-		}
-		show_as_tooltip = {
-			if = {
-				limit = {
-					exists = scope:scheme_discovered
-				}
-				add_dread = minor_dread_gain
-			}
-			start_scheme = {
-				type = murder
-				target = scope:target
-			}
-		}
-		hidden_effect = {
-			save_scope_value_as = {
-				name = restart_scheme
-				value = yes
-			}
-		}
-	}
-
-	after = {
-		hidden_effect = {
-			trigger_event = murder_outcome.9999
-		}
-	}
-}
-} 

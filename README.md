@@ -1,5 +1,5 @@
 # Quixotic Murder - Crusader Kings 3 Mod
-**Version: 1.3.001**
+**Version: 1.3.1.001**
 *by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*
 
 **Adds 20 NEW Murder Scheme Outcome Event Chains**
@@ -15,8 +15,10 @@ Don Quixote de la Mancha
 All Quixotic mods are only officially supported in English Only. Any languages provided are community translations and I cannot personally verify the quality, the accuracy, or the content of these translations. Furthmore, as I continue to update and expand these mods, some language files will become outdated and may have missing localizations for newer events.
 
 Community Submitted Languages
-Deutsche - Danke LordKhaox!
-русский - Спасибо Aytendeo!
+Deutsche(1.2.2.002)  - Danke LordKhaox!
+русский(1.2.2.002) - Спасибо Aytendeo!
+简化字(1.2.2.002) - 谢谢你 Juijote!
+
 
 ## Compatibility
 This mod is NOT compatible with other murder scheme event mods. Technically speaking, I am overwriting murder_on_actions.txt because this is the only way I can figure out to insert the custom events into schemes. If you know a better way, please let me know. Mod authors, I would be happy to release a patch for your mod and give you everything you need to release one for mine, hit me up. If you want it to load Quixotic Murder events into another mod, like a total conversion, run it lower in the load order.
@@ -35,6 +37,12 @@ Additions:
 * 20 new regular murder scheme outcome event chains - 60 individual events, each with multiple variations - over 500 lines of custom dialog.
 
 ## Changelog
+
+### 1.3.1.001
+* Updated to Game Version 1.3.1 (Corvus)
+* Added 2 New Child & Infant Murders
+* Changed the way vanilla assigns murders so teenagers only get appropriate options now
+* Added Chinese community language support
 
 ### 1.2.2.002
 * Added Russian and German community language support

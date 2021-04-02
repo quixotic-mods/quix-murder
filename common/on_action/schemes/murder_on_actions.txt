@@ -1,7 +1,7 @@
 ﻿##################################
 # Quixotic Murder
-# quix_murder_on_actions.txt
-# Version:1.3.001
+# murder_on_actions.txt
+# Version:1.3.1.001
 # by El Ingenioso Caballero Don Quixote de la Mancha
 # https://DonQuixote.Games/
 ##################################
@@ -37,10 +37,10 @@ child_murder_method_selection = {
 		}
 	}
 	random_events = {
-		#100 = murder_outcome.0201 # Leave a child in the forest
-		#100 = murder_outcome.0204 # Poisoned candy
-		#100 = murder_outcome.0205 # Child pushed to death
-		#100 = quix_murder_outcome.0201 #Swimming Lessons
+		100 = murder_outcome.0201 # Leave a child in the forest
+		100 = murder_outcome.0204 # Poisoned candy
+		100 = murder_outcome.0205 # Child pushed to death
+		100 = quix_murder_outcome.0201 #Swimming Lessons
 		100 = quix_murder_outcome.0202 #Trojan Horse
 	}
 }
@@ -52,10 +52,8 @@ teen_murder_method_selection = {
 		}
 	}
 	random_events = {
-		#100 = murder_outcome.0201 # Leave a child in the forest
-		#100 = murder_outcome.0204 # Poisoned candy
-		#100 = murder_outcome.0205 # Child pushed to death
-		100 = quix_murder_outcome.0201 #Swimming Lessons
+		100 = murder_outcome.0205 # Child pushed to death
+
 	}
 }
 
@@ -92,7 +90,6 @@ house_arrest_murder_method_selection = {
 		100 = murder_outcome.0302
 	}
 }
-
 
 standard_murder_method_selection = {
 	random_events = {
