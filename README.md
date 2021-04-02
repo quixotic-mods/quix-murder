@@ -41,7 +41,8 @@ Additions:
 * Updated to Game Version 1.3.1 (Corvus)
 * Added 2 New Child & Infant Murders
 * Changed the way vanilla assigns murders so teenagers only get appropriate options now
-* Added Chinese community language support
+* Added Chinese community language support (by Juijote!)
+* German Community language bugfix (by LordKhaox!)
 
 ### 1.2.2.002
 * Added Russian and German community language support
