@@ -1,7 +1,7 @@
 ##################################
 # Quixotic Murder
 # quix_murder_outcome_events.txt
-# Version:1.3.1.001
+# Version:1.3.1.002
 # by El Ingenioso Hidalgo Don Quixote de la Mancha
 # https://DonQuixote.Games/
 ##################################
@@ -422,6 +422,7 @@ quix_murder_outcome.0201 = {
 	}
 }
 
+# 202 Trojan Horse
 quix_murder_outcome.0202 = {
 	type = character_event
 	hidden = yes
@@ -435,6 +436,19 @@ quix_murder_outcome.0202 = {
 	}
 }
 
+# 203 The Runaway
+quix_murder_outcome.0203 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:abducted
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
 
 
 ################################
@@ -1313,7 +1327,7 @@ quix_murder_outcome.1201 = {
 		custom_tooltip = do_not_execute_murder_tooltip
 	}
 }
-
+# 1202 Trojan Horse
 quix_murder_outcome.1202 = {
 	title = quix_murder_outcome.1202.t
 	desc = {
@@ -1367,6 +1381,70 @@ quix_murder_outcome.1202 = {
 
 	option = {
 		name = quix_murder_outcome.1202.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+# The Runaway
+quix_murder_outcome.1203 = {
+	title = quix_murder_outcome.1203.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:acting_agent
+				}
+				desc = quix_murder_outcome.1203.desc
+			}
+			desc = quix_murder_outcome.1203.no_acting_agent
+		}
+	}
+	theme = murder_scheme
+	left_portrait = scope:target
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:murder_method = flag:abducted
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+		scope:scheme = {
+			if = {
+				limit = {
+					any_scheme_agent = {
+						scope:scheme = {
+							NOT = {is_scheme_agent_exposed = prev }
+						}
+					}
+				}
+				random_scheme_agent = {
+					save_scope_as = acting_agent
+				}
+			}
+			else = {
+				random_dummy_gender_effect = yes
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1203.a
+		custom_tooltip = murder_child_really_tooltip
+		murder_outcome_roll_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1203.b
 		ai_chance = {
 			base = 0
 		}
@@ -2695,7 +2773,6 @@ quix_murder_outcome.2020 = {
 
 # 2200 Child Murder Success
 # 2201 Swimming Lessons
-
 quix_murder_outcome.2201 = {
 	type = character_event
 	title = quix_murder_outcome.2201.t
@@ -2746,7 +2823,7 @@ quix_murder_outcome.2201 = {
 	}
 }
 
-
+# 2202 Trojan Horse
 quix_murder_outcome.2202 = {
 	type = character_event
 	title = quix_murder_outcome.2202.t
@@ -2788,6 +2865,57 @@ quix_murder_outcome.2202 = {
 				NOT = { exists = scope:scheme_discovered }
 			}
 			text = quix_murder_outcome.2202.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+		stress_impact = {
+			base = medium_stress_gain
+			compassionate = major_stress_impact_gain
+		}
+	}
+}
+
+# 2203 The Runaway
+quix_murder_outcome.2203 = {
+	type = character_event
+	title = quix_murder_outcome.2203.t
+	desc = {
+		desc = quix_murder_outcome.2203.opening
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.2203.scheme_owner_known
+			}
+			desc = quix_murder_outcome.2203.scheme_unknown
+		}
+	}
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = pain
+	}
+
+	trigger = {
+		scope:murder_method = flag:abducted
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2203.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2203.a
 		}
 		successful_murder_outcome_event_option_effect = yes
 		stress_impact = {
@@ -4932,13 +5060,105 @@ quix_murder_outcome.4202 = {
 			trigger = {
 				exists = scope:scheme_discovered
 			}
-			text = murder_outcome.4202.a.discovered
+			text = quix_murder_outcome.4202.a.discovered
 		}
 		name = {
 			trigger = {
 				NOT = { exists = scope:scheme_discovered }
 			}
-			text = murder_outcome.4202.a
+			text = quix_murder_outcome.4202.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4001.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+quix_murder_outcome.4203 = {
+	type = character_event
+	title = quix_murder_outcome.4203.t
+	desc = {
+		random_valid = {
+			desc = quix_murder_outcome.4203.failure_declaration_1
+			desc = quix_murder_outcome.4203.failure_declaration_2
+			desc = quix_murder_outcome.4203.failure_declaration_3
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.4203.scheme_owner_known
+			}
+			desc = quix_murder_outcome.4203.scheme_unknown
+		}
+	}
+	
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:abducted
+	}
+
+	immediate = {
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = murder_outcome.4203.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = murder_outcome.4203.a
 		}
 		show_as_tooltip = {
 			scope:scheme = {

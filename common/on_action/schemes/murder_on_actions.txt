@@ -1,9 +1,9 @@
 ﻿##################################
 # Quixotic Murder
 # murder_on_actions.txt
-# Version:1.3.1.001
+# Version:1.3.1.002
 # by El Ingenioso Caballero Don Quixote de la Mancha
-# https://DonQuixote.Games/
+# https://www.patreon.com/donquixote
 ##################################
 
 murder_method_selection = {
@@ -33,7 +33,7 @@ infant_murder_method_selection = {
 child_murder_method_selection = {
 	trigger = {
 		scope:scheme.scheme_target = {
-			age < 12
+			age < 11
 		}
 	}
 	random_events = {
@@ -53,6 +53,7 @@ teen_murder_method_selection = {
 	}
 	random_events = {
 		100 = murder_outcome.0205 # Child pushed to death
+		100 = quix_murder_outcome.0203 # Faked runaway
 
 	}
 }
@@ -122,6 +123,7 @@ standard_murder_method_selection = {
 		100 = quix_murder_outcome.0120 # A shadowy organization
 		100 = quix_murder_outcome.0201 #swimming lessons
 		100 = quix_murder_outcome.0202 #Trojan Horse
+		100 = quic_murder_outcome.0203
 	}
 }
 
@@ -165,6 +167,7 @@ murder_setup = {
 		murder_outcome.1401 #Strangling Incapable
 		quix_murder_outcome.1201 #Swimming Lessons
 		quix_murder_outcome.1202 #Trojan Horse
+		quix_murder_outcome.1203 #The Runaway
 
 	}
 }
@@ -274,6 +277,7 @@ murder_succeeded = {
 		murder_outcome.2401 #Strangling incapable
 		quix_murder_outcome.2201 #swimming lessons
 		quix_murder_outcome.2202 #Trojan Horse
+		quix_murder_outcome.2203 #the runaway
 	}
 	effect = {
 
@@ -363,6 +367,7 @@ murder_failed = {
 		murder_outcome.4401 #Strangling incapable
 		quix_murder_outcome.4201 #swimming lessons
 		quix_murder_outcome.4202 #Trojan Horse
+		quix_murder_outcome.4203 #The Runaway
 	}
 }
 
