@@ -14,11 +14,10 @@ Don Quixote de la Mancha
 ## Language Support
 All Quixotic mods are only officially supported in English Only. Any languages provided are community translations and I cannot personally verify the quality, the accuracy, or the content of these translations. Furthmore, as I continue to update and expand these mods, some language files will become outdated and may have missing localizations for newer events.
 
-Community Submitted Languages
+Community Submitted Languages (Last Complete Version - Some Localization may be missing)
 Deutsche(1.2.2.002)  - Danke LordKhaox!
 русский(1.2.2.002) - Спасибо Aytendeo!
 简化字(1.2.2.002) - 谢谢你 Juijote!
-
 
 ## Compatibility
 This mod is NOT compatible with other murder scheme event mods. Technically speaking, I am overwriting murder_on_actions.txt because this is the only way I can figure out to insert the custom events into schemes. If you know a better way, please let me know. Mod authors, I would be happy to release a patch for your mod and give you everything you need to release one for mine, hit me up. If you want it to load Quixotic Murder events into another mod, like a total conversion, run it lower in the load order.
