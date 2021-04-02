@@ -1,5 +1,5 @@
 # Quixotic Murder - Crusader Kings 3 Mod
-**Version: 1.3.1.001**
+**Version: 1.3.1.002**
 *by El Ingenioso Hidalgo y Caballero Don Quixote de la Mancha ~ https://DonQuixote.Games/*
 
 **Adds 20 NEW Murder Scheme Outcome Event Chains**
