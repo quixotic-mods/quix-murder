@@ -464,19 +464,6 @@ quix_murder_outcome.0204 = {
 	}
 }
 
-# 205 The Secret Friend
-quix_murder_outcome.0205 = {
-	type = character_event
-	hidden = yes
-
-	immediate = {
-		save_scope_value_as = {
-			name = murder_method
-			value = flag:tossed_in_lake
-		}
-		trigger_event = { on_action = murder_setup }
-	}
-}
 
 
 ################################
@@ -1482,6 +1469,71 @@ quix_murder_outcome.1203 = {
 		custom_tooltip = do_not_execute_murder_tooltip
 	}
 }
+
+# Baby with the Bathwater
+quix_murder_outcome.1204 = {
+	title = quix_murder_outcome.1204.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:acting_agent
+				}
+				desc = quix_murder_outcome.1204.desc
+			}
+			desc = quix_murder_outcome.1204.no_acting_agent
+		}
+	}
+	theme = murder_scheme
+	left_portrait = scope:target
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:murder_method = flag:tossed_in_moat
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+		scope:scheme = {
+			if = {
+				limit = {
+					any_scheme_agent = {
+						scope:scheme = {
+							NOT = {is_scheme_agent_exposed = prev }
+						}
+					}
+				}
+				random_scheme_agent = {
+					save_scope_as = acting_agent
+				}
+			}
+			else = {
+				random_dummy_gender_effect = yes
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1204.a
+		custom_tooltip = murder_child_really_tooltip
+		murder_outcome_roll_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1204.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
 
 #####################################
 # SUCCESSFUL OUTCOME 2000 - 2999
@@ -2944,6 +2996,57 @@ quix_murder_outcome.2203 = {
 				NOT = { exists = scope:scheme_discovered }
 			}
 			text = quix_murder_outcome.2203.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+		stress_impact = {
+			base = medium_stress_gain
+			compassionate = major_stress_impact_gain
+		}
+	}
+}
+
+# 2204 Baby with the Bathwater
+quix_murder_outcome.2204 = {
+	type = character_event
+	title = quix_murder_outcome.2204.t
+	desc = {
+		desc = quix_murder_outcome.2204.opening
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.2204.scheme_owner_known
+			}
+			desc = quix_murder_outcome.2204.scheme_unknown
+		}
+	}
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = pain
+	}
+
+	trigger = {
+		scope:murder_method = flag:tossed_in_moat
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2204.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2204.a
 		}
 		successful_murder_outcome_event_option_effect = yes
 		stress_impact = {
@@ -5233,6 +5336,7 @@ quix_murder_outcome.4203 = {
 	}
 }
 
+# 4204 Baby with the Bathwater
 quix_murder_outcome.4204 = {
 	type = character_event
 	title = quix_murder_outcome.4204.t
@@ -5260,7 +5364,7 @@ quix_murder_outcome.4204 = {
 	}
 
 	trigger = {
-		scope:murder_method = flag:abducted
+		scope:murder_method = flag:tossed_in_moat
 	}
 
 	immediate = {
