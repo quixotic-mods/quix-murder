@@ -1,4 +1,4 @@
-##################################
+﻿##################################
 # Quixotic Murder
 # quix_murder_outcome_events.txt
 # Version:1.3.1.002
@@ -445,6 +445,34 @@ quix_murder_outcome.0203 = {
 		save_scope_value_as = {
 			name = murder_method
 			value = flag:abducted
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 204 Baby with the Bathwater
+quix_murder_outcome.0204 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:tossed_in_moat
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 205 The Secret Friend
+quix_murder_outcome.0205 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:tossed_in_lake
 		}
 		trigger_event = { on_action = murder_setup }
 	}
@@ -5112,7 +5140,7 @@ quix_murder_outcome.4202 = {
 		}
 	}
 }
-
+# The Runaway
 quix_murder_outcome.4203 = {
 	type = character_event
 	title = quix_murder_outcome.4203.t
@@ -5159,6 +5187,98 @@ quix_murder_outcome.4203 = {
 				NOT = { exists = scope:scheme_discovered }
 			}
 			text = murder_outcome.4203.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = murder_outcome.4001.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+quix_murder_outcome.4204 = {
+	type = character_event
+	title = quix_murder_outcome.4204.t
+	desc = {
+		random_valid = {
+			desc = quix_murder_outcome.4204.failure_declaration_1
+			desc = quix_murder_outcome.4204.failure_declaration_2
+			desc = quix_murder_outcome.4204.failure_declaration_3
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.4204.scheme_owner_known
+			}
+			desc = quix_murder_outcome.4204.scheme_unknown
+		}
+	}
+	
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:abducted
+	}
+
+	immediate = {
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = murder_outcome.4204.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = murder_outcome.4204.a
 		}
 		show_as_tooltip = {
 			scope:scheme = {

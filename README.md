@@ -33,12 +33,15 @@ If you install the mod manually, be sure to delete any previous versions rather 
 
 ## Mod Content
 Additions:
-* 23 new regular murder scheme outcome event chains - 66 individual events, each with multiple variations - over 500 lines of custom dialog.
+* 24 new regular murder scheme outcome event chains - 66 individual events, each with multiple variations - over 500 lines of custom dialog.
 
 ## Changelog
 
 ### 1.3.1.002
-* Added 1 new "teenager" (12+) murder. 
+* Added 1 new "teenager" (12+) murder outcome
+* Added 1 new "infant murder outcome
+* Fixed Minor bug (don't worry about it)
+* Fixed BOM formatting issue with Chinese localization
 
 ### 1.3.1.001
 * Updated to Game Version 1.3.1 (Corvus)
@@ -57,7 +60,7 @@ Initial Release
 Near Future:
 * 10+ New murder saves
 * 10+ New murder maintenance events
-* 10+ New Child & Prisoner murder outcomes
+* 6 New Child & Prisoner murder outcomes
 * 10+ New random character interaction events
 * 10+ Post-murder event chains
 
@@ -82,4 +85,4 @@ Thanks to:
 * My most noble squire, Sancho Panza.
 
 ## Fine Print
-Cruasder Kings 3 is property of Paradox Interactive. Mod is made in compliance with Paradox Interactive Mod Policy. This mod, to the extent I have to do so under the law and Paradox TOS/EULA, is published under the Creative Commons Attribution-NonCommercial-ShareAlike license (CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/). This means you can copy it, distribute it, and modify it, as long as you do not use it in a commercial work (which would be against Paradox mod policy as well), you attribute me (Don Quixote) in your readme file and descriptions, and any forks or submods are shared under the same license. I would also ask a personal favor that you do not use the name Quixotic in the title just to not confuse people as I will hopefully be publishing many more mods under this moniker. And of course, I would be always indebted to you for sharing my web page: https://www.donquixote.games/
+Cruasder Kings 3 is property of Paradox Interactive. Mod is made in compliance with Paradox Interactive Mod Policy. This mod, to the extent I have to do so under the law and Paradox TOS/EULA, is published under the Creative Commons Attribution-NonCommercial-ShareAlike license (CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/). This means you can copy it, distribute it, and modify it, as long as you do not use it in a commercial work (which would be against Paradox mod policy as well), you attribute me (Don Quixote) in your readme file and descriptions, and any forks or submods are shared under the same license. I would also ask a personal favor that you do not use the name Quixotic in the title just to not confuse people as I will hopefully be publishing many more mods under this moniker. And of course, I would be always indebted to you for sharing my web page: https://www.patreon.com/donquixote

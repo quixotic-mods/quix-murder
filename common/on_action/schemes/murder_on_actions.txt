@@ -27,6 +27,7 @@ infant_murder_method_selection = {
 	random_events = {
 		100 = murder_outcome.0202 # Infant Stabbed to Death
 		100 = murder_outcome.0203 # Leave venomous creepy crawly in child's cradle
+		100 = quix_murder_outcome.0204 # Baby with the Bath Water
 	}
 }
 
@@ -53,7 +54,7 @@ teen_murder_method_selection = {
 	}
 	random_events = {
 		100 = murder_outcome.0205 # Child pushed to death
-		100 = quix_murder_outcome.0203 # Faked runaway
+		100 = quix_murder_outcome.0203 # The Runaway
 
 	}
 }
@@ -121,9 +122,6 @@ standard_murder_method_selection = {
 		100 = quix_murder_outcome.0118
 		100 = quix_murder_outcome.0119 # The Prize Fighter
 		100 = quix_murder_outcome.0120 # A shadowy organization
-		100 = quix_murder_outcome.0201 #swimming lessons
-		100 = quix_murder_outcome.0202 #Trojan Horse
-		100 = quic_murder_outcome.0203
 	}
 }
 
@@ -168,6 +166,8 @@ murder_setup = {
 		quix_murder_outcome.1201 #Swimming Lessons
 		quix_murder_outcome.1202 #Trojan Horse
 		quix_murder_outcome.1203 #The Runaway
+		quix_murder_outcome.1204 #Baby with the Bathwater
+		
 
 	}
 }
@@ -278,6 +278,7 @@ murder_succeeded = {
 		quix_murder_outcome.2201 #swimming lessons
 		quix_murder_outcome.2202 #Trojan Horse
 		quix_murder_outcome.2203 #the runaway
+		quix_murder_outcome.2204 #Baby with the bathwater
 	}
 	effect = {
 
@@ -368,6 +369,7 @@ murder_failed = {
 		quix_murder_outcome.4201 #swimming lessons
 		quix_murder_outcome.4202 #Trojan Horse
 		quix_murder_outcome.4203 #The Runaway
+		quix_murder_outcome.4204 #baby with the bathwater
 	}
 }
 

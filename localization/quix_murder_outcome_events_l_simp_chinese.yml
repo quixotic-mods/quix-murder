@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  quix_murder_outcome.1001.t:0 "暖和舒适的旅馆……"
  quix_murder_outcome.1001.d:0 "一个机会出现了。我的刺客发现[target.GetTitledFirstName]和随行人员将在即将到来的旅行中住在一家客栈。这家客栈完全是由木材制成的，而且有一个古老的茅草屋顶。如果我们不能轻易通过[target.GetTitledFirstNamePossessive]的守卫，[target.GetSheHe]也可以直接上阵。这个计划最好的地方就是不留证据。\n\n甚至可能是一场意外......"
  quix_murder_outcome.1001.a:0 "燃烧吧，宝贝，燃烧吧。"
