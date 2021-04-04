@@ -407,7 +407,7 @@ quix_murder_outcome.0120 = {
 # CHILD AND INFANT MURDERS
 # 0201-0299
 #############################
-# 0200 Child btwn 3 and 12
+
 # 201 Swimming Lessons
 quix_murder_outcome.0201 = {
 	type = character_event
@@ -459,6 +459,20 @@ quix_murder_outcome.0204 = {
 		save_scope_value_as = {
 			name = murder_method
 			value = flag:tossed_in_moat
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+# 205 Crush
+quix_murder_outcome.0205 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:stoned
 		}
 		trigger_event = { on_action = murder_setup }
 	}
@@ -1406,7 +1420,7 @@ quix_murder_outcome.1202 = {
 	}
 }
 
-# The Runaway
+# 1203 The Runaway
 quix_murder_outcome.1203 = {
 	title = quix_murder_outcome.1203.t
 	desc = {
@@ -1470,7 +1484,7 @@ quix_murder_outcome.1203 = {
 	}
 }
 
-# Baby with the Bathwater
+# 1204 Baby with the Bathwater
 quix_murder_outcome.1204 = {
 	title = quix_murder_outcome.1204.t
 	desc = {
@@ -1524,6 +1538,70 @@ quix_murder_outcome.1204 = {
 
 	option = {
 		name = quix_murder_outcome.1204.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+# 1205 Crush
+quix_murder_outcome.1205 = {
+	title = quix_murder_outcome.1205.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:acting_agent
+				}
+				desc = quix_murder_outcome.1205.desc
+			}
+			desc = quix_murder_outcome.1205.no_acting_agent
+		}
+	}
+	theme = murder_scheme
+	left_portrait = scope:target
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:murder_method = flag:stoned
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+		scope:scheme = {
+			if = {
+				limit = {
+					any_scheme_agent = {
+						scope:scheme = {
+							NOT = {is_scheme_agent_exposed = prev }
+						}
+					}
+				}
+				random_scheme_agent = {
+					save_scope_as = acting_agent
+				}
+			}
+			else = {
+				random_dummy_gender_effect = yes
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1205.a
+		custom_tooltip = murder_child_really_tooltip
+		murder_outcome_roll_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1205.b
 		ai_chance = {
 			base = 0
 		}
@@ -3047,6 +3125,57 @@ quix_murder_outcome.2204 = {
 				NOT = { exists = scope:scheme_discovered }
 			}
 			text = quix_murder_outcome.2204.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+		stress_impact = {
+			base = medium_stress_gain
+			compassionate = major_stress_impact_gain
+		}
+	}
+}
+
+# 2205 Crush
+quix_murder_outcome.2205 = {
+	type = character_event
+	title = quix_murder_outcome.2205.t
+	desc = {
+		desc = quix_murder_outcome.2205.opening
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.2205.scheme_owner_known
+			}
+			desc = quix_murder_outcome.2205.scheme_unknown
+		}
+	}
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = pain
+	}
+
+	trigger = {
+		scope:murder_method = flag:stoned
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2205.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2205.a
 		}
 		successful_murder_outcome_event_option_effect = yes
 		stress_impact = {
@@ -5383,6 +5512,99 @@ quix_murder_outcome.4204 = {
 				NOT = { exists = scope:scheme_discovered }
 			}
 			text = murder_outcome.4204.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = murder_outcome.4001.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+# 4205 Crush
+quix_murder_outcome.4205 = {
+	type = character_event
+	title = quix_murder_outcome.4205.t
+	desc = {
+		random_valid = {
+			desc = quix_murder_outcome.4205.failure_declaration_1
+			desc = quix_murder_outcome.4205.failure_declaration_2
+			desc = quix_murder_outcome.4205.failure_declaration_3
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.4205.scheme_owner_known
+			}
+			desc = quix_murder_outcome.4205.scheme_unknown
+		}
+	}
+	
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:stoned
+	}
+
+	immediate = {
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = murder_outcome.4205.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = murder_outcome.4205.a
 		}
 		show_as_tooltip = {
 			scope:scheme = {
