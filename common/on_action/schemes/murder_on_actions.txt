@@ -1,7 +1,7 @@
 ﻿##################################
 # Quixotic Murder
 # murder_on_actions.txt
-# Version:1.3.1.002
+# Version:1.3.1.003
 # by El Ingenioso Caballero Don Quixote de la Mancha
 # https://www.patreon.com/donquixote
 ##################################
@@ -28,6 +28,7 @@ infant_murder_method_selection = {
 		100 = murder_outcome.0202 # Infant Stabbed to Death
 		100 = murder_outcome.0203 # Leave venomous creepy crawly in child's cradle
 		100 = quix_murder_outcome.0204 # Baby with the Bath Water
+		100 = quix_murder_outcome.0206 # Exposure
 	}
 }
 
@@ -168,7 +169,8 @@ murder_setup = {
 		quix_murder_outcome.1202 #Trojan Horse
 		quix_murder_outcome.1203 #The Runaway
 		quix_murder_outcome.1204 #Baby with the Bathwater
-		quix_murder_outcome.1205
+		quix_murder_outcome.1205 # Crush
+		quix_murder_outcome.1206 # Exposure
 		
 
 	}
@@ -282,6 +284,7 @@ murder_succeeded = {
 		quix_murder_outcome.2203 #the runaway
 		quix_murder_outcome.2204 #Baby with the bathwater
 		quix_murder_outcome.2205 #Crush
+		quix_murder_outcome.2206 #Exposure
 	}
 	effect = {
 
@@ -374,6 +377,7 @@ murder_failed = {
 		quix_murder_outcome.4203 #The Runaway
 		quix_murder_outcome.4204 #baby with the bathwater
 		quix_murder_outcome.4205 #Crush
+		quix_murder_outcome.4206 #Exposure
 	}
 }
 
