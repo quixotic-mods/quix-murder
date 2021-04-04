@@ -55,6 +55,7 @@ teen_murder_method_selection = {
 	random_events = {
 		100 = murder_outcome.0205 # Child pushed to death
 		100 = quix_murder_outcome.0203 # The Runaway
+		100 = quix_murder_outcome.0205 #Crush
 
 	}
 }
@@ -167,6 +168,7 @@ murder_setup = {
 		quix_murder_outcome.1202 #Trojan Horse
 		quix_murder_outcome.1203 #The Runaway
 		quix_murder_outcome.1204 #Baby with the Bathwater
+		quix_murder_outcome.1205
 		
 
 	}
@@ -279,6 +281,7 @@ murder_succeeded = {
 		quix_murder_outcome.2202 #Trojan Horse
 		quix_murder_outcome.2203 #the runaway
 		quix_murder_outcome.2204 #Baby with the bathwater
+		quix_murder_outcome.2205 #Crush
 	}
 	effect = {
 
@@ -370,6 +373,7 @@ murder_failed = {
 		quix_murder_outcome.4202 #Trojan Horse
 		quix_murder_outcome.4203 #The Runaway
 		quix_murder_outcome.4204 #baby with the bathwater
+		quix_murder_outcome.4205 #Crush
 	}
 }
 
