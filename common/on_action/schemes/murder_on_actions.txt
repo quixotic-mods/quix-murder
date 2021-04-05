@@ -79,8 +79,9 @@ dungeon_murder_method_selection = {
 		}
 	}
 	random_events = {
-		#100 = murder_outcome.0301 #Beat to death in a dungeon
+		100 = murder_outcome.0301 #Beat to death in a dungeon
 		100 = quix_murder_outcome.0301 # Bad Air
+		100 = quix_murder_outcome.0303 # Inside Job
 	}
 }
 
@@ -91,9 +92,9 @@ house_arrest_murder_method_selection = {
 		}
 	}
 	random_events = {
-		#100 = murder_outcome.0302
-		#100 = quix_murder_outcome.0302 # Rescue Attempt
-		100 = quix_murder_outcome.0301 # Bad Air
+		100 = murder_outcome.0302
+		100 = quix_murder_outcome.0302 # Rescue Attempt
+		100 = quix_murder_outcome.0304 # Burning down the house
 	}
 }
 
@@ -175,6 +176,8 @@ murder_setup = {
 		quix_murder_outcome.1206 # Exposure
 		quix_murder_outcome.1301 # Bad Air
 		quix_murder_outcome.1302 # Rescue Attempt
+		quix_murder_outcome.1303 # Inside Job
+		quix_murder_outcome.1304 # Burning down the house
 		
 
 	}
@@ -291,6 +294,8 @@ murder_succeeded = {
 		quix_murder_outcome.2206 #Exposure
 		quix_murder_outcome.2301 # Bad Air
 		quix_murder_outcome.2302 # Rescue Attempt
+		quix_murder_outcome.2303 # Inside Job
+		quix_murder_outcome.2304 # Burning down the House
 		
 		
 	}
@@ -388,6 +393,8 @@ murder_failed = {
 		quix_murder_outcome.4206 #Exposure
 		quix_murder_outcome.4301 # Bad Air
 		quix_murder_outcome.4302 # Rescue Attempt
+		quix_murder_outcome.4303 # Inside Job
+		quix_murder_outcome.4304 # Burning down the house
 	}
 }
 
