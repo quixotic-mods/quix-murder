@@ -497,6 +497,58 @@ quix_murder_outcome.0206 = {
 # 0301-0399
 ################################
 
+# Bad Air
+quix_murder_outcome.0301 = {
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:prison_poison
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
+#The Rescue Attempt
+quix_murder_outcome.0302 = {
+	hidden = yes
+
+	immediate = {
+		save_scope_value_as = {
+			name = murder_method
+			value = flag:fake_rescue
+		}
+		scope:target = {
+			if = {
+				limit = { is_landed = yes }
+				save_scope_as = home_owner
+			}
+			else = {
+				if = {
+					limit = {
+						exists = court_owner
+					}
+					court_owner = {
+						save_scope_as = home_owner
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:home_owner.capital_province
+			}
+			scope:home_owner.capital_province = {
+				barony = {
+					save_scope_as = target_home
+				}
+			}	
+		}
+		trigger_event = { on_action = murder_setup }
+	}
+}
+
 #######################################
 # "REGULAR" MURDER SETUPS 1000 - 1999
 #######################################
@@ -1683,6 +1735,105 @@ quix_murder_outcome.1206 = {
 		}
 		scope:scheme = {
 			add_scheme_progress = decline_execution_setback
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+#Bad Air
+quix_murder_outcome.1301 = {
+	title = quix_murder_outcome.1301.t
+	desc = quix_murder_outcome.1301.desc
+	left_portrait = scope:target
+	theme = murder_scheme
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:murder_method = flag:prison_poison
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+		scope:scheme.scheme_target.imprisoner = {
+			save_scope_as = prison_owner
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1301.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			gregarious = minor_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1301.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+			stubborn = minor_stress_impact_gain
+		}
+		custom_tooltip = do_not_execute_murder_tooltip
+	}
+}
+
+#The Rescue Attempt
+quix_murder_outcome.1302 = {
+	title = quix_murder_outcome.1302.t
+	desc = quix_murder_outcome.1302.desc
+	left_portrait = scope:target
+	theme = murder_scheme
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:murder_method = flag:fake_rescue
+	}
+
+	immediate = {
+		murder_outcome_roll_setup_effect = yes
+		scope:scheme.scheme_target.imprisoner = {
+			save_scope_as = prison_owner
+		}
+		random_dummy_gender_effect = yes
+	}
+
+	option = {
+		name = quix_murder_outcome.1302.a
+		murder_outcome_roll_effect = yes
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			gregarious = minor_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.1302.b
+		ai_chance = {
+			base = 0
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+			stubborn = minor_stress_impact_gain
 		}
 		custom_tooltip = do_not_execute_murder_tooltip
 	}
@@ -3309,6 +3460,142 @@ quix_murder_outcome.2206 = {
 			base = medium_stress_gain
 			compassionate = major_stress_impact_gain
 		}
+	}
+}
+
+#2300 Prisoner Murder Success
+
+#Bad Air
+quix_murder_outcome.2301 = {
+	type = character_event
+	title = quix_murder_outcome.2301.t
+
+	desc = {
+		random_valid = {
+			desc = quix_murder_outcome.2301.opening_1
+		}
+		triggered_desc = {
+			trigger = {
+				has_trait = sadistic
+			}
+			desc = quix_murder_outcome.2301.heh
+		}
+
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = {
+					random_valid = {
+						desc = quix_murder_outcome.2301.owner_is_known_1
+					}
+				}
+			}
+			desc = {
+				random_valid = {
+					desc = quix_murder_outcome.2301.no_awareness_1
+				}
+			}
+		}
+	}
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = pain
+	}
+
+	trigger = {
+		scope:murder_method = flag:prison_poison
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2301.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2301.a
+		}
+		successful_murder_outcome_event_option_effect = yes
+	}
+}
+
+# The Rescue Attempt
+quix_murder_outcome.2302 = {
+	type = character_event
+	title = quix_murder_outcome.2302.t
+
+	### START DESC
+	desc = {
+		# Open with a statement celebrating success
+		# Remember to name the Target character
+		random_valid = {
+			desc = quix_murder_outcome.2302.opening_1
+		}
+		triggered_desc = {
+			# Additional comment if you're sadistic.
+			trigger = {
+				has_trait = sadistic
+			}
+			desc = quix_murder_outcome.2001.heh
+		}
+		first_valid = {
+			# If the Scheme Owner is known:
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = {
+					random_valid = {
+						desc = quix_murder_outcome.2302.owner_is_known_1
+					}
+				}
+			}
+			desc = {
+				random_valid = {
+					desc = quix_murder_outcome.2302.no_awareness_1
+				}
+			}
+		}
+	}
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = pain
+	}
+
+	trigger = {
+		scope:murder_method = flag:fake_rescue
+	}
+
+	immediate = {
+		murder_success_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.2302.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.2302.a
+		}
+		successful_murder_outcome_event_option_effect = yes
 	}
 }
 
@@ -5407,7 +5694,7 @@ quix_murder_outcome.4201 = {
 	}
 }
 
-# Trojan Horse
+# 4202Trojan Horse
 quix_murder_outcome.4202 = {
 	type = character_event
 	title = quix_murder_outcome.4202.t
@@ -5499,7 +5786,8 @@ quix_murder_outcome.4202 = {
 		}
 	}
 }
-# The Runaway
+
+# 4203 The Runaway
 quix_murder_outcome.4203 = {
 	type = character_event
 	title = quix_murder_outcome.4203.t
@@ -5841,6 +6129,192 @@ quix_murder_outcome.4206 = {
 
 	option = {
 		name = murder_outcome.4001.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+# 4300 Prisoner Murders
+
+# 4301 Bad Air
+quix_murder_outcome.4301 = {
+	type = character_event
+	title = quix_murder_outcome.4301.t
+	desc = {
+		desc = {
+			random_valid = {
+				desc = quix_murder_outcome.4301.failure
+			}
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:scheme_discovered
+					}
+					desc = quix_murder_outcome.4301.scheme_owner_known
+				}
+				desc = quix_murder_outcome.4301.scheme_unknown
+			}
+		}
+	}	
+	
+	
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:prison_poison
+	}
+
+	immediate = {
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4301.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4301.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4001.b
+		trigger = {
+			NOT = { exists = scope:scheme_discovered }
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					exists = scope:scheme_discovered
+				}
+				add_dread = minor_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			trigger_event = murder_outcome.9999
+		}
+	}
+}
+
+#An Unwelcome Guest
+quix_murder_outcome.4302 = {
+	type = character_event
+	title = quix_murder_outcome.4302.t
+	desc = {
+		random_valid = {
+			desc = quix_murder_outcome.4302.failure
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme_discovered
+				}
+				desc = quix_murder_outcome.4302.scheme_owner_known
+			}
+			desc = quix_murder_outcome.4302.scheme_unknown
+		}
+	}
+
+	
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+
+	trigger = {
+		scope:murder_method = flag:fake_rescue
+	}
+
+	immediate = {
+		murder_failure_effect = yes
+	}
+
+	option = {
+		name = {
+			trigger = {
+				exists = scope:scheme_discovered
+			}
+			text = quix_murder_outcome.4302.a.discovered
+		}
+		name = {
+			trigger = {
+				NOT = { exists = scope:scheme_discovered }
+			}
+			text = quix_murder_outcome.4302.a
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				end_scheme = yes
+			}
+			if = {
+				limit = { exists = scope:scheme_discovered }
+				add_dread = minor_dread_gain
+			}
+		}
+	}
+
+	option = {
+		name = quix_murder_outcome.4001.b
 		trigger = {
 			NOT = { exists = scope:scheme_discovered }
 		}

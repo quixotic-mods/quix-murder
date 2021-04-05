@@ -79,10 +79,10 @@ dungeon_murder_method_selection = {
 		}
 	}
 	random_events = {
-		100 = murder_outcome.0301 #Beat to death in a dungeon
+		#100 = murder_outcome.0301 #Beat to death in a dungeon
+		100 = quix_murder_outcome.0301 # Bad Air
 	}
 }
-
 
 house_arrest_murder_method_selection = {
 	trigger = {
@@ -91,7 +91,9 @@ house_arrest_murder_method_selection = {
 		}
 	}
 	random_events = {
-		100 = murder_outcome.0302
+		#100 = murder_outcome.0302
+		#100 = quix_murder_outcome.0302 # Rescue Attempt
+		100 = quix_murder_outcome.0301 # Bad Air
 	}
 }
 
@@ -171,6 +173,8 @@ murder_setup = {
 		quix_murder_outcome.1204 #Baby with the Bathwater
 		quix_murder_outcome.1205 # Crush
 		quix_murder_outcome.1206 # Exposure
+		quix_murder_outcome.1301 # Bad Air
+		quix_murder_outcome.1302 # Rescue Attempt
 		
 
 	}
@@ -285,6 +289,10 @@ murder_succeeded = {
 		quix_murder_outcome.2204 #Baby with the bathwater
 		quix_murder_outcome.2205 #Crush
 		quix_murder_outcome.2206 #Exposure
+		quix_murder_outcome.2301 # Bad Air
+		quix_murder_outcome.2302 # Rescue Attempt
+		
+		
 	}
 	effect = {
 
@@ -378,6 +386,8 @@ murder_failed = {
 		quix_murder_outcome.4204 #baby with the bathwater
 		quix_murder_outcome.4205 #Crush
 		quix_murder_outcome.4206 #Exposure
+		quix_murder_outcome.4301 # Bad Air
+		quix_murder_outcome.4302 # Rescue Attempt
 	}
 }
 
