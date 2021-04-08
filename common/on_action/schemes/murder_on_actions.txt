@@ -1,7 +1,7 @@
 ﻿##################################
 # Quixotic Murder
 # murder_on_actions.txt
-# Version:1.3.1.003
+# Version:1.3.1.101
 # by El Ingenioso Caballero Don Quixote de la Mancha
 # https://www.patreon.com/donquixote
 ##################################
@@ -405,59 +405,61 @@ murder_ongoing = {
 	}
 	
 	random_events = {
-		chance_to_happen = 10
+		chance_to_happen = 100
 		200 = 0
 		################
 		## Generic Intrigue Scheme events#
 		################
 		##Agents:
-		200 = intrigue_scheme_ongoing.1001 	# Pay gold for Scheme Progress
-		100 = intrigue_scheme_ongoing.1002 	# Zealous agent promotes your agenda
-		100 = intrigue_scheme_ongoing.1004 	# A Gregarious agent is a little too loose-lipped
-		100 = intrigue_scheme_ongoing.1006 	# A Lazy agent is a little careless
-		30 = intrigue_scheme_ongoing.1007 	# Caring agent wants you to stop
-		50 = intrigue_scheme_ongoing.1008 	# Agent close to being discovered
-		50 = intrigue_scheme_ongoing.1009 	# Close relation is willing to join your scheme after all
-		50 = intrigue_scheme_ongoing.2003 	# Discover a secret about someone else than your target
-		50 = murder_ongoing.3010			# Drunkard Agent
-		100 = intrigue_scheme_ongoing.5019 	# Find old architectural papers
-		100 = intrigue_scheme_ongoing.5026 	# Court chaplain is in on it
+		#200 = intrigue_scheme_ongoing.1001 	# Pay gold for Scheme Progress
+		#100 = intrigue_scheme_ongoing.1002 	# Zealous agent promotes your agenda
+		#100 = intrigue_scheme_ongoing.1004 	# A Gregarious agent is a little too loose-lipped
+		#100 = intrigue_scheme_ongoing.1006 	# A Lazy agent is a little careless
+		#30 = intrigue_scheme_ongoing.1007 	# Caring agent wants you to stop
+		#50 = intrigue_scheme_ongoing.1008 	# Agent close to being discovered
+		#50 = intrigue_scheme_ongoing.1009 	# Close relation is willing to join your scheme after all
+		#50 = intrigue_scheme_ongoing.2003 	# Discover a secret about someone else than your target
+		#50 = murder_ongoing.3010			# Drunkard Agent
+		50 = quix_murder_ongoing.3010       # Sadistic Agent
+		#100 = intrigue_scheme_ongoing.5019 	# Find old architectural papers
+		#100 = intrigue_scheme_ongoing.5026 	# Court chaplain is in on it
 		
 		##Target:
-		100 = intrigue_scheme_ongoing.2001 	# Trusting target
-		100 = intrigue_scheme_ongoing.2002 	# Drunkard target
+		#100 = intrigue_scheme_ongoing.2001 	# Trusting target
+		#100 = intrigue_scheme_ongoing.2002 	# Drunkard target
 		##Owner:
-		50 = intrigue_scheme_ongoing.3001 	# Being Just Causes Stress
-		50 = intrigue_scheme_ongoing.3002 	# Being Compassionate Causes Pain
+		#50 = intrigue_scheme_ongoing.3001 	# Being Just Causes Stress
+		#50 = intrigue_scheme_ongoing.3002 	# Being Compassionate Causes Pain
 		##Child target:
-		200 = intrigue_scheme_ongoing.4001 	# Agent is put in charge of a group of children
-		200 = intrigue_scheme_ongoing.4002 	# Child is gullible
-		150 = intrigue_scheme_ongoing.4003 	# Agent has second thoughts
+		#200 = intrigue_scheme_ongoing.4001 	# Agent is put in charge of a group of children
+		#200 = intrigue_scheme_ongoing.4002 	# Child is gullible
+		#150 = intrigue_scheme_ongoing.4003 	# Agent has second thoughts
 		##Other
-		100 = intrigue_scheme_ongoing.5001 	# Distract guards with itching powder
-		100 = intrigue_scheme_ongoing.5002 	# Convince mystic to give target omen
-		100 = intrigue_scheme_ongoing.5005 	# Gift them poisonous gold
-		100 = intrigue_scheme_ongoing.5009 	# "Friend of Animals" gets some help
-		10 = intrigue_scheme_ongoing.5011 	# You mess up with venomous animals
-		50 = intrigue_scheme_ongoing.5014 	# You buy them a plush and exotic carpet
-		100 = intrigue_scheme_ongoing.5016 	# Lower their courtiers opinion of them
-		50 = intrigue_scheme_ongoing.5017 	# Lower their spouse's opinion of them
-		100 = intrigue_scheme_ongoing.5018 	# Target at war - send camp followers to them
-		100 = intrigue_scheme_ongoing.5024 	# Encourage local celebration
-		50 = murder_ongoing.3301 			# Lose your knife
-		100 = intrigue_scheme_ongoing.3005 	# Messenger pigeon
-		100 = intrigue_scheme_ongoing.3003 	# Mapping the local surroundings
+		#100 = intrigue_scheme_ongoing.5001 	# Distract guards with itching powder
+		#100 = intrigue_scheme_ongoing.5002 	# Convince mystic to give target omen
+		#100 = intrigue_scheme_ongoing.5005 	# Gift them poisonous gold
+		#100 = intrigue_scheme_ongoing.5009 	# "Friend of Animals" gets some help
+		#10 = intrigue_scheme_ongoing.5011 	# You mess up with venomous animals
+		#50 = intrigue_scheme_ongoing.5014 	# You buy them a plush and exotic carpet
+		#100 = intrigue_scheme_ongoing.5016 	# Lower their courtiers opinion of them
+		#50 = intrigue_scheme_ongoing.5017 	# Lower their spouse's opinion of them
+		#100 = intrigue_scheme_ongoing.5018 	# Target at war - send camp followers to them
+		#100 = intrigue_scheme_ongoing.5024 	# Encourage local celebration
+		#50 = murder_ongoing.3301 			# Lose your knife
+		50 = quix_murder_ongoing.3301       # Conspiracy of Fools
+		#100 = intrigue_scheme_ongoing.3005 	# Messenger pigeon
+		#100 = intrigue_scheme_ongoing.3003 	# Mapping the local surroundings
 		
 		#############
 		# Lifestyle events
 		#############
-		100 = intrigue_scheme_lifestyle.1001 	# Opportunity for a general to set up a soldier spy ring
-		50 = intrigue_scheme_lifestyle.1002 	# Your soldier spy ring has been compromised!
-		100 = intrigue_scheme_lifestyle.3001 	# Study the targets habits
-		100 = intrigue_scheme_lifestyle.3101 	# Convert informants in target´s court
-		50 = intrigue_scheme_lifestyle.3102 	# Informants are revealed!
-		100 = intrigue_scheme_lifestyle.3201 	# Intercept communication
-		100 = intrigue_scheme_lifestyle.3301 	# Possible to gain hook - ends the scheme
-		100 = intrigue_scheme_lifestyle.3401 	# Convince courtier at target's court to inform on them
+		#100 = intrigue_scheme_lifestyle.1001 	# Opportunity for a general to set up a soldier spy ring
+		#50 = intrigue_scheme_lifestyle.1002 	# Your soldier spy ring has been compromised!
+		#100 = intrigue_scheme_lifestyle.3001 	# Study the targets habits
+		#100 = intrigue_scheme_lifestyle.3101 	# Convert informants in target´s court
+		#50 = intrigue_scheme_lifestyle.3102 	# Informants are revealed!
+		#100 = intrigue_scheme_lifestyle.3201 	# Intercept communication
+		#100 = intrigue_scheme_lifestyle.3301 	# Possible to gain hook - ends the scheme
+		#100 = intrigue_scheme_lifestyle.3401 	# Convince courtier at target's court to inform on them
 	}
 }
