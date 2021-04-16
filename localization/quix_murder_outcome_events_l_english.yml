@@ -80,7 +80,7 @@
  quix_murder_outcome.1016.b:0 "It sounds like a terrible plan."
 
  quix_murder_outcome.1017.t:0 "The Exotic Weapon..."
- quix_murder_outcome.1017.d:0 "Our agents have acquired a novel weapon. It is a thin reed that allows a small poisoned art to be launched at quite remarkable distances towards a target, and can deliver a fatal dose of poison. Perhaps this could be the method by which we dispatch [target.GetName] ?"
+ quix_murder_outcome.1017.d:0 "Our agents have acquired a novel weapon. It is a thin reed that allows a small poisoned dart to be launched at quite remarkable distances towards a target, and can deliver a fatal dose of poison. Perhaps this could be the method by which we dispatch [target.GetName] ?"
  quix_murder_outcome.1017.a:0 "What a marvelous tool."
  quix_murder_outcome.1017.b:0 "I won't trust something this important to a mere hollow stick!"
 
